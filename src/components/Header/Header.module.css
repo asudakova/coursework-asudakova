@@ -1,0 +1,48 @@
+.header {
+    height: 80px;
+    width: 100%;
+    background-color: #867AC5;
+}
+.wrapper {
+    max-width: 1310px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logoImg {
+    height: 44px;
+    width: 43px;
+    margin-right: 5px;
+}
+.logoText {
+    font: 600 25px/30px 'Rubik', sans-serif;
+    color: #1F1235;
+}
+.accountBtns {
+    display: flex;
+}
+.darkThemeBtn,
+.favBtn,
+.profileBtn {
+    width: 28px;
+    height: 28px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+.darkThemeBtn:hover,
+.favBtn:hover,
+.profileBtn:hover {
+    opacity: .8;
+}
+.darkThemeBtn,
+.favBtn {
+    margin-right: 15px;
+}

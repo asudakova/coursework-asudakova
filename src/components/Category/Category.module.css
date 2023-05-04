@@ -1,0 +1,19 @@
+.category {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font: 400 20px/24px 'Rubik', sans-serif;
+    transition: color .2s ease-in-out;
+}
+.category:hover {
+    color: #5843BE;
+}
+.active {
+    color: #5843BE;
+}
+.inactive {
+    color: #86838C;
+}
+img {
+    margin-right: 5px;
+}

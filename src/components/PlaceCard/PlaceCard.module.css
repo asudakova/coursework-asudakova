@@ -1,0 +1,78 @@
+.placeCard {
+    width: 100%;
+    height: auto;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    padding: 10px;
+    position: relative;
+    font-family: 'Rubik', sans-serif;
+}
+.fav, 
+.noFav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+}
+.fav:hover, 
+.noFav:hover {
+    padding: 6px;
+}
+.fav {
+    color: #FFFFFF;
+    background-color: #867AC5;
+}
+.noFav {
+    color: #86838C;
+    background-color: #FFFFFF;
+}
+.pic,
+.noPic {
+    width: 100%;
+    height: 220px;
+    border-radius: 25px;
+    margin-bottom: 10px;
+}
+.pic {
+    object-fit: cover;
+}
+.noPic {
+    background-color: rgba(134, 131, 140, 0.4);;
+}
+.placeInfo {
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+.rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.review {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    color: #1F1235;
+    margin-left: 5px;
+}
+.name {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #1F1235;
+    margin-bottom: 5px;
+}
+.address {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #1F1235;
+    margin-bottom: 5px;
+}

@@ -10,8 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@2gis/mapgl": "^1.36.0",
+    "@2gis/mapgl-clusterer": "^2.5.0",
+    "@iconscout/react-unicons": "^2.0.2",
+    "classnames": "^2.3.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-star-ratings": "^2.3.0",
     "redux": "^4.2.1"
   },
   "devDependencies": {
