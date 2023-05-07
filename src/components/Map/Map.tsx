@@ -2,14 +2,15 @@ import React, { useEffect } from 'react';
 import { load } from '@2gis/mapgl';
 import { Clusterer } from '@2gis/mapgl-clusterer';
 import mapgl from '@2gis/mapgl/global';
+import { MapWrapper } from './MapWrapper';
+import { useAppSelector } from '../../redux/typingReduxHooks';
+import { mockMarkers } from '../../constants/index';
+import { userLocationTag } from '../../img';
 import styles from './Map.module.css';
-import { MapWrapper } from './MapWrapper'
-import mapMarkerSvg from '../../img/map-marker.svg'
-
 
 const Map: React.FC = () => {
-    const MAP_CENTER = [37.62264509986394, 55.75428544939373];
-    const API_KEY = 'paste your api key here';
+    const { lngLat } = useAppSelector(state => state.coordinatesRedcer);
+    const { userLocation } = useAppSelector(state => state.coordinatesRedcer);
 
     useEffect(() => {
         let currentCalls = Number(localStorage.getItem('apiCalls')) + 1;
@@ -20,44 +21,37 @@ const Map: React.FC = () => {
 
         load().then((mapgl) => {
             map = new mapgl.Map('map-container', {
-                center: MAP_CENTER,
-                zoom: 15,
-                key: API_KEY,
+                center: lngLat,
+                zoom: 16,
+                key: import.meta.env.VITE_2GIS_MAP_API_KEY,
             });
 
-            const markers = [
-                { 
-                    coordinates: [37.62007017741414, 55.76074512788935],
-                    icon: mapMarkerSvg
-                },
-                { 
-                    coordinates: [37.62646456511692, 55.7533556513168],
-                    icon: mapMarkerSvg
-                },
-                { 
-                    coordinates: [37.61556407026668, 55.75139938101164],
-                    icon: mapMarkerSvg
-                },
-            ];
-    
+            if (userLocation.length) {
+                new mapgl.Marker(map, {
+                    coordinates: userLocation,
+                    icon: userLocationTag,
+                });
+            }
+
             clusterer = new Clusterer(map, {
                 radius: 60,
             });
-            clusterer.load(markers);
+            clusterer.load(mockMarkers);
+
+            map.on('click', (e) => console.log(e))
         });
-        
+
         // Destroy the map, if Map component is going to be unmounted
         return () => {
             map && map.destroy();
             clusterer && clusterer.destroy();
         };
-    }, []);
+    }, [lngLat]);
 
     return (
         <div className={styles.map}>
             <MapWrapper />
         </div>
-        
     );
 };
 

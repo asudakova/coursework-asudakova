@@ -9,8 +9,12 @@ import attr_active from './attractions-active.png';
 import cafe01 from './cafe-01.jpg';
 import cafe02 from './cafe-02.jpg';
 import cafe03 from './cafe-03.jpg';
+import mapMarkerTag from './map-marker.svg';
+import userLocationTag from './user-location-tag.svg';
+import logo from './logo.png';
 
 export {
+    logo,
     food_inactive,
     food_active,
     ent_inactive,
@@ -21,5 +25,7 @@ export {
     attr_active,
     cafe01,
     cafe02,
-    cafe03
+    cafe03,
+    mapMarkerTag,
+    userLocationTag,
 }

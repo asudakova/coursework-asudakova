@@ -9,7 +9,8 @@ import {
     attr_active,
     cafe01,
     cafe02,
-    cafe03
+    cafe03,
+    mapMarkerTag,
 } from '../img'
 
 type Category = {
@@ -118,3 +119,22 @@ export const mockPlaces: PlaceCard[] = [
     },
 ]
 
+type Marker = {
+    coordinates: number[],
+    icon?: string
+}
+
+export const mockMarkers: Marker[] = [
+    {
+        coordinates: [37.6192860177451, 55.75319337511704],
+        icon: mapMarkerTag,
+    },
+    {
+        coordinates: [37.61545582092605, 55.751448423906325],
+        icon: mapMarkerTag,
+    },
+    {
+        coordinates: [37.62068076033474, 55.7475537116394],
+        icon: mapMarkerTag,
+    },
+];
