@@ -1,0 +1,30 @@
+.loader {
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+}
+.loader_path {
+    fill: none;
+    stroke: green;
+    stroke-width: 5px;
+    stroke-linecap: round;
+    animation: animate-stroke 1.5s ease-in-out infinite;
+}
+@keyframes animate-stroke {
+    0% {
+        stroke-dasharray: 1, 200;
+        stroke-dashoffset: 0;
+        stroke: #86838C;
+    }
+    50% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -35;
+        stroke: #5843BE;
+    }
+    100% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -124;
+        stroke: #1F1235;
+    }
+}
+

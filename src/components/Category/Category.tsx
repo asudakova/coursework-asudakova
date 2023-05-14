@@ -1,21 +1,20 @@
-import React, { useState } from 'react';
+import React from 'react';
 import cn from 'classnames';
 import styles from './Category.module.css';
+import { useAppDispatch, useAppSelector } from '../../redux/typingReduxHooks';
+import { setNewCategory } from '../../redux/places/actions';
+import { CategoryPropsType } from '../../types';
 
-type CategoryProps = {
-    active: string,
-    inactive: string,
-    title: string
-}
-
-const Category: React.FC<CategoryProps> = ({active, inactive, title}) => {
-    const [activeCategory, setActiveCategory] = useState('Еда');
+const Category: React.FC<CategoryPropsType> = ({active, inactive, title, shortCut}) => {
+    const dispatch = useAppDispatch();
+    const currentCategory = useAppSelector(state => state.placesReducer.category);
     
     return (
         <div
-            className={cn(styles.category, activeCategory === title ? styles.active : styles.inactive)}>
+            onClick={()=>dispatch(setNewCategory(shortCut))}
+            className={cn(styles.category, currentCategory === shortCut ? styles.active : styles.inactive)}>
             <img
-                src={activeCategory === title ? active : inactive}
+                src={currentCategory === shortCut ? active : inactive}
                 alt={title} />
             <span>{title}</span>
         </div>

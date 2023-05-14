@@ -1,16 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
 import cn from 'classnames';
 import styles from './Filter.module.css';
+import { useAppDispatch, useAppSelector } from '../../redux/typingReduxHooks';
+import { setNewSort } from '../../redux/places/actions';
+import { FilterPropsType } from '../../types';
 
-type FilterProps = {
-    title: string
-}
+const Filter: React.FC<FilterPropsType> = ({title, shortCut}) => {
+    const dispatch= useAppDispatch();
+    const currentSort = useAppSelector(state => state.placesReducer.sortBy)
 
-const Filter: React.FC<FilterProps> = ({title}) => {
-    const [activeFilter, setActiveFilter] = useState('Рядом');
-    
     return (
-        <div className={cn(styles.filter, activeFilter === title ? styles.active : styles.inactive)}>
+        <div 
+            onClick={()=>dispatch(setNewSort(shortCut))}
+            className={cn(styles.filter, currentSort === shortCut ? styles.active : styles.inactive)}>
             {title}
         </div>
     );

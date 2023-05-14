@@ -3,21 +3,22 @@ import { load } from '@2gis/mapgl';
 import { Clusterer } from '@2gis/mapgl-clusterer';
 import mapgl from '@2gis/mapgl/global';
 import { MapWrapper } from './MapWrapper';
-import { useAppSelector } from '../../redux/typingReduxHooks';
-import { mockMarkers } from '../../constants/index';
+import { useAppSelector, useAppDispatch } from '../../redux/typingReduxHooks';
+import { setMapBoundaries } from '../../redux/coordinates/actions';
 import { userLocationTag } from '../../img';
+import { createMapMarkersArray } from '../../helpers/createMapMarkersArray';
 import styles from './Map.module.css';
 
 const Map: React.FC = () => {
-    const { lngLat } = useAppSelector(state => state.coordinatesRedcer);
-    const { userLocation } = useAppSelector(state => state.coordinatesRedcer);
+    const dispatch = useAppDispatch();
+    const { lngLat } = useAppSelector(state => state.coordinatesReducer);
+    const { userLocation } = useAppSelector(state => state.coordinatesReducer);
+    const foundPlaces = useAppSelector(state => state.placesReducer.markerPlaces);
 
     useEffect(() => {
-        let currentCalls = Number(localStorage.getItem('apiCalls')) + 1;
-        localStorage.setItem('apiCalls', currentCalls.toString());
-
         let map: mapgl.Map | undefined = undefined;
         let clusterer: Clusterer | undefined = undefined;
+        let userLocationMarker: mapgl.Marker | undefined = undefined;
 
         load().then((mapgl) => {
             map = new mapgl.Map('map-container', {
@@ -27,7 +28,7 @@ const Map: React.FC = () => {
             });
 
             if (userLocation.length) {
-                new mapgl.Marker(map, {
+                userLocationMarker = new mapgl.Marker(map, {
                     coordinates: userLocation,
                     icon: userLocationTag,
                 });
@@ -36,17 +37,22 @@ const Map: React.FC = () => {
             clusterer = new Clusterer(map, {
                 radius: 60,
             });
-            clusterer.load(mockMarkers);
+            clusterer.load(createMapMarkersArray(foundPlaces));
 
             map.on('click', (e) => console.log(e))
+
+            const { northEast, southWest } = map.getBounds();
+            const bounds = [...northEast, ...southWest];
+            dispatch(setMapBoundaries(bounds))
         });
 
         // Destroy the map, if Map component is going to be unmounted
         return () => {
             map && map.destroy();
             clusterer && clusterer.destroy();
+            userLocationMarker && userLocationMarker.destroy();
         };
-    }, [lngLat]);
+    }, [lngLat, foundPlaces]);
 
     return (
         <div className={styles.map}>

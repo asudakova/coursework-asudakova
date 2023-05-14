@@ -1,5 +1,7 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
+//@ts-ignore
 import debounce from 'lodash.debounce';
+//@ts-ignore
 import { UilSearch, UilMapMarker, UilTimes } from '@iconscout/react-unicons';
 import { useAppDispatch } from '../../redux/typingReduxHooks';
 import { fetchCoordinates, getUserLocation } from '../../redux/coordinates/actions';
@@ -27,7 +29,6 @@ const Input: React.FC = () => {
 
     useEffect(() => {
         if (debouncedInputValue !== '') {
-            console.log(debouncedInputValue)
             dispatch(fetchCoordinates(debouncedInputValue));
         }
     }, [debouncedInputValue]);

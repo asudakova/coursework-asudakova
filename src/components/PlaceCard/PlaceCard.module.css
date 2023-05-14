@@ -1,12 +1,16 @@
 .placeCard {
-    width: 100%;
-    height: auto;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.25);
-    border-radius: 25px;
-    padding: 10px;
-    position: relative;
     font-family: 'Rubik', sans-serif;
+    position: relative;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px 1px #1f123544;
+    transition: all .1s ease-in-out;
+}
+.placeCard:hover {
+    box-shadow: 0px 4px 10px 5px #1f123553;
 }
 .fav, 
 .noFav {

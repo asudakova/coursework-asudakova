@@ -1,7 +1,7 @@
 import React from 'react';
+import Header from './components/Header/Header';
+import MainPage from './pages/MainPage/MainPage';
 import './App.module.css'
-import Header from './components/Header/Header'
-import MainPage from './components/MainPage/MainPage';
 
 const App: React.FC = () => {
 
@@ -10,7 +10,6 @@ const App: React.FC = () => {
             <Header />
             <MainPage />
         </>
-
     )
 }
 

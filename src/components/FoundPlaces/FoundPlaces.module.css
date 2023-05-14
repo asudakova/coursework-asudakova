@@ -1,0 +1,24 @@
+.title,
+.notFound  {
+    color: #1F1235;
+    margin-bottom: 45px;
+}
+.title {
+    font: 600 36px/43px 'Rubik', sans-serif;
+}
+.notFound {
+    font: 300 30px/38px 'Rubik', sans-serif;
+}
+.filters {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 45px;
+}
+.placesCards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+    padding-right: 15px;
+    padding-left: 15px;
+}

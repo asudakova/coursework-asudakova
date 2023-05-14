@@ -6,9 +6,6 @@ import hotel_inactive from './hotel-inactive.png';
 import hotel_active from './hotel-active.png';
 import attr_inactive from './attractions-inactive.png';
 import attr_active from './attractions-active.png';
-import cafe01 from './cafe-01.jpg';
-import cafe02 from './cafe-02.jpg';
-import cafe03 from './cafe-03.jpg';
 import mapMarkerTag from './map-marker.svg';
 import userLocationTag from './user-location-tag.svg';
 import logo from './logo.png';
@@ -23,9 +20,6 @@ export {
     hotel_active,
     attr_inactive,
     attr_active,
-    cafe01,
-    cafe02,
-    cafe03,
     mapMarkerTag,
     userLocationTag,
 }

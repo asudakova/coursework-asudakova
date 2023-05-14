@@ -1,0 +1,283 @@
+{
+  "meta": {
+    "api_version": "3.0.17025",
+    "code": 200,
+    "issue_date": "20230508"
+  },
+  "result": {
+    "items": [
+      {
+        "address_comment": "клуб Notch Men`s Club",
+        "address_name": "Большой Златоустинский переулок, 9 ст1",
+        "ads": {
+          "article": "<br />•&nbsp;Для романтического свидания. Идеальное место для уединения в самом центре города в номере со стильным интерьером<br /><br />•&nbsp;Для вечеринки и отдыха компании. Мальчишник, девичник, день рождения? Начните празднование в нашем отеле в центре Москвы, до которого всем будет удобно добраться<br /><br />•&nbsp;Для впечатляющих фотосессий. Наши номера с необычным и дорогим дизайном отлично подойдут для любых видов съемок.<br /><br />•&nbsp;Для деловых переговоров. Проведите деловые переговоры или презентацию в неформальной обстановке наших номеров Люкс.<br /><br />•&nbsp;Для отдыха в путешествии. Проездом в Москве? Остановитесь в нашем отеле и отдохните в номере с звукоизоляцией и шторами black-out<br /><br />•&nbsp;Для караоке вечеринки. В номере Люкс вас ждёт караоке и мощная акустическая система<br />",
+          "text": "Отели премиум-класса с почасовой оплатой в центре Москвы"
+        },
+        "external_content": [
+          {
+            "count": 19,
+            "main_photo_url": "https://i4.photo.2gis.com/main/branch/32/70000001059265350/common",
+            "subtype": "common",
+            "type": "photo_album"
+          },
+          {
+            "count": 5,
+            "main_photo_url": "https://i1.photo.2gis.com/main/geo/32/4504235282979981/view",
+            "subtype": "view",
+            "type": "photo_album"
+          }
+        ],
+        "id": "70000001059265350",
+        "name": "11 rooms, гостиница",
+        "point": {
+          "lat": 55.758422,
+          "lon": 37.632963
+        },
+        "type": "branch"
+      },
+      {
+        "address_comment": "4 этаж",
+        "address_name": "улица Маросейка, 7/8 ст1",
+        "external_content": [
+          {
+            "count": 89,
+            "main_photo_url": "https://i0.photo.2gis.com/main/branch/32/70000001044413269/common",
+            "subtype": "common",
+            "type": "photo_album"
+          },
+          {
+            "count": 15,
+            "main_photo_url": "https://i0.photo.2gis.com/main/geo/32/4504235282760467/view",
+            "subtype": "view",
+            "type": "photo_album"
+          }
+        ],
+        "id": "70000001044413269",
+        "name": "7слонов, бутик-отель",
+        "point": {
+          "lat": 55.757764,
+          "lon": 37.632688
+        },
+        "type": "branch"
+      },
+      {
+        "address_name": "Тверская улица, 9а ст5",
+        "ads": {
+          "article": "Давно мечтали остановиться в самом центре нашей столицы, но цены в центре слишком большие?<br />У нас есть для вас решение! A.Kosterev — это отель не только с большим историческим бэкграундом, но и с современным сервисом, который навсегда останется у вас в душе, и вы будете возвращаться к нам снова и снова!",
+          "link": {
+            "text": "Забронировать",
+            "value": "http://link.2gis.com/1.2/3BCD3C92/webapi/20230501/project32/70000001045787984/null/8x6iD27228G2J81301I23GGG3sBAuu49G6G42AB966997C95ttbc6A386J77G4I1G46CI5GJ5c6Auv6B3843102277H3H4J3HHG4A3?https://kosterevhotel.ru/"
+          },
+          "text": "Современный отель со своей историей в самом центре Москвы!"
+        },
+        "external_content": [
+          {
+            "count": 76,
+            "main_photo_url": "https://i1.photo.2gis.com/main/branch/32/70000001045787984/common",
+            "subtype": "common",
+            "type": "photo_album"
+          },
+          {
+            "count": 1,
+            "main_photo_url": "https://i1.photo.2gis.com/main/geo/32/4504235282776413/view",
+            "subtype": "view",
+            "type": "photo_album"
+          }
+        ],
+        "full_name": "Москва, Тверская улица, 9а ст5",
+        "id": "70000001045787984",
+        "name": "A.Kosterev, отель",
+        "point": {
+          "lat": 55.759605,
+          "lon": 37.609493
+        },
+        "purpose_name": "Гостиница",
+        "type": "branch"
+      },
+      {
+        "address_comment": "2 этаж",
+        "address_name": "улица Покровка, 3/7 ст1г",
+        "external_content": [
+          {
+            "count": 1,
+            "main_photo_url": "https://i3.photo.2gis.com/main/branch/32/70000001062487434/common",
+            "subtype": "common",
+            "type": "photo_album"
+          },
+          {
+            "count": 1,
+            "main_photo_url": "https://i1.photo.2gis.com/main/geo/32/4504235282746152/view",
+            "subtype": "view",
+            "type": "photo_album"
+          }
+        ],
+        "id": "70000001062487434",
+        "name": "A4 Покровка, гостиница",
+        "point": {
+          "lat": 55.758946,
+          "lon": 37.639699
+        },
+        "type": "branch"
+      },
+      {
+        "address_name": "переулок Столешников, 12 ст3",
+        "building_name": "Akvarel Stoleshnikov, гостиница",
+        "external_content": [
+          {
+            "count": 70,
+            "main_photo_url": "https://i9.photo.2gis.com/main/branch/32/4504127908892849/common",
+            "subtype": "common",
+            "type": "photo_album"
+          }
+        ],
+        "full_name": "Москва, Akvarel Stoleshnikov, гостиница",
+        "id": "4504127908892849",
+        "name": "Akvarel Stoleshnikov, гостиница",
+        "point": {
+          "lat": 55.76257,
+          "lon": 37.614684
+        },
+        "purpose_name": "Гостиница",
+        "type": "branch"
+      },
+      {
+        "address_comment": "1 этаж",
+        "address_name": "Раушская набережная, 4/5 ст1",
+        "ads": {
+          "article": "ApeironSpace — новый уровень отелей!<br />Полностью автоматизированное комфортное пространство, управляемое с вашего смартфона. Идеальное место для тех, кто любит новизну и технологичность, приватность и комфорт.<br /><br />Уникальная особенность ApeironSpace — управление бронированием и пространством номера с экрана вашего смартфона. Каждый номер — это умный дом, который вы можете настроить под себя.<br /><br />Ваш смартфон — ключ ко всему!",
+          "article_warning": "ООО «Магеллан».",
+          "link": {
+            "text": "Новый уровень отелей",
+            "value": "http://link.2gis.com/1.2/80D92747/webapi/20230501/project32/70000001062627032/null/8x6iD27228G2J81301I23GGG3sBAuu49G6G42AB966837343ttbc6A386J77G4I1G46CI5GJ5c6Auv6B3843102294H6H4J3HHG443?https://apeironspace.com/?utm_source=2gis"
+          },
+          "text": "Новый технологичный отель, управляемый с вашего смартфона",
+          "warning": "ООО «Магеллан»."
+        },
+        "external_content": [
+          {
+            "count": 71,
+            "main_photo_url": "https://i9.photo.2gis.com/main/branch/32/70000001062627032/common",
+            "subtype": "common",
+            "type": "photo_album"
+          },
+          {
+            "count": 10,
+            "main_photo_url": "https://i3.photo.2gis.com/main/geo/32/4504235282714050/view",
+            "subtype": "view",
+            "type": "photo_album"
+          }
+        ],
+        "id": "70000001062627032",
+        "name": "ApeironSpace",
+        "point": {
+          "lat": 55.748604,
+          "lon": 37.627409
+        },
+        "type": "branch"
+      },
+      {
+        "address_comment": "1-4 этаж",
+        "address_name": "Покровский бульвар, 8 ст2",
+        "ads": {
+          "article": "AxeL Hotel &amp; Hostel — мы снова в деле и мы объявляем огромные скидки на проживание у нас в отеле!<br />Современные и суперкомфортные номера как дома оставят след в вашем сердце, и вы обязательно к нам вернётесь!<br />К вашему размещению будет предоставлено 4 совершенно разных номера, в которых можно выспаться, провести романтический вечер или просто насладиться атмосферой спокойствия и релакса.",
+          "link": {
+            "text": "Забронировать",
+            "value": "http://link.2gis.com/1.2/AA4AD637/webapi/20230501/project32/70000001032234778/null/8x6iD27228G2J81301I23GGG3sBAuu49G6G42AB966444A89ttbc6A386J77G4I1G46CI5GJ5c6Auv6B3843102264H7H4J3HHG42e?https://axel-hostel.ru/booking/"
+          },
+          "text": "Современное объединение отеля, апартаментов и хостела в одном месте"
+        },
+        "external_content": [
+          {
+            "count": 54,
+            "main_photo_url": "https://i1.photo.2gis.com/main/branch/32/70000001032234778/common",
+            "subtype": "common",
+            "type": "photo_album"
+          },
+          {
+            "count": 2,
+            "main_photo_url": "https://i2.photo.2gis.com/main/geo/32/4504235282744133/view",
+            "subtype": "view",
+            "type": "photo_album"
+          }
+        ],
+        "id": "70000001032234778",
+        "name": "AxeL, апарт-отель",
+        "point": {
+          "lat": 55.756796,
+          "lon": 37.646525
+        },
+        "type": "branch"
+      },
+      {
+        "address_name": "Милютинский переулок, 2",
+        "external_content": [
+          {
+            "count": 3,
+            "main_photo_url": "https://i8.photo.2gis.com/main/geo/32/4504235282810924/view",
+            "subtype": "view",
+            "type": "photo_album"
+          }
+        ],
+        "id": "70000001069435045",
+        "name": "Barin Residence Grand",
+        "point": {
+          "lat": 55.761506,
+          "lon": 37.631845
+        },
+        "type": "branch"
+      },
+      {
+        "address_name": "Милютинский переулок, 2",
+        "external_content": [
+          {
+            "count": 60,
+            "main_photo_url": "https://i8.photo.2gis.com/main/branch/32/70000001039917013/common",
+            "subtype": "common",
+            "type": "photo_album"
+          },
+          {
+            "count": 3,
+            "main_photo_url": "https://i8.photo.2gis.com/main/geo/32/4504235282810924/view",
+            "subtype": "view",
+            "type": "photo_album"
+          }
+        ],
+        "id": "70000001039917013",
+        "name": "Barin Residence Myasnitskaya, отель",
+        "point": {
+          "lat": 55.761553,
+          "lon": 37.632071
+        },
+        "type": "branch"
+      },
+      {
+        "address_name": "Садовническая улица, 8",
+        "building_name": "Barin Residence, отель",
+        "external_content": [
+          {
+            "count": 28,
+            "main_photo_url": "https://i7.photo.2gis.com/main/branch/32/70000001033781565/common",
+            "subtype": "common",
+            "type": "photo_album"
+          },
+          {
+            "count": 1,
+            "main_photo_url": "https://i3.photo.2gis.com/main/geo/32/4504235282713862/view",
+            "subtype": "view",
+            "type": "photo_album"
+          }
+        ],
+        "full_name": "Москва, Barin Residence, отель",
+        "id": "70000001033781565",
+        "name": "Barin Residence Myasnitskaya, отель",
+        "point": {
+          "lat": 55.747572,
+          "lon": 37.627568
+        },
+        "purpose_name": "Гостиница",
+        "type": "branch"
+      }
+    ],
+    "total": 119
+  }
+}

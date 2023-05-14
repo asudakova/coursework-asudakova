@@ -1,6 +1,9 @@
 import React from 'react';
 import Input from '../Input/Input';
+
+//@ts-ignore
 import { UilMoon, UilHeartAlt, UilUserCircle } from '@iconscout/react-unicons';
+
 import { logo } from '../../img'
 import styles from './Header.module.css';
 

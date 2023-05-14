@@ -4,22 +4,21 @@ import axios from "axios";
 
 export const fetchCoordinates = (city: string) => (dispatch: AppDispatch) => {
     dispatch(coordinatesSlice.actions.coordinatesFetching());
-    axios
+    try {
+        axios
         .get(`http://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${import.meta.env.VITE_WEATHERAPI_GEOCODER_API_KEY}`)
         .then((res) => {
             if (res.data[0]?.country === 'RU') {
                 const lon = res.data[0].lon;
                 const lat = res.data[0].lat;
                 dispatch(coordinatesSlice.actions.coordinatesFetchingFromSearchSuccess([lon, lat]))
-            } else {
-                throw new Error ('Введенный город находится за пределами России')
             }
         })
-        .catch((e) => {
-            if (e instanceof Error) {
-                dispatch(coordinatesSlice.actions.coordinatesFetchingError(e.message))
-            }
-        })
+    } catch(e) {
+        if (e instanceof Error) {
+            dispatch(coordinatesSlice.actions.coordinatesFetchingError(e.message))
+        }
+    }
 }
 
 export const getUserLocation = () => (dispatch: AppDispatch) => {
@@ -36,4 +35,8 @@ export const getUserLocation = () => (dispatch: AppDispatch) => {
             dispatch(coordinatesSlice.actions.coordinatesFetchingError(e.message))
         }
     }
+}
+
+export const setMapBoundaries = (bounds: number[]) => (dispatch: AppDispatch) => {
+    dispatch(coordinatesSlice.actions.coordinatesSetMapBoundaries(bounds));
 }
