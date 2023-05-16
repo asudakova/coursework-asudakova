@@ -11,9 +11,13 @@ import styles from './Map.module.css';
 
 const Map: React.FC = () => {
     const dispatch = useAppDispatch();
-    const { lngLat } = useAppSelector(state => state.coordinatesReducer);
-    const { userLocation } = useAppSelector(state => state.coordinatesReducer);
-    const foundPlaces = useAppSelector(state => state.placesReducer.markerPlaces);
+    const { lngLat } = useAppSelector((state) => state.coordinatesReducer);
+    const { userLocation } = useAppSelector(
+        (state) => state.coordinatesReducer
+    );
+    const foundPlaces = useAppSelector(
+        (state) => state.placesReducer.markerPlaces
+    );
 
     useEffect(() => {
         let map: mapgl.Map | undefined = undefined;
@@ -39,11 +43,11 @@ const Map: React.FC = () => {
             });
             clusterer.load(createMapMarkersArray(foundPlaces));
 
-            map.on('click', (e) => console.log(e))
+            map.on('click', (e) => console.log(e));
 
             const { northEast, southWest } = map.getBounds();
             const bounds = [...northEast, ...southWest];
-            dispatch(setMapBoundaries(bounds))
+            dispatch(setMapBoundaries(bounds));
         });
 
         // Destroy the map, if Map component is going to be unmounted

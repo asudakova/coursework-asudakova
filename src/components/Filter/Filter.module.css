@@ -3,18 +3,19 @@
     border-radius: 20px;
     padding: 8px 15px;
     cursor: pointer;
+    background-color: #ffffff;
 }
 .filter:not(:last-child) {
     margin-right: 50px;
 }
 .filter:hover {
-    color: #1F1235;
+    color: #1f1235;
 }
 .active {
-    color: #1F1235;
-    box-shadow: 0px 0px 5px 5px rgba(31, 18, 53, .25);
+    color: #1f1235;
+    box-shadow: 0px 0px 5px 5px rgba(31, 18, 53, 0.25);
 }
 .inactive {
-    color: #86838C;
-    box-shadow: 0px 0px 5px 5px rgba(31, 18, 53, .1);
+    color: #86838c;
+    box-shadow: 0px 0px 5px 5px rgba(31, 18, 53, 0.1);
 }

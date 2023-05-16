@@ -4,38 +4,37 @@ import { useParams } from 'react-router-dom';
 import { useAppSelector } from '../../redux/typingReduxHooks';
 import { CurrentPlaceType } from '../../types';
 import { Link } from 'react-router-dom';
-
 //@ts-ignore
 import { UilHeartAlt } from '@iconscout/react-unicons';
 //@ts-ignore
 import StarRatings from 'react-star-ratings';
-
 import { getDeclension } from '../../helpers/getDeclension';
 
 const categories = {
     food: 'Еда',
     ent: 'Развлечения',
     hotels: 'Отели',
-    attr: 'Достопримечательности'
-}
-
-type PlaceParams = {
-    placeId: string;
+    attr: 'Достопримечательности',
 };
 
 const PlacePage: React.FC = () => {
-    const { placeId } = useParams<PlaceParams>();
-    const curPlace: CurrentPlaceType = useAppSelector(state => state.placesReducer.mapPlaces[placeId as keyof typeof state.placesReducer.mapPlaces]);
-    const curCategory = useAppSelector(state => state.placesReducer.category);
+    const { placeId } = useParams<{ placeId: string }>();
+    const curPlace: CurrentPlaceType = useAppSelector(
+        (state) =>
+            state.placesReducer.mapPlaces[
+                placeId as keyof typeof state.placesReducer.mapPlaces
+            ]
+    );
+    const curCategory = useAppSelector((state) => state.placesReducer.category);
 
     const createMarkup = (text: string) => {
         return { __html: text };
-    }
+    };
 
     return (
         <div className={styles.wrapper}>
             <div className={styles.navigation}>
-                <Link to='/' className={styles.link}>
+                <Link to="/" className={styles.link}>
                     {categories[curCategory]}
                 </Link>
                 <span className={styles.linkName}>
@@ -51,20 +50,17 @@ const PlacePage: React.FC = () => {
             </div>
             <div className={styles.info}>
                 <div className={styles.titleWrapper}>
-                    {(curPlace.nameExtension && curPlace.shortName)
-                        ?
+                    {curPlace.nameExtension && curPlace.shortName ? (
                         <h1 className={styles.title}>
                             {curPlace.shortName}
                             <span>&#160;{curPlace.nameExtension}</span>
                         </h1>
-                        :
-                        <h1 className={styles.title}>
-                            {curPlace.name}
-                        </h1>
-                    }
+                    ) : (
+                        <h1 className={styles.title}>{curPlace.name}</h1>
+                    )}
                     <UilHeartAlt className={styles.fav} />
                 </div>
-                {(curPlace.rating && curPlace.reviewsAmount) &&
+                {curPlace.rating && curPlace.reviewsAmount && (
                     <div className={styles.rating}>
                         <StarRatings
                             className={styles.stars}
@@ -76,28 +72,38 @@ const PlacePage: React.FC = () => {
                             starSpacing="1px"
                         />
                         <span className={styles.review}>
-                            ({curPlace.reviewsAmount} {['отзыв', 'отзыва', 'отзывов'][getDeclension(curPlace.reviewsAmount)]})
+                            ({curPlace.reviewsAmount}{' '}
+                            {
+                                ['отзыв', 'отзыва', 'отзывов'][
+                                    getDeclension(curPlace.reviewsAmount)
+                                ]
+                            }
+                            )
                         </span>
                     </div>
-                }
+                )}
             </div>
             <div className={styles.address}>{curPlace.address}</div>
-            {curPlace.description &&
+            {curPlace.description && (
                 <div
                     className={styles.description}
-                    dangerouslySetInnerHTML={createMarkup(curPlace.description)}>
-                </div>
-            }
+                    dangerouslySetInnerHTML={createMarkup(curPlace.description)}
+                ></div>
+            )}
             <div className={styles.schedule}>
                 <h2 className={styles.scheduleTitle}>Время работы</h2>
                 {Object.keys(curPlace.workingHours).map((day, index) => {
-                    const curDayHours = curPlace.workingHours[day as keyof typeof curPlace.workingHours];
-                    return (<div key={index} className={styles.scheduleLine}>
-                        <span className={styles.day}>{day}</span>
-                        {curDayHours[0] === '' ? '' : curDayHours[0]}
-                        -
-                        {curDayHours[1] === '' ? '' : curDayHours[1]}
-                    </div>)
+                    const curDayHours =
+                        curPlace.workingHours[
+                            day as keyof typeof curPlace.workingHours
+                        ];
+                    return (
+                        <div key={index} className={styles.scheduleLine}>
+                            <span className={styles.day}>{day}</span>
+                            {curDayHours[0] === '' ? '' : curDayHours[0]}-
+                            {curDayHours[1] === '' ? '' : curDayHours[1]}
+                        </div>
+                    );
                 })}
             </div>
         </div>

@@ -1,6 +1,6 @@
 .wrapper {
     font: 400 16px/19px 'Rubik', sans-serif;
-    color: #1F1235;
+    color: #1f1235;
     height: calc(100vh - 80px);
     overflow-y: scroll;
     padding-right: 20px;
@@ -13,14 +13,14 @@
     margin-bottom: 35px;
 }
 .link {
-    color: #5843BE;
+    color: #5843be;
     cursor: pointer;
     padding-right: 18px;
     background: url(../../img/nav.png) no-repeat right;
 }
 .linkName {
     margin-left: 5px;
-    color: #86838C;
+    color: #86838c;
 }
 .photos {
     height: 300px;
@@ -41,12 +41,12 @@
 }
 .title {
     font: 600 32px/38px 'Rubik', sans-serif;
-    color: #1F1235;
+    color: #1f1235;
 }
 .title span {
     font-weight: 300;
 }
-.fav, 
+.fav,
 .noFav {
     margin-left: 15px;
     width: 40px;
@@ -54,19 +54,19 @@
     padding: 8px;
     border-radius: 20px;
     cursor: pointer;
-    transition: all .1s ease-in-out;
+    transition: all 0.1s ease-in-out;
 }
-.fav:hover, 
+.fav:hover,
 .noFav:hover {
     padding: 6px;
 }
 .fav {
-    color: #FFFFFF;
-    background-color: #867AC5;
+    color: #ffffff;
+    background-color: #867ac5;
 }
 .noFav {
-    color: #86838C;
-    background-color: #FFFFFF;
+    color: #86838c;
+    background-color: #ffffff;
 }
 .rating {
     display: flex;
@@ -76,7 +76,7 @@
 .review {
     font-size: 15px;
     line-height: 18px;
-    color: #1F1235;
+    color: #1f1235;
     margin-left: 5px;
 }
 .address {

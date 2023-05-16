@@ -1,7 +1,7 @@
 .header {
     height: 80px;
     width: 100%;
-    background-color: #867AC5;
+    background-color: #867ac5;
 }
 .wrapper {
     max-width: 1310px;
@@ -23,26 +23,56 @@
 }
 .logoText {
     font: 600 25px/30px 'Rubik', sans-serif;
-    color: #1F1235;
+    color: #1f1235;
 }
 .accountBtns {
     display: flex;
 }
 .darkThemeBtn,
 .favBtn,
-.profileBtn {
+.profileBtn,
+.logountBtn {
     width: 28px;
     height: 28px;
-    color: #FFFFFF;
+    color: #ffffff;
     cursor: pointer;
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.logountBtn {
+    color: #1f1235;
 }
 .darkThemeBtn:hover,
 .favBtn:hover,
-.profileBtn:hover {
-    opacity: .8;
+.profileBtn:hover,
+.logountBtn:hover {
+    opacity: 0.8;
 }
 .darkThemeBtn,
 .favBtn {
     margin-right: 15px;
+}
+.profile {
+    position: relative;
+}
+.userInfo {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    right: 0;
+    top: 28px;
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.25);
+    transition: display 0.3s ease-in-out;
+    z-index: 55;
+}
+.profile:hover .userInfo {
+    display: flex;
+}
+.userName {
+    color: #1f1235;
+    font: 400 20px/24px 'Rubik', sans-serif;
+    margin-bottom: 15px;
 }

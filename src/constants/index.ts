@@ -6,9 +6,9 @@ import {
     hotel_inactive,
     hotel_active,
     attr_inactive,
-    attr_active
-} from '../img'
-import { CategoryBtnType, FilterBtnType } from '../types'
+    attr_active,
+} from '../img';
+import { CategoryBtnType, FilterBtnType } from '../types';
 
 export const typesOfPlaces: CategoryBtnType[] = [
     {
@@ -39,43 +39,41 @@ export const typesOfPlaces: CategoryBtnType[] = [
         title: 'Достопримечательности',
         shortCut: 'attr',
     },
-]
+];
 
 export const typesOfFilters: FilterBtnType[] = [
     {
         id: 1,
         title: 'Рядом',
-        shortCut: 'near'
+        shortCut: 'near',
     },
     {
         id: 2,
         title: 'Лучшие',
-        shortCut: 'best'
+        shortCut: 'best',
     },
     {
         id: 3,
         title: 'По алфавиту',
-        shortCut: 'abc'
+        shortCut: 'abc',
     },
     {
         id: 4,
         title: 'Новые',
-        shortCut: 'new'
+        shortCut: 'new',
     },
-]
+];
 
 export const categoryQueryParams = {
     food: 'еда',
     ent: 'развлечения',
     hotels: 'отели',
     attr: 'достопримечательности',
-}
+};
 
 export const sortQueryParams = {
     near: 'distance',
     best: 'rating',
     abc: 'name',
     new: 'creation_time',
-}
-
-
+};

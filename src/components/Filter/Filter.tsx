@@ -1,9 +1,9 @@
 import React from 'react';
 import cn from 'classnames';
-import styles from './Filter.module.css';
 import { useAppDispatch, useAppSelector } from '../../redux/typingReduxHooks';
 import { setNewSort } from '../../redux/places/actions';
 import { FilterPropsType } from '../../types';
+import styles from './Filter.module.css';
 
 const Filter: React.FC<FilterPropsType> = ({title, shortCut}) => {
     const dispatch= useAppDispatch();

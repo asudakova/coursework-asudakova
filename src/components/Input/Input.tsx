@@ -4,8 +4,11 @@ import debounce from 'lodash.debounce';
 //@ts-ignore
 import { UilSearch, UilMapMarker, UilTimes } from '@iconscout/react-unicons';
 import { useAppDispatch } from '../../redux/typingReduxHooks';
-import { fetchCoordinates, getUserLocation } from '../../redux/coordinates/actions';
-import styles from './Input.module.css'
+import {
+    fetchCoordinates,
+    getUserLocation,
+} from '../../redux/coordinates/actions';
+import styles from './Input.module.css';
 
 const Input: React.FC = () => {
     const dispatch = useAppDispatch();
@@ -18,14 +21,14 @@ const Input: React.FC = () => {
     const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setCityInput(event.target.value);
         debouceInput(event.target.value);
-    }
+    };
 
     const debouceInput = useCallback(
         debounce((str: string) => {
             setDebouncedInputValue(str);
         }, 700),
         []
-    )
+    );
 
     useEffect(() => {
         if (debouncedInputValue !== '') {
@@ -37,25 +40,23 @@ const Input: React.FC = () => {
         setDebouncedInputValue('');
         setCityInput('');
         inputRef.current?.focus();
-    }
+    };
 
     const handleLocationClick = () => {
-        dispatch(getUserLocation())
-    }
+        dispatch(getUserLocation());
+    };
 
     return (
         <div className={styles.wrapper}>
             <div className={styles.search}>
-                <UilSearch
-                    className={styles.searchIcon}
-                />
+                <UilSearch className={styles.searchIcon} />
                 <input
                     ref={inputRef}
                     value={cityInput}
                     onChange={handleInputChange}
                     type="text"
                     className={styles.input}
-                    placeholder='Введите город...'
+                    placeholder="Введите город..."
                 />
                 <UilTimes
                     onClick={handleClearClick}

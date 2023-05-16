@@ -1,4 +1,4 @@
-import { FormattedScheduleType,  ScheduleType} from "../types";
+import { FormattedScheduleType, ScheduleType } from '../types';
 
 const days = {
     Mon: 'Пн',
@@ -7,30 +7,30 @@ const days = {
     Thu: 'Чт',
     Fri: 'Пт',
     Sat: 'Сб',
-    Sun: 'Вс'
-}
+    Sun: 'Вс',
+};
 
 export const formatWorkingHours = (schedule: ScheduleType) => {
     const workingHours: FormattedScheduleType = {
-        'Пн': ['', ''],
-        'Вт': ['', ''],
-        'Ср': ['', ''],
-        'Чт': ['', ''],
-        'Пт': ['', ''],
-        'Сб': ['', ''],
-        'Вс': ['', ''],
+        Пн: ['', ''],
+        Вт: ['', ''],
+        Ср: ['', ''],
+        Чт: ['', ''],
+        Пт: ['', ''],
+        Сб: ['', ''],
+        Вс: ['', ''],
     };
     if (!schedule) {
-        return workingHours
+        return workingHours;
     }
-    Object.keys(schedule).map(day => {
+    Object.keys(schedule).map((day) => {
         const currentDayHours = schedule[day as keyof typeof schedule];
         if (currentDayHours?.working_hours) {
             const from = currentDayHours.working_hours[0].from;
             const to = currentDayHours.working_hours[0]?.to;
             const dayName = days[day as keyof typeof schedule];
-            workingHours[dayName as keyof typeof workingHours] = [from, to]
+            workingHours[dayName as keyof typeof workingHours] = [from, to];
         }
     });
     return workingHours;
-}
+};

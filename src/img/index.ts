@@ -22,4 +22,4 @@ export {
     attr_active,
     mapMarkerTag,
     userLocationTag,
-}
+};

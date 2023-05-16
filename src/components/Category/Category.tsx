@@ -5,17 +5,29 @@ import { useAppDispatch, useAppSelector } from '../../redux/typingReduxHooks';
 import { setNewCategory } from '../../redux/places/actions';
 import { CategoryPropsType } from '../../types';
 
-const Category: React.FC<CategoryPropsType> = ({active, inactive, title, shortCut}) => {
+const Category: React.FC<CategoryPropsType> = ({
+    active,
+    inactive,
+    title,
+    shortCut,
+}) => {
     const dispatch = useAppDispatch();
-    const currentCategory = useAppSelector(state => state.placesReducer.category);
-    
+    const currentCategory = useAppSelector(
+        (state) => state.placesReducer.category
+    );
+
     return (
         <div
-            onClick={()=>dispatch(setNewCategory(shortCut))}
-            className={cn(styles.category, currentCategory === shortCut ? styles.active : styles.inactive)}>
+            onClick={() => dispatch(setNewCategory(shortCut))}
+            className={cn(
+                styles.category,
+                currentCategory === shortCut ? styles.active : styles.inactive
+            )}
+        >
             <img
                 src={currentCategory === shortCut ? active : inactive}
-                alt={title} />
+                alt={title}
+            />
             <span>{title}</span>
         </div>
     );

@@ -1,1091 +1,1091 @@
 {
-  "meta": {
-    "api_version": "3.0.17025",
-    "code": 200,
-    "issue_date": "20230508"
-  },
-  "result": {
-    "items": [
-      {
-        "address_name": "Покровский бульвар, 14/6",
-        "ads": {
-          "article": "Особенности нашего ресторана:<br />•&nbsp;поразим любого гурмана своей изысканной кухней;<br />•&nbsp;великолепный выбор блюд;<br />•&nbsp;зал вместимостью до 150 человек;<br />•&nbsp;безупречный сервис;<br />•&nbsp;VIP-комнаты;<br />•&nbsp;в день рождения скидка 20% на всё меню.<br />",
-          "text": "Поразим любого гурмана своей изысканной кухней"
-        },
-        "external_content": [
-          {
-            "count": 52,
-            "main_photo_url": "https://i8.photo.2gis.com/main/branch/32/70000001066038499/common",
-            "subtype": "common",
-            "type": "photo_album"
-          },
-          {
-            "count": 19,
-            "main_photo_url": "https://i7.photo.2gis.com/main/geo/32/4504235282735682/view",
-            "subtype": "view",
-            "type": "photo_album"
-          }
-        ],
-        "id": "70000001066038499",
-        "name": "Кампус, кафе",
-        "point": {
-          "lat": 55.754921,
-          "lon": 37.647789
-        },
-        "reviews": {
-          "general_rating": 4.6,
-          "general_review_count": 9,
-          "is_reviewable": true,
-          "is_reviewable_on_flamp": true,
-          "items": [
+    "meta": {
+        "api_version": "3.0.17025",
+        "code": 200,
+        "issue_date": "20230508"
+    },
+    "result": {
+        "items": [
             {
-              "is_reviewable": true,
-              "tag": "2gis_reviews"
+                "address_name": "Покровский бульвар, 14/6",
+                "ads": {
+                    "article": "Особенности нашего ресторана:<br />•&nbsp;поразим любого гурмана своей изысканной кухней;<br />•&nbsp;великолепный выбор блюд;<br />•&nbsp;зал вместимостью до 150 человек;<br />•&nbsp;безупречный сервис;<br />•&nbsp;VIP-комнаты;<br />•&nbsp;в день рождения скидка 20% на всё меню.<br />",
+                    "text": "Поразим любого гурмана своей изысканной кухней"
+                },
+                "external_content": [
+                    {
+                        "count": 52,
+                        "main_photo_url": "https://i8.photo.2gis.com/main/branch/32/70000001066038499/common",
+                        "subtype": "common",
+                        "type": "photo_album"
+                    },
+                    {
+                        "count": 19,
+                        "main_photo_url": "https://i7.photo.2gis.com/main/geo/32/4504235282735682/view",
+                        "subtype": "view",
+                        "type": "photo_album"
+                    }
+                ],
+                "id": "70000001066038499",
+                "name": "Кампус, кафе",
+                "point": {
+                    "lat": 55.754921,
+                    "lon": 37.647789
+                },
+                "reviews": {
+                    "general_rating": 4.6,
+                    "general_review_count": 9,
+                    "is_reviewable": true,
+                    "is_reviewable_on_flamp": true,
+                    "items": [
+                        {
+                            "is_reviewable": true,
+                            "tag": "2gis_reviews"
+                        },
+                        {
+                            "is_reviewable": true,
+                            "tag": "flamp"
+                        }
+                    ],
+                    "org_rating": 4.2,
+                    "org_review_count": 77
+                },
+                "schedule": {
+                    "Fri": {
+                        "working_hours": [
+                            {
+                                "from": "11:00",
+                                "to": "04:00"
+                            }
+                        ]
+                    },
+                    "Mon": {
+                        "working_hours": [
+                            {
+                                "from": "11:00",
+                                "to": "24:00"
+                            }
+                        ]
+                    },
+                    "Sat": {
+                        "working_hours": [
+                            {
+                                "from": "11:00",
+                                "to": "04:00"
+                            }
+                        ]
+                    },
+                    "Sun": {
+                        "working_hours": [
+                            {
+                                "from": "11:00",
+                                "to": "24:00"
+                            }
+                        ]
+                    },
+                    "Thu": {
+                        "working_hours": [
+                            {
+                                "from": "11:00",
+                                "to": "24:00"
+                            }
+                        ]
+                    },
+                    "Tue": {
+                        "working_hours": [
+                            {
+                                "from": "11:00",
+                                "to": "24:00"
+                            }
+                        ]
+                    },
+                    "Wed": {
+                        "working_hours": [
+                            {
+                                "from": "11:00",
+                                "to": "24:00"
+                            }
+                        ]
+                    },
+                    "date_from": "2023-05-09",
+                    "date_to": "2023-05-09",
+                    "description": "День Победы"
+                },
+                "type": "branch"
             },
             {
-              "is_reviewable": true,
-              "tag": "flamp"
-            }
-          ],
-          "org_rating": 4.2,
-          "org_review_count": 77
-        },
-        "schedule": {
-          "Fri": {
-            "working_hours": [
-              {
-                "from": "11:00",
-                "to": "04:00"
-              }
-            ]
-          },
-          "Mon": {
-            "working_hours": [
-              {
-                "from": "11:00",
-                "to": "24:00"
-              }
-            ]
-          },
-          "Sat": {
-            "working_hours": [
-              {
-                "from": "11:00",
-                "to": "04:00"
-              }
-            ]
-          },
-          "Sun": {
-            "working_hours": [
-              {
-                "from": "11:00",
-                "to": "24:00"
-              }
-            ]
-          },
-          "Thu": {
-            "working_hours": [
-              {
-                "from": "11:00",
-                "to": "24:00"
-              }
-            ]
-          },
-          "Tue": {
-            "working_hours": [
-              {
-                "from": "11:00",
-                "to": "24:00"
-              }
-            ]
-          },
-          "Wed": {
-            "working_hours": [
-              {
-                "from": "11:00",
-                "to": "24:00"
-              }
-            ]
-          },
-          "date_from": "2023-05-09",
-          "date_to": "2023-05-09",
-          "description": "День Победы"
-        },
-        "type": "branch"
-      },
-      {
-        "address_comment": "1 этаж",
-        "address_name": "Малый Гнездниковский переулок, 9 ст2",
-        "external_content": [
-          {
-            "count": 77,
-            "main_photo_url": "https://i8.photo.2gis.com/main/branch/32/70000001037330997/common",
-            "subtype": "common",
-            "type": "photo_album"
-          },
-          {
-            "count": 2,
-            "main_photo_url": "https://i2.photo.2gis.com/main/geo/32/4504235282993661/view",
-            "subtype": "view",
-            "type": "photo_album"
-          }
-        ],
-        "id": "70000001037330997",
-        "name": "Ровесник, кафе-бар",
-        "point": {
-          "lat": 55.762331,
-          "lon": 37.605972
-        },
-        "reviews": {
-          "general_rating": 2.9,
-          "general_review_count": 129,
-          "is_reviewable": true,
-          "is_reviewable_on_flamp": true,
-          "items": [
-            {
-              "is_reviewable": true,
-              "tag": "2gis_reviews"
+                "address_comment": "1 этаж",
+                "address_name": "Малый Гнездниковский переулок, 9 ст2",
+                "external_content": [
+                    {
+                        "count": 77,
+                        "main_photo_url": "https://i8.photo.2gis.com/main/branch/32/70000001037330997/common",
+                        "subtype": "common",
+                        "type": "photo_album"
+                    },
+                    {
+                        "count": 2,
+                        "main_photo_url": "https://i2.photo.2gis.com/main/geo/32/4504235282993661/view",
+                        "subtype": "view",
+                        "type": "photo_album"
+                    }
+                ],
+                "id": "70000001037330997",
+                "name": "Ровесник, кафе-бар",
+                "point": {
+                    "lat": 55.762331,
+                    "lon": 37.605972
+                },
+                "reviews": {
+                    "general_rating": 2.9,
+                    "general_review_count": 129,
+                    "is_reviewable": true,
+                    "is_reviewable_on_flamp": true,
+                    "items": [
+                        {
+                            "is_reviewable": true,
+                            "tag": "2gis_reviews"
+                        },
+                        {
+                            "is_reviewable": true,
+                            "tag": "flamp"
+                        }
+                    ],
+                    "org_rating": 2.9,
+                    "org_review_count": 129
+                },
+                "schedule": {
+                    "Fri": {
+                        "working_hours": [
+                            {
+                                "from": "09:00",
+                                "to": "06:00"
+                            }
+                        ]
+                    },
+                    "Mon": {
+                        "working_hours": [
+                            {
+                                "from": "09:00",
+                                "to": "01:00"
+                            }
+                        ]
+                    },
+                    "Sat": {
+                        "working_hours": [
+                            {
+                                "from": "09:00",
+                                "to": "06:00"
+                            }
+                        ]
+                    },
+                    "Sun": {
+                        "working_hours": [
+                            {
+                                "from": "09:00",
+                                "to": "01:00"
+                            }
+                        ]
+                    },
+                    "Thu": {
+                        "working_hours": [
+                            {
+                                "from": "09:00",
+                                "to": "01:00"
+                            }
+                        ]
+                    },
+                    "Tue": {
+                        "working_hours": [
+                            {
+                                "from": "09:00",
+                                "to": "01:00"
+                            }
+                        ]
+                    },
+                    "Wed": {
+                        "working_hours": [
+                            {
+                                "from": "09:00",
+                                "to": "01:00"
+                            }
+                        ]
+                    },
+                    "date_from": "2023-05-09",
+                    "date_to": "2023-05-09",
+                    "description": "День Победы"
+                },
+                "type": "branch"
             },
             {
-              "is_reviewable": true,
-              "tag": "flamp"
-            }
-          ],
-          "org_rating": 2.9,
-          "org_review_count": 129
-        },
-        "schedule": {
-          "Fri": {
-            "working_hours": [
-              {
-                "from": "09:00",
-                "to": "06:00"
-              }
-            ]
-          },
-          "Mon": {
-            "working_hours": [
-              {
-                "from": "09:00",
-                "to": "01:00"
-              }
-            ]
-          },
-          "Sat": {
-            "working_hours": [
-              {
-                "from": "09:00",
-                "to": "06:00"
-              }
-            ]
-          },
-          "Sun": {
-            "working_hours": [
-              {
-                "from": "09:00",
-                "to": "01:00"
-              }
-            ]
-          },
-          "Thu": {
-            "working_hours": [
-              {
-                "from": "09:00",
-                "to": "01:00"
-              }
-            ]
-          },
-          "Tue": {
-            "working_hours": [
-              {
-                "from": "09:00",
-                "to": "01:00"
-              }
-            ]
-          },
-          "Wed": {
-            "working_hours": [
-              {
-                "from": "09:00",
-                "to": "01:00"
-              }
-            ]
-          },
-          "date_from": "2023-05-09",
-          "date_to": "2023-05-09",
-          "description": "День Победы"
-        },
-        "type": "branch"
-      },
-      {
-        "address_comment": "1 этаж",
-        "address_name": "улица Покровка, 14/2 ст3",
-        "external_content": [
-          {
-            "count": 133,
-            "main_photo_url": "https://i7.photo.2gis.com/main/branch/32/70000001039547703/common",
-            "subtype": "common",
-            "type": "photo_album"
-          },
-          {
-            "count": 3,
-            "main_photo_url": "http://i4.photo.2gis.com/main/geo/32/4504235283044464/view",
-            "subtype": "view",
-            "type": "photo_album"
-          }
-        ],
-        "full_name": "Москва, улица Покровка, 14/2 ст3",
-        "id": "70000001039547703",
-        "name": "Дом в котором, паб",
-        "point": {
-          "lat": 55.758592,
-          "lon": 37.645447
-        },
-        "purpose_name": "Кафе, бар",
-        "reviews": {
-          "general_rating": 4.7,
-          "general_review_count": 79,
-          "is_reviewable": true,
-          "is_reviewable_on_flamp": true,
-          "items": [
-            {
-              "is_reviewable": true,
-              "tag": "2gis_reviews"
+                "address_comment": "1 этаж",
+                "address_name": "улица Покровка, 14/2 ст3",
+                "external_content": [
+                    {
+                        "count": 133,
+                        "main_photo_url": "https://i7.photo.2gis.com/main/branch/32/70000001039547703/common",
+                        "subtype": "common",
+                        "type": "photo_album"
+                    },
+                    {
+                        "count": 3,
+                        "main_photo_url": "http://i4.photo.2gis.com/main/geo/32/4504235283044464/view",
+                        "subtype": "view",
+                        "type": "photo_album"
+                    }
+                ],
+                "full_name": "Москва, улица Покровка, 14/2 ст3",
+                "id": "70000001039547703",
+                "name": "Дом в котором, паб",
+                "point": {
+                    "lat": 55.758592,
+                    "lon": 37.645447
+                },
+                "purpose_name": "Кафе, бар",
+                "reviews": {
+                    "general_rating": 4.7,
+                    "general_review_count": 79,
+                    "is_reviewable": true,
+                    "is_reviewable_on_flamp": true,
+                    "items": [
+                        {
+                            "is_reviewable": true,
+                            "tag": "2gis_reviews"
+                        },
+                        {
+                            "is_reviewable": true,
+                            "rating": 5,
+                            "review_count": 1,
+                            "tag": "flamp"
+                        }
+                    ],
+                    "org_rating": 4.7,
+                    "org_review_count": 79,
+                    "rating": 5,
+                    "review_count": 1
+                },
+                "schedule": {
+                    "Fri": {
+                        "working_hours": [
+                            {
+                                "from": "15:00",
+                                "to": "02:00"
+                            }
+                        ]
+                    },
+                    "Mon": {
+                        "working_hours": [
+                            {
+                                "from": "15:00",
+                                "to": "24:00"
+                            }
+                        ]
+                    },
+                    "Sat": {
+                        "working_hours": [
+                            {
+                                "from": "15:00",
+                                "to": "02:00"
+                            }
+                        ]
+                    },
+                    "Sun": {
+                        "working_hours": [
+                            {
+                                "from": "15:00",
+                                "to": "24:00"
+                            }
+                        ]
+                    },
+                    "Thu": {
+                        "working_hours": [
+                            {
+                                "from": "15:00",
+                                "to": "24:00"
+                            }
+                        ]
+                    },
+                    "Tue": {
+                        "working_hours": [
+                            {
+                                "from": "15:00",
+                                "to": "24:00"
+                            }
+                        ]
+                    },
+                    "Wed": {
+                        "working_hours": [
+                            {
+                                "from": "15:00",
+                                "to": "24:00"
+                            }
+                        ]
+                    },
+                    "date_from": "2023-05-09",
+                    "date_to": "2023-05-09",
+                    "description": "День Победы"
+                },
+                "type": "branch"
             },
             {
-              "is_reviewable": true,
-              "rating": 5,
-              "review_count": 1,
-              "tag": "flamp"
-            }
-          ],
-          "org_rating": 4.7,
-          "org_review_count": 79,
-          "rating": 5,
-          "review_count": 1
-        },
-        "schedule": {
-          "Fri": {
-            "working_hours": [
-              {
-                "from": "15:00",
-                "to": "02:00"
-              }
-            ]
-          },
-          "Mon": {
-            "working_hours": [
-              {
-                "from": "15:00",
-                "to": "24:00"
-              }
-            ]
-          },
-          "Sat": {
-            "working_hours": [
-              {
-                "from": "15:00",
-                "to": "02:00"
-              }
-            ]
-          },
-          "Sun": {
-            "working_hours": [
-              {
-                "from": "15:00",
-                "to": "24:00"
-              }
-            ]
-          },
-          "Thu": {
-            "working_hours": [
-              {
-                "from": "15:00",
-                "to": "24:00"
-              }
-            ]
-          },
-          "Tue": {
-            "working_hours": [
-              {
-                "from": "15:00",
-                "to": "24:00"
-              }
-            ]
-          },
-          "Wed": {
-            "working_hours": [
-              {
-                "from": "15:00",
-                "to": "24:00"
-              }
-            ]
-          },
-          "date_from": "2023-05-09",
-          "date_to": "2023-05-09",
-          "description": "День Победы"
-        },
-        "type": "branch"
-      },
-      {
-        "address_name": "Большой Трёхсвятительский переулок, 2/1 ст8",
-        "external_content": [
-          {
-            "count": 42,
-            "main_photo_url": "https://i2.photo.2gis.com/main/branch/32/70000001043164982/common",
-            "subtype": "common",
-            "type": "photo_album"
-          },
-          {
-            "count": 2,
-            "main_photo_url": "https://i8.photo.2gis.com/main/geo/32/4504235301164894/view",
-            "subtype": "view",
-            "type": "photo_album"
-          }
-        ],
-        "id": "70000001043164982",
-        "name": "Sur Bar, кафе-бар",
-        "point": {
-          "lat": 55.75474,
-          "lon": 37.642854
-        },
-        "reviews": {
-          "general_rating": 4.5,
-          "general_review_count": 36,
-          "is_reviewable": true,
-          "is_reviewable_on_flamp": true,
-          "items": [
-            {
-              "is_reviewable": true,
-              "tag": "2gis_reviews"
+                "address_name": "Большой Трёхсвятительский переулок, 2/1 ст8",
+                "external_content": [
+                    {
+                        "count": 42,
+                        "main_photo_url": "https://i2.photo.2gis.com/main/branch/32/70000001043164982/common",
+                        "subtype": "common",
+                        "type": "photo_album"
+                    },
+                    {
+                        "count": 2,
+                        "main_photo_url": "https://i8.photo.2gis.com/main/geo/32/4504235301164894/view",
+                        "subtype": "view",
+                        "type": "photo_album"
+                    }
+                ],
+                "id": "70000001043164982",
+                "name": "Sur Bar, кафе-бар",
+                "point": {
+                    "lat": 55.75474,
+                    "lon": 37.642854
+                },
+                "reviews": {
+                    "general_rating": 4.5,
+                    "general_review_count": 36,
+                    "is_reviewable": true,
+                    "is_reviewable_on_flamp": true,
+                    "items": [
+                        {
+                            "is_reviewable": true,
+                            "tag": "2gis_reviews"
+                        },
+                        {
+                            "is_reviewable": true,
+                            "rating": 4,
+                            "review_count": 2,
+                            "tag": "flamp"
+                        }
+                    ],
+                    "org_rating": 4.5,
+                    "org_review_count": 36,
+                    "rating": 4,
+                    "review_count": 2
+                },
+                "schedule": {
+                    "Fri": {
+                        "working_hours": [
+                            {
+                                "from": "11:00",
+                                "to": "24:00"
+                            }
+                        ]
+                    },
+                    "Mon": {
+                        "working_hours": [
+                            {
+                                "from": "11:00",
+                                "to": "23:00"
+                            }
+                        ]
+                    },
+                    "Sat": {
+                        "working_hours": [
+                            {
+                                "from": "11:00",
+                                "to": "24:00"
+                            }
+                        ]
+                    },
+                    "Sun": {
+                        "working_hours": [
+                            {
+                                "from": "11:00",
+                                "to": "23:00"
+                            }
+                        ]
+                    },
+                    "Thu": {
+                        "working_hours": [
+                            {
+                                "from": "11:00",
+                                "to": "23:00"
+                            }
+                        ]
+                    },
+                    "Tue": {
+                        "working_hours": [
+                            {
+                                "from": "11:00",
+                                "to": "23:00"
+                            }
+                        ]
+                    },
+                    "Wed": {
+                        "working_hours": [
+                            {
+                                "from": "11:00",
+                                "to": "23:00"
+                            }
+                        ]
+                    },
+                    "date_from": "2023-05-09",
+                    "date_to": "2023-05-09",
+                    "description": "День Победы"
+                },
+                "type": "branch"
             },
             {
-              "is_reviewable": true,
-              "rating": 4,
-              "review_count": 2,
-              "tag": "flamp"
-            }
-          ],
-          "org_rating": 4.5,
-          "org_review_count": 36,
-          "rating": 4,
-          "review_count": 2
-        },
-        "schedule": {
-          "Fri": {
-            "working_hours": [
-              {
-                "from": "11:00",
-                "to": "24:00"
-              }
-            ]
-          },
-          "Mon": {
-            "working_hours": [
-              {
-                "from": "11:00",
-                "to": "23:00"
-              }
-            ]
-          },
-          "Sat": {
-            "working_hours": [
-              {
-                "from": "11:00",
-                "to": "24:00"
-              }
-            ]
-          },
-          "Sun": {
-            "working_hours": [
-              {
-                "from": "11:00",
-                "to": "23:00"
-              }
-            ]
-          },
-          "Thu": {
-            "working_hours": [
-              {
-                "from": "11:00",
-                "to": "23:00"
-              }
-            ]
-          },
-          "Tue": {
-            "working_hours": [
-              {
-                "from": "11:00",
-                "to": "23:00"
-              }
-            ]
-          },
-          "Wed": {
-            "working_hours": [
-              {
-                "from": "11:00",
-                "to": "23:00"
-              }
-            ]
-          },
-          "date_from": "2023-05-09",
-          "date_to": "2023-05-09",
-          "description": "День Победы"
-        },
-        "type": "branch"
-      },
-      {
-        "address_comment": "1 этаж",
-        "address_name": "улица Солянка, 2",
-        "external_content": [
-          {
-            "count": 20,
-            "main_photo_url": "https://i4.photo.2gis.com/main/branch/32/70000001067847896/common",
-            "subtype": "common",
-            "type": "photo_album"
-          },
-          {
-            "count": 1,
-            "main_photo_url": "https://i3.photo.2gis.com/main/geo/32/4504235282739864/view",
-            "subtype": "view",
-            "type": "photo_album"
-          }
-        ],
-        "id": "70000001067847896",
-        "name": "Бублик, кафе-пекарня",
-        "point": {
-          "lat": 55.753921,
-          "lon": 37.637012
-        },
-        "reviews": {
-          "general_rating": 3.5,
-          "general_review_count": 15,
-          "is_reviewable": true,
-          "is_reviewable_on_flamp": true,
-          "items": [
-            {
-              "is_reviewable": true,
-              "tag": "2gis_reviews"
+                "address_comment": "1 этаж",
+                "address_name": "улица Солянка, 2",
+                "external_content": [
+                    {
+                        "count": 20,
+                        "main_photo_url": "https://i4.photo.2gis.com/main/branch/32/70000001067847896/common",
+                        "subtype": "common",
+                        "type": "photo_album"
+                    },
+                    {
+                        "count": 1,
+                        "main_photo_url": "https://i3.photo.2gis.com/main/geo/32/4504235282739864/view",
+                        "subtype": "view",
+                        "type": "photo_album"
+                    }
+                ],
+                "id": "70000001067847896",
+                "name": "Бублик, кафе-пекарня",
+                "point": {
+                    "lat": 55.753921,
+                    "lon": 37.637012
+                },
+                "reviews": {
+                    "general_rating": 3.5,
+                    "general_review_count": 15,
+                    "is_reviewable": true,
+                    "is_reviewable_on_flamp": true,
+                    "items": [
+                        {
+                            "is_reviewable": true,
+                            "tag": "2gis_reviews"
+                        },
+                        {
+                            "is_reviewable": true,
+                            "tag": "flamp"
+                        }
+                    ],
+                    "org_rating": 3.9,
+                    "org_review_count": 43
+                },
+                "schedule": {
+                    "Fri": {
+                        "working_hours": [
+                            {
+                                "from": "07:30",
+                                "to": "22:30"
+                            }
+                        ]
+                    },
+                    "Mon": {
+                        "working_hours": [
+                            {
+                                "from": "07:30",
+                                "to": "22:30"
+                            }
+                        ]
+                    },
+                    "Sat": {
+                        "working_hours": [
+                            {
+                                "from": "08:30",
+                                "to": "22:30"
+                            }
+                        ]
+                    },
+                    "Sun": {
+                        "working_hours": [
+                            {
+                                "from": "08:30",
+                                "to": "22:30"
+                            }
+                        ]
+                    },
+                    "Thu": {
+                        "working_hours": [
+                            {
+                                "from": "07:30",
+                                "to": "22:30"
+                            }
+                        ]
+                    },
+                    "Tue": {
+                        "working_hours": [
+                            {
+                                "from": "07:30",
+                                "to": "22:30"
+                            }
+                        ]
+                    },
+                    "Wed": {
+                        "working_hours": [
+                            {
+                                "from": "07:30",
+                                "to": "22:30"
+                            }
+                        ]
+                    },
+                    "date_from": "2023-05-09",
+                    "date_to": "2023-05-09",
+                    "description": "День Победы"
+                },
+                "type": "branch"
             },
             {
-              "is_reviewable": true,
-              "tag": "flamp"
-            }
-          ],
-          "org_rating": 3.9,
-          "org_review_count": 43
-        },
-        "schedule": {
-          "Fri": {
-            "working_hours": [
-              {
-                "from": "07:30",
-                "to": "22:30"
-              }
-            ]
-          },
-          "Mon": {
-            "working_hours": [
-              {
-                "from": "07:30",
-                "to": "22:30"
-              }
-            ]
-          },
-          "Sat": {
-            "working_hours": [
-              {
-                "from": "08:30",
-                "to": "22:30"
-              }
-            ]
-          },
-          "Sun": {
-            "working_hours": [
-              {
-                "from": "08:30",
-                "to": "22:30"
-              }
-            ]
-          },
-          "Thu": {
-            "working_hours": [
-              {
-                "from": "07:30",
-                "to": "22:30"
-              }
-            ]
-          },
-          "Tue": {
-            "working_hours": [
-              {
-                "from": "07:30",
-                "to": "22:30"
-              }
-            ]
-          },
-          "Wed": {
-            "working_hours": [
-              {
-                "from": "07:30",
-                "to": "22:30"
-              }
-            ]
-          },
-          "date_from": "2023-05-09",
-          "date_to": "2023-05-09",
-          "description": "День Победы"
-        },
-        "type": "branch"
-      },
-      {
-        "address_comment": "2 этаж",
-        "address_name": "Покровский бульвар, 6/20 ст1",
-        "external_content": [
-          {
-            "count": 12,
-            "main_photo_url": "https://i1.photo.2gis.com/main/branch/32/70000001006636313/common",
-            "subtype": "common",
-            "type": "photo_album"
-          },
-          {
-            "count": 3,
-            "main_photo_url": "https://i5.photo.2gis.com/main/geo/32/4504235282744196/view",
-            "subtype": "view",
-            "type": "photo_album"
-          }
-        ],
-        "id": "70000001006636313",
-        "name": "Mono bar, клуб",
-        "point": {
-          "lat": 55.757524,
-          "lon": 37.646559
-        },
-        "reviews": {
-          "general_rating": 2.6,
-          "general_review_count": 59,
-          "is_reviewable": true,
-          "is_reviewable_on_flamp": true,
-          "items": [
-            {
-              "is_reviewable": true,
-              "tag": "2gis_reviews"
+                "address_comment": "2 этаж",
+                "address_name": "Покровский бульвар, 6/20 ст1",
+                "external_content": [
+                    {
+                        "count": 12,
+                        "main_photo_url": "https://i1.photo.2gis.com/main/branch/32/70000001006636313/common",
+                        "subtype": "common",
+                        "type": "photo_album"
+                    },
+                    {
+                        "count": 3,
+                        "main_photo_url": "https://i5.photo.2gis.com/main/geo/32/4504235282744196/view",
+                        "subtype": "view",
+                        "type": "photo_album"
+                    }
+                ],
+                "id": "70000001006636313",
+                "name": "Mono bar, клуб",
+                "point": {
+                    "lat": 55.757524,
+                    "lon": 37.646559
+                },
+                "reviews": {
+                    "general_rating": 2.6,
+                    "general_review_count": 59,
+                    "is_reviewable": true,
+                    "is_reviewable_on_flamp": true,
+                    "items": [
+                        {
+                            "is_reviewable": true,
+                            "tag": "2gis_reviews"
+                        },
+                        {
+                            "is_reviewable": true,
+                            "rating": 2.5,
+                            "review_count": 2,
+                            "tag": "flamp"
+                        }
+                    ],
+                    "org_rating": 2.6,
+                    "org_review_count": 59,
+                    "rating": 2.5,
+                    "review_count": 2
+                },
+                "schedule": {
+                    "Fri": {
+                        "working_hours": [
+                            {
+                                "from": "18:00",
+                                "to": "06:00"
+                            }
+                        ]
+                    },
+                    "Mon": {
+                        "working_hours": [
+                            {
+                                "from": "18:00",
+                                "to": "06:00"
+                            }
+                        ]
+                    },
+                    "Sat": {
+                        "working_hours": [
+                            {
+                                "from": "18:00",
+                                "to": "06:00"
+                            }
+                        ]
+                    },
+                    "Sun": {
+                        "working_hours": [
+                            {
+                                "from": "18:00",
+                                "to": "06:00"
+                            }
+                        ]
+                    },
+                    "Thu": {
+                        "working_hours": [
+                            {
+                                "from": "18:00",
+                                "to": "06:00"
+                            }
+                        ]
+                    },
+                    "Tue": {
+                        "working_hours": [
+                            {
+                                "from": "18:00",
+                                "to": "06:00"
+                            }
+                        ]
+                    },
+                    "Wed": {
+                        "working_hours": [
+                            {
+                                "from": "18:00",
+                                "to": "06:00"
+                            }
+                        ]
+                    },
+                    "date_from": "2023-05-09",
+                    "date_to": "2023-05-09",
+                    "description": "День Победы"
+                },
+                "type": "branch"
             },
             {
-              "is_reviewable": true,
-              "rating": 2.5,
-              "review_count": 2,
-              "tag": "flamp"
-            }
-          ],
-          "org_rating": 2.6,
-          "org_review_count": 59,
-          "rating": 2.5,
-          "review_count": 2
-        },
-        "schedule": {
-          "Fri": {
-            "working_hours": [
-              {
-                "from": "18:00",
-                "to": "06:00"
-              }
-            ]
-          },
-          "Mon": {
-            "working_hours": [
-              {
-                "from": "18:00",
-                "to": "06:00"
-              }
-            ]
-          },
-          "Sat": {
-            "working_hours": [
-              {
-                "from": "18:00",
-                "to": "06:00"
-              }
-            ]
-          },
-          "Sun": {
-            "working_hours": [
-              {
-                "from": "18:00",
-                "to": "06:00"
-              }
-            ]
-          },
-          "Thu": {
-            "working_hours": [
-              {
-                "from": "18:00",
-                "to": "06:00"
-              }
-            ]
-          },
-          "Tue": {
-            "working_hours": [
-              {
-                "from": "18:00",
-                "to": "06:00"
-              }
-            ]
-          },
-          "Wed": {
-            "working_hours": [
-              {
-                "from": "18:00",
-                "to": "06:00"
-              }
-            ]
-          },
-          "date_from": "2023-05-09",
-          "date_to": "2023-05-09",
-          "description": "День Победы"
-        },
-        "type": "branch"
-      },
-      {
-        "address_comment": "1 этаж",
-        "address_name": "улица Большая Дмитровка, 7/5 ст5",
-        "external_content": [
-          {
-            "count": 44,
-            "main_photo_url": "https://i6.photo.2gis.com/main/branch/32/4504128908372099/common",
-            "subtype": "common",
-            "type": "photo_album"
-          },
-          {
-            "count": 1,
-            "main_photo_url": "https://i6.photo.2gis.com/main/geo/32/4504235282760915/view",
-            "subtype": "view",
-            "type": "photo_album"
-          }
-        ],
-        "id": "4504128908372099",
-        "name": "Moloko, кафе",
-        "point": {
-          "lat": 55.761136,
-          "lon": 37.614627
-        },
-        "reviews": {
-          "general_rating": 3.9,
-          "general_review_count": 99,
-          "is_reviewable": true,
-          "is_reviewable_on_flamp": true,
-          "items": [
-            {
-              "is_reviewable": true,
-              "tag": "2gis_reviews"
+                "address_comment": "1 этаж",
+                "address_name": "улица Большая Дмитровка, 7/5 ст5",
+                "external_content": [
+                    {
+                        "count": 44,
+                        "main_photo_url": "https://i6.photo.2gis.com/main/branch/32/4504128908372099/common",
+                        "subtype": "common",
+                        "type": "photo_album"
+                    },
+                    {
+                        "count": 1,
+                        "main_photo_url": "https://i6.photo.2gis.com/main/geo/32/4504235282760915/view",
+                        "subtype": "view",
+                        "type": "photo_album"
+                    }
+                ],
+                "id": "4504128908372099",
+                "name": "Moloko, кафе",
+                "point": {
+                    "lat": 55.761136,
+                    "lon": 37.614627
+                },
+                "reviews": {
+                    "general_rating": 3.9,
+                    "general_review_count": 99,
+                    "is_reviewable": true,
+                    "is_reviewable_on_flamp": true,
+                    "items": [
+                        {
+                            "is_reviewable": true,
+                            "tag": "2gis_reviews"
+                        },
+                        {
+                            "is_reviewable": true,
+                            "rating": 4.4,
+                            "recommendation_count": 4,
+                            "review_count": 24,
+                            "tag": "flamp"
+                        }
+                    ],
+                    "org_rating": 3.9,
+                    "org_review_count": 99,
+                    "rating": 4.4,
+                    "recommendation_count": 4,
+                    "review_count": 24
+                },
+                "schedule": {
+                    "Fri": {
+                        "working_hours": [
+                            {
+                                "from": "00:00",
+                                "to": "24:00"
+                            }
+                        ]
+                    },
+                    "Mon": {
+                        "working_hours": [
+                            {
+                                "from": "00:00",
+                                "to": "24:00"
+                            }
+                        ]
+                    },
+                    "Sat": {
+                        "working_hours": [
+                            {
+                                "from": "00:00",
+                                "to": "24:00"
+                            }
+                        ]
+                    },
+                    "Sun": {
+                        "working_hours": [
+                            {
+                                "from": "00:00",
+                                "to": "24:00"
+                            }
+                        ]
+                    },
+                    "Thu": {
+                        "working_hours": [
+                            {
+                                "from": "00:00",
+                                "to": "24:00"
+                            }
+                        ]
+                    },
+                    "Tue": {
+                        "working_hours": [
+                            {
+                                "from": "00:00",
+                                "to": "24:00"
+                            }
+                        ]
+                    },
+                    "Wed": {
+                        "working_hours": [
+                            {
+                                "from": "00:00",
+                                "to": "24:00"
+                            }
+                        ]
+                    },
+                    "date_from": "2023-05-09",
+                    "date_to": "2023-05-09",
+                    "description": "День Победы",
+                    "is_24x7": true
+                },
+                "type": "branch"
             },
             {
-              "is_reviewable": true,
-              "rating": 4.4,
-              "recommendation_count": 4,
-              "review_count": 24,
-              "tag": "flamp"
-            }
-          ],
-          "org_rating": 3.9,
-          "org_review_count": 99,
-          "rating": 4.4,
-          "recommendation_count": 4,
-          "review_count": 24
-        },
-        "schedule": {
-          "Fri": {
-            "working_hours": [
-              {
-                "from": "00:00",
-                "to": "24:00"
-              }
-            ]
-          },
-          "Mon": {
-            "working_hours": [
-              {
-                "from": "00:00",
-                "to": "24:00"
-              }
-            ]
-          },
-          "Sat": {
-            "working_hours": [
-              {
-                "from": "00:00",
-                "to": "24:00"
-              }
-            ]
-          },
-          "Sun": {
-            "working_hours": [
-              {
-                "from": "00:00",
-                "to": "24:00"
-              }
-            ]
-          },
-          "Thu": {
-            "working_hours": [
-              {
-                "from": "00:00",
-                "to": "24:00"
-              }
-            ]
-          },
-          "Tue": {
-            "working_hours": [
-              {
-                "from": "00:00",
-                "to": "24:00"
-              }
-            ]
-          },
-          "Wed": {
-            "working_hours": [
-              {
-                "from": "00:00",
-                "to": "24:00"
-              }
-            ]
-          },
-          "date_from": "2023-05-09",
-          "date_to": "2023-05-09",
-          "description": "День Победы",
-          "is_24x7": true
-        },
-        "type": "branch"
-      },
-      {
-        "address_comment": "1 этаж",
-        "address_name": "Кривоколенный переулок, 9 ст2",
-        "external_content": [
-          {
-            "count": 62,
-            "main_photo_url": "https://i4.photo.2gis.com/main/branch/32/70000001040679580/common",
-            "subtype": "common",
-            "type": "photo_album"
-          },
-          {
-            "count": 5,
-            "main_photo_url": "http://i6.photo.2gis.com/main/geo/32/4504235282757896/view",
-            "subtype": "view",
-            "type": "photo_album"
-          }
-        ],
-        "full_name": "Москва, Кривоколенный переулок, 9 ст2",
-        "id": "70000001040679580",
-        "name": "Ладо, ресторан-бар",
-        "point": {
-          "lat": 55.762842,
-          "lon": 37.637317
-        },
-        "purpose_name": "Кафе, бар",
-        "reviews": {
-          "general_rating": 3.3,
-          "general_review_count": 26,
-          "is_reviewable": true,
-          "is_reviewable_on_flamp": true,
-          "items": [
-            {
-              "is_reviewable": true,
-              "tag": "2gis_reviews"
+                "address_comment": "1 этаж",
+                "address_name": "Кривоколенный переулок, 9 ст2",
+                "external_content": [
+                    {
+                        "count": 62,
+                        "main_photo_url": "https://i4.photo.2gis.com/main/branch/32/70000001040679580/common",
+                        "subtype": "common",
+                        "type": "photo_album"
+                    },
+                    {
+                        "count": 5,
+                        "main_photo_url": "http://i6.photo.2gis.com/main/geo/32/4504235282757896/view",
+                        "subtype": "view",
+                        "type": "photo_album"
+                    }
+                ],
+                "full_name": "Москва, Кривоколенный переулок, 9 ст2",
+                "id": "70000001040679580",
+                "name": "Ладо, ресторан-бар",
+                "point": {
+                    "lat": 55.762842,
+                    "lon": 37.637317
+                },
+                "purpose_name": "Кафе, бар",
+                "reviews": {
+                    "general_rating": 3.3,
+                    "general_review_count": 26,
+                    "is_reviewable": true,
+                    "is_reviewable_on_flamp": true,
+                    "items": [
+                        {
+                            "is_reviewable": true,
+                            "tag": "2gis_reviews"
+                        },
+                        {
+                            "is_reviewable": true,
+                            "rating": 5,
+                            "review_count": 1,
+                            "tag": "flamp"
+                        }
+                    ],
+                    "org_rating": 3.3,
+                    "org_review_count": 26,
+                    "rating": 5,
+                    "review_count": 1
+                },
+                "schedule": {
+                    "Fri": {
+                        "working_hours": [
+                            {
+                                "from": "12:00",
+                                "to": "02:00"
+                            }
+                        ]
+                    },
+                    "Mon": {
+                        "working_hours": [
+                            {
+                                "from": "12:00",
+                                "to": "24:00"
+                            }
+                        ]
+                    },
+                    "Sat": {
+                        "working_hours": [
+                            {
+                                "from": "12:00",
+                                "to": "02:00"
+                            }
+                        ]
+                    },
+                    "Sun": {
+                        "working_hours": [
+                            {
+                                "from": "12:00",
+                                "to": "24:00"
+                            }
+                        ]
+                    },
+                    "Thu": {
+                        "working_hours": [
+                            {
+                                "from": "12:00",
+                                "to": "24:00"
+                            }
+                        ]
+                    },
+                    "Tue": {
+                        "working_hours": [
+                            {
+                                "from": "12:00",
+                                "to": "24:00"
+                            }
+                        ]
+                    },
+                    "Wed": {
+                        "working_hours": [
+                            {
+                                "from": "12:00",
+                                "to": "24:00"
+                            }
+                        ]
+                    },
+                    "date_from": "2023-05-09",
+                    "date_to": "2023-05-09",
+                    "description": "День Победы"
+                },
+                "type": "branch"
             },
             {
-              "is_reviewable": true,
-              "rating": 5,
-              "review_count": 1,
-              "tag": "flamp"
-            }
-          ],
-          "org_rating": 3.3,
-          "org_review_count": 26,
-          "rating": 5,
-          "review_count": 1
-        },
-        "schedule": {
-          "Fri": {
-            "working_hours": [
-              {
-                "from": "12:00",
-                "to": "02:00"
-              }
-            ]
-          },
-          "Mon": {
-            "working_hours": [
-              {
-                "from": "12:00",
-                "to": "24:00"
-              }
-            ]
-          },
-          "Sat": {
-            "working_hours": [
-              {
-                "from": "12:00",
-                "to": "02:00"
-              }
-            ]
-          },
-          "Sun": {
-            "working_hours": [
-              {
-                "from": "12:00",
-                "to": "24:00"
-              }
-            ]
-          },
-          "Thu": {
-            "working_hours": [
-              {
-                "from": "12:00",
-                "to": "24:00"
-              }
-            ]
-          },
-          "Tue": {
-            "working_hours": [
-              {
-                "from": "12:00",
-                "to": "24:00"
-              }
-            ]
-          },
-          "Wed": {
-            "working_hours": [
-              {
-                "from": "12:00",
-                "to": "24:00"
-              }
-            ]
-          },
-          "date_from": "2023-05-09",
-          "date_to": "2023-05-09",
-          "description": "День Победы"
-        },
-        "type": "branch"
-      },
-      {
-        "address_comment": "цокольный этаж",
-        "address_name": "Кривоколенный переулок, 10 ст5",
-        "external_content": [
-          {
-            "count": 41,
-            "main_photo_url": "https://i5.photo.2gis.com/main/branch/32/70000001023339372/common",
-            "subtype": "common",
-            "type": "photo_album"
-          },
-          {
-            "count": 6,
-            "main_photo_url": "https://i1.photo.2gis.com/main/geo/32/4504235282760118/view",
-            "subtype": "view",
-            "type": "photo_album"
-          }
-        ],
-        "id": "70000001023339372",
-        "name": "Широкую на широкую, гриль-бар",
-        "point": {
-          "lat": 55.761553,
-          "lon": 37.636183
-        },
-        "reviews": {
-          "general_rating": 3.8,
-          "general_review_count": 71,
-          "is_reviewable": true,
-          "is_reviewable_on_flamp": true,
-          "items": [
-            {
-              "is_reviewable": true,
-              "tag": "2gis_reviews"
+                "address_comment": "цокольный этаж",
+                "address_name": "Кривоколенный переулок, 10 ст5",
+                "external_content": [
+                    {
+                        "count": 41,
+                        "main_photo_url": "https://i5.photo.2gis.com/main/branch/32/70000001023339372/common",
+                        "subtype": "common",
+                        "type": "photo_album"
+                    },
+                    {
+                        "count": 6,
+                        "main_photo_url": "https://i1.photo.2gis.com/main/geo/32/4504235282760118/view",
+                        "subtype": "view",
+                        "type": "photo_album"
+                    }
+                ],
+                "id": "70000001023339372",
+                "name": "Широкую на широкую, гриль-бар",
+                "point": {
+                    "lat": 55.761553,
+                    "lon": 37.636183
+                },
+                "reviews": {
+                    "general_rating": 3.8,
+                    "general_review_count": 71,
+                    "is_reviewable": true,
+                    "is_reviewable_on_flamp": true,
+                    "items": [
+                        {
+                            "is_reviewable": true,
+                            "tag": "2gis_reviews"
+                        },
+                        {
+                            "is_reviewable": true,
+                            "rating": 4.1,
+                            "recommendation_count": 5,
+                            "review_count": 12,
+                            "tag": "flamp"
+                        }
+                    ],
+                    "org_rating": 3.8,
+                    "org_review_count": 71,
+                    "rating": 4.1,
+                    "recommendation_count": 5,
+                    "review_count": 12
+                },
+                "schedule": {
+                    "Fri": {
+                        "working_hours": [
+                            {
+                                "from": "11:00",
+                                "to": "06:00"
+                            }
+                        ]
+                    },
+                    "Mon": {
+                        "working_hours": [
+                            {
+                                "from": "11:00",
+                                "to": "06:00"
+                            }
+                        ]
+                    },
+                    "Sat": {
+                        "working_hours": [
+                            {
+                                "from": "11:00",
+                                "to": "06:00"
+                            }
+                        ]
+                    },
+                    "Sun": {
+                        "working_hours": [
+                            {
+                                "from": "11:00",
+                                "to": "06:00"
+                            }
+                        ]
+                    },
+                    "Thu": {
+                        "working_hours": [
+                            {
+                                "from": "11:00",
+                                "to": "06:00"
+                            }
+                        ]
+                    },
+                    "Tue": {
+                        "working_hours": [
+                            {
+                                "from": "11:00",
+                                "to": "06:00"
+                            }
+                        ]
+                    },
+                    "Wed": {
+                        "working_hours": [
+                            {
+                                "from": "11:00",
+                                "to": "06:00"
+                            }
+                        ]
+                    },
+                    "date_from": "2023-05-09",
+                    "date_to": "2023-05-09",
+                    "description": "День Победы"
+                },
+                "type": "branch"
             },
             {
-              "is_reviewable": true,
-              "rating": 4.1,
-              "recommendation_count": 5,
-              "review_count": 12,
-              "tag": "flamp"
+                "address_comment": "1 этаж",
+                "address_name": "улица Покровка, 3/7 ст1г",
+                "external_content": [
+                    {
+                        "count": 39,
+                        "main_photo_url": "https://i7.photo.2gis.com/main/branch/32/70000001059174255/common",
+                        "subtype": "common",
+                        "type": "photo_album"
+                    },
+                    {
+                        "count": 1,
+                        "main_photo_url": "https://i1.photo.2gis.com/main/geo/32/4504235282746152/view",
+                        "subtype": "view",
+                        "type": "photo_album"
+                    }
+                ],
+                "id": "70000001059174255",
+                "name": "Скрепка, бистро",
+                "point": {
+                    "lat": 55.758906,
+                    "lon": 37.639729
+                },
+                "reviews": {
+                    "general_rating": 3.3,
+                    "general_review_count": 14,
+                    "is_reviewable": true,
+                    "is_reviewable_on_flamp": true,
+                    "items": [
+                        {
+                            "is_reviewable": true,
+                            "tag": "2gis_reviews"
+                        },
+                        {
+                            "is_reviewable": true,
+                            "rating": 5,
+                            "review_count": 1,
+                            "tag": "flamp"
+                        }
+                    ],
+                    "org_rating": 3.3,
+                    "org_review_count": 14,
+                    "rating": 5,
+                    "review_count": 1
+                },
+                "schedule": {
+                    "Fri": {
+                        "working_hours": [
+                            {
+                                "from": "11:00",
+                                "to": "03:00"
+                            }
+                        ]
+                    },
+                    "Mon": {
+                        "working_hours": [
+                            {
+                                "from": "11:00",
+                                "to": "24:00"
+                            }
+                        ]
+                    },
+                    "Sat": {
+                        "working_hours": [
+                            {
+                                "from": "11:00",
+                                "to": "03:00"
+                            }
+                        ]
+                    },
+                    "Sun": {
+                        "working_hours": [
+                            {
+                                "from": "10:00",
+                                "to": "24:00"
+                            }
+                        ]
+                    },
+                    "Thu": {
+                        "working_hours": [
+                            {
+                                "from": "11:00",
+                                "to": "24:00"
+                            }
+                        ]
+                    },
+                    "Tue": {
+                        "working_hours": [
+                            {
+                                "from": "11:00",
+                                "to": "24:00"
+                            }
+                        ]
+                    },
+                    "Wed": {
+                        "working_hours": [
+                            {
+                                "from": "11:00",
+                                "to": "24:00"
+                            }
+                        ]
+                    },
+                    "date_from": "2023-05-09",
+                    "date_to": "2023-05-09",
+                    "description": "День Победы"
+                },
+                "type": "branch"
             }
-          ],
-          "org_rating": 3.8,
-          "org_review_count": 71,
-          "rating": 4.1,
-          "recommendation_count": 5,
-          "review_count": 12
-        },
-        "schedule": {
-          "Fri": {
-            "working_hours": [
-              {
-                "from": "11:00",
-                "to": "06:00"
-              }
-            ]
-          },
-          "Mon": {
-            "working_hours": [
-              {
-                "from": "11:00",
-                "to": "06:00"
-              }
-            ]
-          },
-          "Sat": {
-            "working_hours": [
-              {
-                "from": "11:00",
-                "to": "06:00"
-              }
-            ]
-          },
-          "Sun": {
-            "working_hours": [
-              {
-                "from": "11:00",
-                "to": "06:00"
-              }
-            ]
-          },
-          "Thu": {
-            "working_hours": [
-              {
-                "from": "11:00",
-                "to": "06:00"
-              }
-            ]
-          },
-          "Tue": {
-            "working_hours": [
-              {
-                "from": "11:00",
-                "to": "06:00"
-              }
-            ]
-          },
-          "Wed": {
-            "working_hours": [
-              {
-                "from": "11:00",
-                "to": "06:00"
-              }
-            ]
-          },
-          "date_from": "2023-05-09",
-          "date_to": "2023-05-09",
-          "description": "День Победы"
-        },
-        "type": "branch"
-      },
-      {
-        "address_comment": "1 этаж",
-        "address_name": "улица Покровка, 3/7 ст1г",
-        "external_content": [
-          {
-            "count": 39,
-            "main_photo_url": "https://i7.photo.2gis.com/main/branch/32/70000001059174255/common",
-            "subtype": "common",
-            "type": "photo_album"
-          },
-          {
-            "count": 1,
-            "main_photo_url": "https://i1.photo.2gis.com/main/geo/32/4504235282746152/view",
-            "subtype": "view",
-            "type": "photo_album"
-          }
         ],
-        "id": "70000001059174255",
-        "name": "Скрепка, бистро",
-        "point": {
-          "lat": 55.758906,
-          "lon": 37.639729
-        },
-        "reviews": {
-          "general_rating": 3.3,
-          "general_review_count": 14,
-          "is_reviewable": true,
-          "is_reviewable_on_flamp": true,
-          "items": [
-            {
-              "is_reviewable": true,
-              "tag": "2gis_reviews"
-            },
-            {
-              "is_reviewable": true,
-              "rating": 5,
-              "review_count": 1,
-              "tag": "flamp"
-            }
-          ],
-          "org_rating": 3.3,
-          "org_review_count": 14,
-          "rating": 5,
-          "review_count": 1
-        },
-        "schedule": {
-          "Fri": {
-            "working_hours": [
-              {
-                "from": "11:00",
-                "to": "03:00"
-              }
-            ]
-          },
-          "Mon": {
-            "working_hours": [
-              {
-                "from": "11:00",
-                "to": "24:00"
-              }
-            ]
-          },
-          "Sat": {
-            "working_hours": [
-              {
-                "from": "11:00",
-                "to": "03:00"
-              }
-            ]
-          },
-          "Sun": {
-            "working_hours": [
-              {
-                "from": "10:00",
-                "to": "24:00"
-              }
-            ]
-          },
-          "Thu": {
-            "working_hours": [
-              {
-                "from": "11:00",
-                "to": "24:00"
-              }
-            ]
-          },
-          "Tue": {
-            "working_hours": [
-              {
-                "from": "11:00",
-                "to": "24:00"
-              }
-            ]
-          },
-          "Wed": {
-            "working_hours": [
-              {
-                "from": "11:00",
-                "to": "24:00"
-              }
-            ]
-          },
-          "date_from": "2023-05-09",
-          "date_to": "2023-05-09",
-          "description": "День Победы"
-        },
-        "type": "branch"
-      }
-    ],
-    "total": 83
-  }
+        "total": 83
+    }
 }

@@ -10,14 +10,14 @@
 }
 .input {
     font: 300 20px/24px 'Rubik', sans-serif;
-    color: #FFFFFF;
+    color: #ffffff;
     width: 350px;
     height: 40px;
     background: rgba(255, 255, 255, 0.2);
-    border: 1px solid #FFFFFF;
+    border: 1px solid #ffffff;
     border-radius: 20px;
     padding: 8px 40px 8px 40px;
-    transition: box-shadow .15s ease-in-out;
+    transition: box-shadow 0.15s ease-in-out;
 }
 .input::placeholder {
     color: rgba(255, 255, 255, 0.6);
@@ -30,8 +30,8 @@
     left: 10px;
     width: 24px;
     height: 24px;
-    color: #FFFFFF;
-    opacity: .8;
+    color: #ffffff;
+    opacity: 0.8;
 }
 .input:focus + .clearBtn {
     opacity: 1;
@@ -45,14 +45,14 @@
 .locationBtn {
     width: 28px;
     height: 28px;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 .clearBtn,
 .locationBtn {
     cursor: pointer;
-    transition: all .15s ease-in-out;
+    transition: all 0.15s ease-in-out;
 }
 .clearBtn:hover,
 .locationBtn:hover {
-    opacity: .8;
+    opacity: 0.8;
 }

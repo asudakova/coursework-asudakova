@@ -1,1 +1,669 @@
-{"meta":{"api_version":"3.0.17058","code":200,"issue_date":"20230512"},"result":{"items":[{"address_name":"Кремль, 1е","building_name":"Архангельский собор","external_content":[{"count":77,"main_photo_url":"https://i5.photo.2gis.com/main/branch/32/4504127913547138/common","subtype":"common","type":"photo_album"},{"count":7,"main_photo_url":"http://i0.photo.2gis.com/main/geo/32/4504235282745880/view","subtype":"view","type":"photo_album"}],"full_name":"Москва, Архангельский собор","id":"4504127913547138","name":"Архангельский собор","name_ex":{"primary":"Архангельский собор","short_name":"Архангельский собор"},"point":{"lat":55.750197,"lon":37.617677},"purpose_name":"Религиозное сооружение","reviews":{"general_rating":5,"general_review_count":12,"is_reviewable":true,"is_reviewable_on_flamp":true,"items":[{"is_reviewable":true,"tag":"2gis_reviews"},{"is_reviewable":true,"rating":5,"recommendation_count":1,"review_count":2,"tag":"flamp"}],"org_rating":5,"org_review_count":12,"rating":5,"recommendation_count":1,"review_count":2},"schedule":{"Fri":{"working_hours":[{"from":"09:30","to":"18:00"}]},"Mon":{"working_hours":[{"from":"09:30","to":"18:00"}]},"Sat":{"working_hours":[{"from":"09:30","to":"18:00"}]},"Sun":{"working_hours":[{"from":"09:30","to":"18:00"}]},"Tue":{"working_hours":[{"from":"09:30","to":"18:00"}]},"Wed":{"working_hours":[{"from":"09:30","to":"18:00"}]},"comment":"зимний период: пн-ср, пт-вс 10:00-17:00"},"type":"branch"},{"address_name":"Красная площадь, 1","building_name":"Государственный Исторический Музей","external_content":[{"count":724,"main_photo_url":"https://i6.photo.2gis.com/main/branch/32/4504127908435201/common","subtype":"common","type":"photo_album"},{"count":70,"main_photo_url":"https://i1.photo.2gis.com/main/geo/32/4504235282810387/view","subtype":"view","type":"photo_album"}],"full_name":"Москва, Государственный Исторический Музей","id":"4504127908435201","name":"Государственный исторический музей","name_ex":{"primary":"Государственный исторический музей","short_name":"Исторический музей"},"point":{"lat":55.755381,"lon":37.618099},"purpose_name":"Культурное учреждение","reviews":{"general_rating":4.6,"general_review_count":152,"is_reviewable":true,"is_reviewable_on_flamp":true,"items":[{"is_reviewable":true,"tag":"2gis_reviews"},{"is_reviewable":true,"rating":4.6,"recommendation_count":15,"review_count":36,"tag":"flamp"}],"org_rating":4.6,"org_review_count":152,"rating":4.6,"recommendation_count":15,"review_count":36},"schedule":{"Fri":{"working_hours":[{"from":"10:00","to":"21:00"}]},"Mon":{"working_hours":[{"from":"10:00","to":"18:00"}]},"Sat":{"working_hours":[{"from":"10:00","to":"21:00"}]},"Sun":{"working_hours":[{"from":"10:00","to":"18:00"}]},"Thu":{"working_hours":[{"from":"10:00","to":"18:00"}]},"Wed":{"working_hours":[{"from":"10:00","to":"18:00"}]},"comment":"июнь-август: пн-вс 10:00-21:00 "},"type":"branch"},{"address_name":"Кремль, 1х","building_name":"Государственный Кремлёвский Дворец","external_content":[{"count":99,"main_photo_url":"https://i7.photo.2gis.com/main/branch/32/4504127908621342/common","subtype":"common","type":"photo_album"},{"count":13,"main_photo_url":"http://i3.photo.2gis.com/main/geo/32/4504235282815753/view","subtype":"view","type":"photo_album"}],"full_name":"Москва, Государственный Кремлёвский Дворец","id":"4504127908621342","name":"Государственный Кремлевский дворец","name_ex":{"primary":"Государственный Кремлевский дворец","short_name":"Кремлевский дворец"},"point":{"lat":55.75197,"lon":37.61585},"purpose_name":"Культурное учреждение","reviews":{"general_rating":4.1,"general_review_count":73,"is_reviewable":true,"is_reviewable_on_flamp":true,"items":[{"is_reviewable":true,"tag":"2gis_reviews"},{"is_reviewable":true,"rating":4.5,"recommendation_count":4,"review_count":18,"tag":"flamp"}],"org_rating":4.1,"org_review_count":72,"rating":4.5,"recommendation_count":4,"review_count":18},"type":"branch"},{"address_name":"Красная площадь, 3","building_name":"Главный универсальный магазин (ГУМ)","external_content":[{"count":1463,"main_photo_url":"https://i1.photo.2gis.com/main/branch/32/4504127908391014/common","subtype":"common","type":"photo_album"},{"count":109,"main_photo_url":"https://i1.photo.2gis.com/main/geo/32/4504235282742224/view","subtype":"view","type":"photo_album"}],"full_name":"Москва, Главный универсальный магазин (ГУМ)","id":"4504127908391014","name":"ГУМ Москва","name_ex":{"primary":"ГУМ Москва","short_name":"ГУМ"},"point":{"lat":55.754423,"lon":37.621026},"purpose_name":"Торгово-развлекательный комплекс","reviews":{"general_rating":4.4,"general_review_count":420,"is_reviewable":true,"is_reviewable_on_flamp":true,"items":[{"is_reviewable":true,"tag":"2gis_reviews"},{"is_reviewable":true,"rating":4.7,"recommendation_count":46,"review_count":159,"tag":"flamp"}],"org_rating":4.4,"org_review_count":420,"rating":4.7,"recommendation_count":46,"review_count":159},"schedule":{"Fri":{"working_hours":[{"from":"10:00","to":"22:00"}]},"Mon":{"working_hours":[{"from":"10:00","to":"22:00"}]},"Sat":{"working_hours":[{"from":"10:00","to":"22:00"}]},"Sun":{"working_hours":[{"from":"10:00","to":"22:00"}]},"Thu":{"working_hours":[{"from":"10:00","to":"22:00"}]},"Tue":{"working_hours":[{"from":"10:00","to":"22:00"}]},"Wed":{"working_hours":[{"from":"10:00","to":"22:00"}]},"comment":"администрация: пн-чт 9:00-18:00; пт 9:00-16:45"},"type":"branch"},{"address_name":"Красная площадь, Мавзолей","building_name":"Мавзолей Ленина","external_content":[{"count":100,"main_photo_url":"https://i2.photo.2gis.com/main/branch/32/4504127908445736/common","subtype":"common","type":"photo_album"},{"count":37,"main_photo_url":"https://i1.photo.2gis.com/main/geo/32/4504235282745769/view","subtype":"view","type":"photo_album"}],"full_name":"Москва, Мавзолей Ленина","id":"4504127908445736","name":"Мавзолей В.И. Ленина","name_ex":{"primary":"Мавзолей В.И. Ленина","short_name":"Мавзолей"},"point":{"lat":55.753792,"lon":37.62005},"purpose_name":"Памятник","reviews":{"general_rating":3.9,"general_review_count":111,"is_reviewable":true,"is_reviewable_on_flamp":true,"items":[{"is_reviewable":true,"tag":"2gis_reviews"},{"is_reviewable":true,"rating":3.7,"recommendation_count":6,"review_count":22,"tag":"flamp"}],"org_rating":3.9,"org_review_count":102,"rating":3.7,"recommendation_count":6,"review_count":22},"schedule":{"Sat":{"working_hours":[{"from":"10:00","to":"13:00"}]},"Sun":{"working_hours":[{"from":"10:00","to":"13:00"}]},"Thu":{"working_hours":[{"from":"10:00","to":"13:00"}]},"Tue":{"working_hours":[{"from":"10:00","to":"13:00"}]},"Wed":{"working_hours":[{"from":"10:00","to":"13:00"}]}},"type":"branch"},{"address_name":"Кремль, 1р","building_name":"Оружейная палата","external_content":[{"count":340,"main_photo_url":"https://i0.photo.2gis.com/main/branch/32/4504127908473368/common","subtype":"common","type":"photo_album"},{"count":3,"main_photo_url":"http://i4.photo.2gis.com/main/geo/32/4504235282814124/view","subtype":"view","type":"photo_album"}],"full_name":"Москва, Оружейная палата","id":"4504127908473368","name":"Оружейная палата","name_ex":{"primary":"Оружейная палата","short_name":"Оружейная палата"},"point":{"lat":55.749223,"lon":37.613194},"purpose_name":"Музей","reviews":{"general_rating":4.3,"general_review_count":132,"is_reviewable":true,"is_reviewable_on_flamp":true,"items":[{"is_reviewable":true,"tag":"2gis_reviews"},{"is_reviewable":true,"rating":4.9,"recommendation_count":12,"review_count":35,"tag":"flamp"}],"org_rating":4.3,"org_review_count":132,"rating":4.9,"recommendation_count":12,"review_count":35},"schedule":{"Fri":{"working_hours":[{"from":"10:00","to":"17:00"}]},"Mon":{"working_hours":[{"from":"10:00","to":"17:00"}]},"Sat":{"working_hours":[{"from":"10:00","to":"17:00"}]},"Sun":{"working_hours":[{"from":"10:00","to":"17:00"}]},"Tue":{"working_hours":[{"from":"10:00","to":"17:00"}]},"Wed":{"working_hours":[{"from":"10:00","to":"17:00"}]},"comment":"летний период: пн-ср 10:00-18:00; пт-вс 10:00-18:00"},"type":"branch"},{"address_name":"Кремль, 1л","building_name":"Патриаршие палаты","external_content":[{"count":36,"main_photo_url":"https://i1.photo.2gis.com/main/branch/32/4504127913546566/common","subtype":"common","type":"photo_album"}],"full_name":"Москва, Патриаршие палаты","id":"4504127913546566","name":"Патриаршие палаты","name_ex":{"primary":"Патриаршие палаты","short_name":"Патриаршие палаты"},"point":{"lat":55.751235,"lon":37.616753},"purpose_name":"Религиозное сооружение","reviews":{"general_rating":5,"general_review_count":2,"is_reviewable":true,"is_reviewable_on_flamp":true,"items":[{"is_reviewable":true,"tag":"2gis_reviews"},{"is_reviewable":true,"rating":5,"recommendation_count":1,"review_count":1,"tag":"flamp"}],"org_rating":5,"org_review_count":2,"rating":5,"recommendation_count":1,"review_count":1},"schedule":{"Mon":{"working_hours":[{"from":"10:00","to":"17:00"}]},"Tue":{"working_hours":[{"from":"10:00","to":"17:00"}]},"Wed":{"working_hours":[{"from":"10:00","to":"17:00"}]},"comment":"летний период: пн-ср 9:30-18:00; пт-вс 9:30-18:00"},"type":"branch"},{"address_name":"Кремль, 1я","building_name":"Патриарший дворец с церковью Двенадцати апостолов","external_content":[{"count":53,"main_photo_url":"https://i8.photo.2gis.com/main/branch/32/4504127913736074/common","subtype":"common","type":"photo_album"},{"count":5,"main_photo_url":"https://i1.photo.2gis.com/main/geo/32/4504235282815519/view","subtype":"view","type":"photo_album"}],"full_name":"Москва, Патриарший дворец с церковью Двенадцати апостолов","id":"4504127913736074","name":"Патриарший дворец с церковью Двенадцати апостолов","name_ex":{"primary":"Патриарший дворец с церковью Двенадцати апостолов","short_name":"Патриарший дворец"},"point":{"lat":55.751401,"lon":37.617183},"purpose_name":"Религиозное сооружение","reviews":{"general_rating":5,"general_review_count":4,"is_reviewable":true,"is_reviewable_on_flamp":true,"items":[{"is_reviewable":true,"tag":"2gis_reviews"},{"is_reviewable":true,"rating":5,"review_count":1,"tag":"flamp"}],"org_rating":5,"org_review_count":4,"rating":5,"review_count":1},"schedule":{"Fri":{"working_hours":[{"from":"10:00","to":"17:00"}]},"Mon":{"working_hours":[{"from":"10:00","to":"17:00"}]},"Sat":{"working_hours":[{"from":"10:00","to":"17:00"}]},"Sun":{"working_hours":[{"from":"10:00","to":"17:00"}]},"Tue":{"working_hours":[{"from":"10:00","to":"17:00"}]},"Wed":{"working_hours":[{"from":"10:00","to":"17:00"}]},"comment":"касса: пн-ср, пт-вс 9:30-16:30"},"type":"branch"},{"address_name":"Кремль, 1Б","building_name":"Успенский Собор","external_content":[{"count":140,"main_photo_url":"https://i4.photo.2gis.com/main/branch/32/4504127913546594/common","subtype":"common","type":"photo_album"},{"count":14,"main_photo_url":"http://i0.photo.2gis.com/main/geo/32/4504235282745850/view","subtype":"view","type":"photo_album"}],"full_name":"Москва, Успенский Собор","id":"4504127913546594","name":"Успенский собор","name_ex":{"primary":"Успенский собор","short_name":"Успенский собор"},"point":{"lat":55.750846,"lon":37.617269},"purpose_name":"Религиозное сооружение","reviews":{"general_rating":4.9,"general_review_count":20,"is_reviewable":true,"is_reviewable_on_flamp":true,"items":[{"is_reviewable":true,"tag":"2gis_reviews"},{"is_reviewable":true,"rating":4.5,"recommendation_count":1,"review_count":4,"tag":"flamp"}],"org_rating":4.9,"org_review_count":20,"rating":4.5,"recommendation_count":1,"review_count":4},"schedule":{"Fri":{"working_hours":[{"from":"09:30","to":"18:00"}]},"Mon":{"working_hours":[{"from":"09:30","to":"18:00"}]},"Sat":{"working_hours":[{"from":"09:30","to":"18:00"}]},"Sun":{"working_hours":[{"from":"09:30","to":"18:00"}]},"Tue":{"working_hours":[{"from":"09:30","to":"18:00"}]},"Wed":{"working_hours":[{"from":"09:30","to":"18:00"}]},"comment":"зимний период: пн-ср 10:00-17:00; пт-вс выходной"},"type":"branch"},{"address_name":"проезд Воскресенские Ворота, 1а","building_name":"Часовня Иверской иконы Божией Матери у Воскресенских ворот","external_content":[{"count":36,"main_photo_url":"https://i0.photo.2gis.com/main/branch/32/4504127916290551/common","subtype":"common","type":"photo_album"},{"count":1,"main_photo_url":"https://i6.photo.2gis.com/main/geo/32/70030076172567587/view","subtype":"view","type":"photo_album"}],"full_name":"Москва, Часовня Иверской иконы Божией Матери у Воскресенских ворот","id":"4504127916290551","name":"Часовня Иверской иконы Божией Матери у Воскресенских ворот","name_ex":{"primary":"Часовня Иверской иконы Божией Матери у Воскресенских ворот"},"point":{"lat":55.75569,"lon":37.617896},"purpose_name":"Религиозное сооружение","reviews":{"general_rating":5,"general_review_count":5,"is_reviewable":true,"is_reviewable_on_flamp":true,"items":[{"is_reviewable":true,"tag":"2gis_reviews"},{"is_reviewable":true,"rating":5,"review_count":1,"tag":"flamp"}],"org_rating":5,"org_review_count":5,"rating":5,"review_count":1},"schedule":{"Fri":{"working_hours":[{"from":"08:00","to":"20:00"}]},"Mon":{"working_hours":[{"from":"08:00","to":"20:00"}]},"Sat":{"working_hours":[{"from":"08:00","to":"20:00"}]},"Sun":{"working_hours":[{"from":"08:00","to":"20:00"}]},"Thu":{"working_hours":[{"from":"08:00","to":"20:00"}]},"Tue":{"working_hours":[{"from":"08:00","to":"20:00"}]},"Wed":{"working_hours":[{"from":"08:00","to":"20:00"}]}},"type":"branch"}],"total":10}}
+{
+    "meta": {
+        "api_version": "3.0.17058",
+        "code": 200,
+        "issue_date": "20230512"
+    },
+    "result": {
+        "items": [
+            {
+                "address_name": "Кремль, 1е",
+                "building_name": "Архангельский собор",
+                "external_content": [
+                    {
+                        "count": 77,
+                        "main_photo_url": "https://i5.photo.2gis.com/main/branch/32/4504127913547138/common",
+                        "subtype": "common",
+                        "type": "photo_album"
+                    },
+                    {
+                        "count": 7,
+                        "main_photo_url": "http://i0.photo.2gis.com/main/geo/32/4504235282745880/view",
+                        "subtype": "view",
+                        "type": "photo_album"
+                    }
+                ],
+                "full_name": "Москва, Архангельский собор",
+                "id": "4504127913547138",
+                "name": "Архангельский собор",
+                "name_ex": {
+                    "primary": "Архангельский собор",
+                    "short_name": "Архангельский собор"
+                },
+                "point": { "lat": 55.750197, "lon": 37.617677 },
+                "purpose_name": "Религиозное сооружение",
+                "reviews": {
+                    "general_rating": 5,
+                    "general_review_count": 12,
+                    "is_reviewable": true,
+                    "is_reviewable_on_flamp": true,
+                    "items": [
+                        { "is_reviewable": true, "tag": "2gis_reviews" },
+                        {
+                            "is_reviewable": true,
+                            "rating": 5,
+                            "recommendation_count": 1,
+                            "review_count": 2,
+                            "tag": "flamp"
+                        }
+                    ],
+                    "org_rating": 5,
+                    "org_review_count": 12,
+                    "rating": 5,
+                    "recommendation_count": 1,
+                    "review_count": 2
+                },
+                "schedule": {
+                    "Fri": {
+                        "working_hours": [{ "from": "09:30", "to": "18:00" }]
+                    },
+                    "Mon": {
+                        "working_hours": [{ "from": "09:30", "to": "18:00" }]
+                    },
+                    "Sat": {
+                        "working_hours": [{ "from": "09:30", "to": "18:00" }]
+                    },
+                    "Sun": {
+                        "working_hours": [{ "from": "09:30", "to": "18:00" }]
+                    },
+                    "Tue": {
+                        "working_hours": [{ "from": "09:30", "to": "18:00" }]
+                    },
+                    "Wed": {
+                        "working_hours": [{ "from": "09:30", "to": "18:00" }]
+                    },
+                    "comment": "зимний период: пн-ср, пт-вс 10:00-17:00"
+                },
+                "type": "branch"
+            },
+            {
+                "address_name": "Красная площадь, 1",
+                "building_name": "Государственный Исторический Музей",
+                "external_content": [
+                    {
+                        "count": 724,
+                        "main_photo_url": "https://i6.photo.2gis.com/main/branch/32/4504127908435201/common",
+                        "subtype": "common",
+                        "type": "photo_album"
+                    },
+                    {
+                        "count": 70,
+                        "main_photo_url": "https://i1.photo.2gis.com/main/geo/32/4504235282810387/view",
+                        "subtype": "view",
+                        "type": "photo_album"
+                    }
+                ],
+                "full_name": "Москва, Государственный Исторический Музей",
+                "id": "4504127908435201",
+                "name": "Государственный исторический музей",
+                "name_ex": {
+                    "primary": "Государственный исторический музей",
+                    "short_name": "Исторический музей"
+                },
+                "point": { "lat": 55.755381, "lon": 37.618099 },
+                "purpose_name": "Культурное учреждение",
+                "reviews": {
+                    "general_rating": 4.6,
+                    "general_review_count": 152,
+                    "is_reviewable": true,
+                    "is_reviewable_on_flamp": true,
+                    "items": [
+                        { "is_reviewable": true, "tag": "2gis_reviews" },
+                        {
+                            "is_reviewable": true,
+                            "rating": 4.6,
+                            "recommendation_count": 15,
+                            "review_count": 36,
+                            "tag": "flamp"
+                        }
+                    ],
+                    "org_rating": 4.6,
+                    "org_review_count": 152,
+                    "rating": 4.6,
+                    "recommendation_count": 15,
+                    "review_count": 36
+                },
+                "schedule": {
+                    "Fri": {
+                        "working_hours": [{ "from": "10:00", "to": "21:00" }]
+                    },
+                    "Mon": {
+                        "working_hours": [{ "from": "10:00", "to": "18:00" }]
+                    },
+                    "Sat": {
+                        "working_hours": [{ "from": "10:00", "to": "21:00" }]
+                    },
+                    "Sun": {
+                        "working_hours": [{ "from": "10:00", "to": "18:00" }]
+                    },
+                    "Thu": {
+                        "working_hours": [{ "from": "10:00", "to": "18:00" }]
+                    },
+                    "Wed": {
+                        "working_hours": [{ "from": "10:00", "to": "18:00" }]
+                    },
+                    "comment": "июнь-август: пн-вс 10:00-21:00 "
+                },
+                "type": "branch"
+            },
+            {
+                "address_name": "Кремль, 1х",
+                "building_name": "Государственный Кремлёвский Дворец",
+                "external_content": [
+                    {
+                        "count": 99,
+                        "main_photo_url": "https://i7.photo.2gis.com/main/branch/32/4504127908621342/common",
+                        "subtype": "common",
+                        "type": "photo_album"
+                    },
+                    {
+                        "count": 13,
+                        "main_photo_url": "http://i3.photo.2gis.com/main/geo/32/4504235282815753/view",
+                        "subtype": "view",
+                        "type": "photo_album"
+                    }
+                ],
+                "full_name": "Москва, Государственный Кремлёвский Дворец",
+                "id": "4504127908621342",
+                "name": "Государственный Кремлевский дворец",
+                "name_ex": {
+                    "primary": "Государственный Кремлевский дворец",
+                    "short_name": "Кремлевский дворец"
+                },
+                "point": { "lat": 55.75197, "lon": 37.61585 },
+                "purpose_name": "Культурное учреждение",
+                "reviews": {
+                    "general_rating": 4.1,
+                    "general_review_count": 73,
+                    "is_reviewable": true,
+                    "is_reviewable_on_flamp": true,
+                    "items": [
+                        { "is_reviewable": true, "tag": "2gis_reviews" },
+                        {
+                            "is_reviewable": true,
+                            "rating": 4.5,
+                            "recommendation_count": 4,
+                            "review_count": 18,
+                            "tag": "flamp"
+                        }
+                    ],
+                    "org_rating": 4.1,
+                    "org_review_count": 72,
+                    "rating": 4.5,
+                    "recommendation_count": 4,
+                    "review_count": 18
+                },
+                "type": "branch"
+            },
+            {
+                "address_name": "Красная площадь, 3",
+                "building_name": "Главный универсальный магазин (ГУМ)",
+                "external_content": [
+                    {
+                        "count": 1463,
+                        "main_photo_url": "https://i1.photo.2gis.com/main/branch/32/4504127908391014/common",
+                        "subtype": "common",
+                        "type": "photo_album"
+                    },
+                    {
+                        "count": 109,
+                        "main_photo_url": "https://i1.photo.2gis.com/main/geo/32/4504235282742224/view",
+                        "subtype": "view",
+                        "type": "photo_album"
+                    }
+                ],
+                "full_name": "Москва, Главный универсальный магазин (ГУМ)",
+                "id": "4504127908391014",
+                "name": "ГУМ Москва",
+                "name_ex": { "primary": "ГУМ Москва", "short_name": "ГУМ" },
+                "point": { "lat": 55.754423, "lon": 37.621026 },
+                "purpose_name": "Торгово-развлекательный комплекс",
+                "reviews": {
+                    "general_rating": 4.4,
+                    "general_review_count": 420,
+                    "is_reviewable": true,
+                    "is_reviewable_on_flamp": true,
+                    "items": [
+                        { "is_reviewable": true, "tag": "2gis_reviews" },
+                        {
+                            "is_reviewable": true,
+                            "rating": 4.7,
+                            "recommendation_count": 46,
+                            "review_count": 159,
+                            "tag": "flamp"
+                        }
+                    ],
+                    "org_rating": 4.4,
+                    "org_review_count": 420,
+                    "rating": 4.7,
+                    "recommendation_count": 46,
+                    "review_count": 159
+                },
+                "schedule": {
+                    "Fri": {
+                        "working_hours": [{ "from": "10:00", "to": "22:00" }]
+                    },
+                    "Mon": {
+                        "working_hours": [{ "from": "10:00", "to": "22:00" }]
+                    },
+                    "Sat": {
+                        "working_hours": [{ "from": "10:00", "to": "22:00" }]
+                    },
+                    "Sun": {
+                        "working_hours": [{ "from": "10:00", "to": "22:00" }]
+                    },
+                    "Thu": {
+                        "working_hours": [{ "from": "10:00", "to": "22:00" }]
+                    },
+                    "Tue": {
+                        "working_hours": [{ "from": "10:00", "to": "22:00" }]
+                    },
+                    "Wed": {
+                        "working_hours": [{ "from": "10:00", "to": "22:00" }]
+                    },
+                    "comment": "администрация: пн-чт 9:00-18:00; пт 9:00-16:45"
+                },
+                "type": "branch"
+            },
+            {
+                "address_name": "Красная площадь, Мавзолей",
+                "building_name": "Мавзолей Ленина",
+                "external_content": [
+                    {
+                        "count": 100,
+                        "main_photo_url": "https://i2.photo.2gis.com/main/branch/32/4504127908445736/common",
+                        "subtype": "common",
+                        "type": "photo_album"
+                    },
+                    {
+                        "count": 37,
+                        "main_photo_url": "https://i1.photo.2gis.com/main/geo/32/4504235282745769/view",
+                        "subtype": "view",
+                        "type": "photo_album"
+                    }
+                ],
+                "full_name": "Москва, Мавзолей Ленина",
+                "id": "4504127908445736",
+                "name": "Мавзолей В.И. Ленина",
+                "name_ex": {
+                    "primary": "Мавзолей В.И. Ленина",
+                    "short_name": "Мавзолей"
+                },
+                "point": { "lat": 55.753792, "lon": 37.62005 },
+                "purpose_name": "Памятник",
+                "reviews": {
+                    "general_rating": 3.9,
+                    "general_review_count": 111,
+                    "is_reviewable": true,
+                    "is_reviewable_on_flamp": true,
+                    "items": [
+                        { "is_reviewable": true, "tag": "2gis_reviews" },
+                        {
+                            "is_reviewable": true,
+                            "rating": 3.7,
+                            "recommendation_count": 6,
+                            "review_count": 22,
+                            "tag": "flamp"
+                        }
+                    ],
+                    "org_rating": 3.9,
+                    "org_review_count": 102,
+                    "rating": 3.7,
+                    "recommendation_count": 6,
+                    "review_count": 22
+                },
+                "schedule": {
+                    "Sat": {
+                        "working_hours": [{ "from": "10:00", "to": "13:00" }]
+                    },
+                    "Sun": {
+                        "working_hours": [{ "from": "10:00", "to": "13:00" }]
+                    },
+                    "Thu": {
+                        "working_hours": [{ "from": "10:00", "to": "13:00" }]
+                    },
+                    "Tue": {
+                        "working_hours": [{ "from": "10:00", "to": "13:00" }]
+                    },
+                    "Wed": {
+                        "working_hours": [{ "from": "10:00", "to": "13:00" }]
+                    }
+                },
+                "type": "branch"
+            },
+            {
+                "address_name": "Кремль, 1р",
+                "building_name": "Оружейная палата",
+                "external_content": [
+                    {
+                        "count": 340,
+                        "main_photo_url": "https://i0.photo.2gis.com/main/branch/32/4504127908473368/common",
+                        "subtype": "common",
+                        "type": "photo_album"
+                    },
+                    {
+                        "count": 3,
+                        "main_photo_url": "http://i4.photo.2gis.com/main/geo/32/4504235282814124/view",
+                        "subtype": "view",
+                        "type": "photo_album"
+                    }
+                ],
+                "full_name": "Москва, Оружейная палата",
+                "id": "4504127908473368",
+                "name": "Оружейная палата",
+                "name_ex": {
+                    "primary": "Оружейная палата",
+                    "short_name": "Оружейная палата"
+                },
+                "point": { "lat": 55.749223, "lon": 37.613194 },
+                "purpose_name": "Музей",
+                "reviews": {
+                    "general_rating": 4.3,
+                    "general_review_count": 132,
+                    "is_reviewable": true,
+                    "is_reviewable_on_flamp": true,
+                    "items": [
+                        { "is_reviewable": true, "tag": "2gis_reviews" },
+                        {
+                            "is_reviewable": true,
+                            "rating": 4.9,
+                            "recommendation_count": 12,
+                            "review_count": 35,
+                            "tag": "flamp"
+                        }
+                    ],
+                    "org_rating": 4.3,
+                    "org_review_count": 132,
+                    "rating": 4.9,
+                    "recommendation_count": 12,
+                    "review_count": 35
+                },
+                "schedule": {
+                    "Fri": {
+                        "working_hours": [{ "from": "10:00", "to": "17:00" }]
+                    },
+                    "Mon": {
+                        "working_hours": [{ "from": "10:00", "to": "17:00" }]
+                    },
+                    "Sat": {
+                        "working_hours": [{ "from": "10:00", "to": "17:00" }]
+                    },
+                    "Sun": {
+                        "working_hours": [{ "from": "10:00", "to": "17:00" }]
+                    },
+                    "Tue": {
+                        "working_hours": [{ "from": "10:00", "to": "17:00" }]
+                    },
+                    "Wed": {
+                        "working_hours": [{ "from": "10:00", "to": "17:00" }]
+                    },
+                    "comment": "летний период: пн-ср 10:00-18:00; пт-вс 10:00-18:00"
+                },
+                "type": "branch"
+            },
+            {
+                "address_name": "Кремль, 1л",
+                "building_name": "Патриаршие палаты",
+                "external_content": [
+                    {
+                        "count": 36,
+                        "main_photo_url": "https://i1.photo.2gis.com/main/branch/32/4504127913546566/common",
+                        "subtype": "common",
+                        "type": "photo_album"
+                    }
+                ],
+                "full_name": "Москва, Патриаршие палаты",
+                "id": "4504127913546566",
+                "name": "Патриаршие палаты",
+                "name_ex": {
+                    "primary": "Патриаршие палаты",
+                    "short_name": "Патриаршие палаты"
+                },
+                "point": { "lat": 55.751235, "lon": 37.616753 },
+                "purpose_name": "Религиозное сооружение",
+                "reviews": {
+                    "general_rating": 5,
+                    "general_review_count": 2,
+                    "is_reviewable": true,
+                    "is_reviewable_on_flamp": true,
+                    "items": [
+                        { "is_reviewable": true, "tag": "2gis_reviews" },
+                        {
+                            "is_reviewable": true,
+                            "rating": 5,
+                            "recommendation_count": 1,
+                            "review_count": 1,
+                            "tag": "flamp"
+                        }
+                    ],
+                    "org_rating": 5,
+                    "org_review_count": 2,
+                    "rating": 5,
+                    "recommendation_count": 1,
+                    "review_count": 1
+                },
+                "schedule": {
+                    "Mon": {
+                        "working_hours": [{ "from": "10:00", "to": "17:00" }]
+                    },
+                    "Tue": {
+                        "working_hours": [{ "from": "10:00", "to": "17:00" }]
+                    },
+                    "Wed": {
+                        "working_hours": [{ "from": "10:00", "to": "17:00" }]
+                    },
+                    "comment": "летний период: пн-ср 9:30-18:00; пт-вс 9:30-18:00"
+                },
+                "type": "branch"
+            },
+            {
+                "address_name": "Кремль, 1я",
+                "building_name": "Патриарший дворец с церковью Двенадцати апостолов",
+                "external_content": [
+                    {
+                        "count": 53,
+                        "main_photo_url": "https://i8.photo.2gis.com/main/branch/32/4504127913736074/common",
+                        "subtype": "common",
+                        "type": "photo_album"
+                    },
+                    {
+                        "count": 5,
+                        "main_photo_url": "https://i1.photo.2gis.com/main/geo/32/4504235282815519/view",
+                        "subtype": "view",
+                        "type": "photo_album"
+                    }
+                ],
+                "full_name": "Москва, Патриарший дворец с церковью Двенадцати апостолов",
+                "id": "4504127913736074",
+                "name": "Патриарший дворец с церковью Двенадцати апостолов",
+                "name_ex": {
+                    "primary": "Патриарший дворец с церковью Двенадцати апостолов",
+                    "short_name": "Патриарший дворец"
+                },
+                "point": { "lat": 55.751401, "lon": 37.617183 },
+                "purpose_name": "Религиозное сооружение",
+                "reviews": {
+                    "general_rating": 5,
+                    "general_review_count": 4,
+                    "is_reviewable": true,
+                    "is_reviewable_on_flamp": true,
+                    "items": [
+                        { "is_reviewable": true, "tag": "2gis_reviews" },
+                        {
+                            "is_reviewable": true,
+                            "rating": 5,
+                            "review_count": 1,
+                            "tag": "flamp"
+                        }
+                    ],
+                    "org_rating": 5,
+                    "org_review_count": 4,
+                    "rating": 5,
+                    "review_count": 1
+                },
+                "schedule": {
+                    "Fri": {
+                        "working_hours": [{ "from": "10:00", "to": "17:00" }]
+                    },
+                    "Mon": {
+                        "working_hours": [{ "from": "10:00", "to": "17:00" }]
+                    },
+                    "Sat": {
+                        "working_hours": [{ "from": "10:00", "to": "17:00" }]
+                    },
+                    "Sun": {
+                        "working_hours": [{ "from": "10:00", "to": "17:00" }]
+                    },
+                    "Tue": {
+                        "working_hours": [{ "from": "10:00", "to": "17:00" }]
+                    },
+                    "Wed": {
+                        "working_hours": [{ "from": "10:00", "to": "17:00" }]
+                    },
+                    "comment": "касса: пн-ср, пт-вс 9:30-16:30"
+                },
+                "type": "branch"
+            },
+            {
+                "address_name": "Кремль, 1Б",
+                "building_name": "Успенский Собор",
+                "external_content": [
+                    {
+                        "count": 140,
+                        "main_photo_url": "https://i4.photo.2gis.com/main/branch/32/4504127913546594/common",
+                        "subtype": "common",
+                        "type": "photo_album"
+                    },
+                    {
+                        "count": 14,
+                        "main_photo_url": "http://i0.photo.2gis.com/main/geo/32/4504235282745850/view",
+                        "subtype": "view",
+                        "type": "photo_album"
+                    }
+                ],
+                "full_name": "Москва, Успенский Собор",
+                "id": "4504127913546594",
+                "name": "Успенский собор",
+                "name_ex": {
+                    "primary": "Успенский собор",
+                    "short_name": "Успенский собор"
+                },
+                "point": { "lat": 55.750846, "lon": 37.617269 },
+                "purpose_name": "Религиозное сооружение",
+                "reviews": {
+                    "general_rating": 4.9,
+                    "general_review_count": 20,
+                    "is_reviewable": true,
+                    "is_reviewable_on_flamp": true,
+                    "items": [
+                        { "is_reviewable": true, "tag": "2gis_reviews" },
+                        {
+                            "is_reviewable": true,
+                            "rating": 4.5,
+                            "recommendation_count": 1,
+                            "review_count": 4,
+                            "tag": "flamp"
+                        }
+                    ],
+                    "org_rating": 4.9,
+                    "org_review_count": 20,
+                    "rating": 4.5,
+                    "recommendation_count": 1,
+                    "review_count": 4
+                },
+                "schedule": {
+                    "Fri": {
+                        "working_hours": [{ "from": "09:30", "to": "18:00" }]
+                    },
+                    "Mon": {
+                        "working_hours": [{ "from": "09:30", "to": "18:00" }]
+                    },
+                    "Sat": {
+                        "working_hours": [{ "from": "09:30", "to": "18:00" }]
+                    },
+                    "Sun": {
+                        "working_hours": [{ "from": "09:30", "to": "18:00" }]
+                    },
+                    "Tue": {
+                        "working_hours": [{ "from": "09:30", "to": "18:00" }]
+                    },
+                    "Wed": {
+                        "working_hours": [{ "from": "09:30", "to": "18:00" }]
+                    },
+                    "comment": "зимний период: пн-ср 10:00-17:00; пт-вс выходной"
+                },
+                "type": "branch"
+            },
+            {
+                "address_name": "проезд Воскресенские Ворота, 1а",
+                "building_name": "Часовня Иверской иконы Божией Матери у Воскресенских ворот",
+                "external_content": [
+                    {
+                        "count": 36,
+                        "main_photo_url": "https://i0.photo.2gis.com/main/branch/32/4504127916290551/common",
+                        "subtype": "common",
+                        "type": "photo_album"
+                    },
+                    {
+                        "count": 1,
+                        "main_photo_url": "https://i6.photo.2gis.com/main/geo/32/70030076172567587/view",
+                        "subtype": "view",
+                        "type": "photo_album"
+                    }
+                ],
+                "full_name": "Москва, Часовня Иверской иконы Божией Матери у Воскресенских ворот",
+                "id": "4504127916290551",
+                "name": "Часовня Иверской иконы Божией Матери у Воскресенских ворот",
+                "name_ex": {
+                    "primary": "Часовня Иверской иконы Божией Матери у Воскресенских ворот"
+                },
+                "point": { "lat": 55.75569, "lon": 37.617896 },
+                "purpose_name": "Религиозное сооружение",
+                "reviews": {
+                    "general_rating": 5,
+                    "general_review_count": 5,
+                    "is_reviewable": true,
+                    "is_reviewable_on_flamp": true,
+                    "items": [
+                        { "is_reviewable": true, "tag": "2gis_reviews" },
+                        {
+                            "is_reviewable": true,
+                            "rating": 5,
+                            "review_count": 1,
+                            "tag": "flamp"
+                        }
+                    ],
+                    "org_rating": 5,
+                    "org_review_count": 5,
+                    "rating": 5,
+                    "review_count": 1
+                },
+                "schedule": {
+                    "Fri": {
+                        "working_hours": [{ "from": "08:00", "to": "20:00" }]
+                    },
+                    "Mon": {
+                        "working_hours": [{ "from": "08:00", "to": "20:00" }]
+                    },
+                    "Sat": {
+                        "working_hours": [{ "from": "08:00", "to": "20:00" }]
+                    },
+                    "Sun": {
+                        "working_hours": [{ "from": "08:00", "to": "20:00" }]
+                    },
+                    "Thu": {
+                        "working_hours": [{ "from": "08:00", "to": "20:00" }]
+                    },
+                    "Tue": {
+                        "working_hours": [{ "from": "08:00", "to": "20:00" }]
+                    },
+                    "Wed": {
+                        "working_hours": [{ "from": "08:00", "to": "20:00" }]
+                    }
+                },
+                "type": "branch"
+            }
+        ],
+        "total": 10
+    }
+}

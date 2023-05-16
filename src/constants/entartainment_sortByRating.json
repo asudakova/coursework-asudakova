@@ -1,287 +1,287 @@
 {
-  "meta": {
-    "api_version": "3.0.17025",
-    "code": 200,
-    "issue_date": "20230508"
-  },
-  "result": {
-    "items": [
-      {
-        "address_comment": "цокольный этаж",
-        "address_name": "Тверская улица, 12 ст2",
-        "ads": {
-          "article": "Для вашего отдыха всё готово: наши двери открыты!<br /><br />Доверяя своё время «Мяте», вы окунётесь в особенную, неповторимую атмосферу нашего пространства.<br /><br />Первое правило для нас — это довольные гости!",
-          "text": "Атмосфера, уют и комфортный отдых в «Мята Lounge»",
-          "text_warning": "ООО «МИЛОВИДОВ»."
-        },
-        "external_content": [
-          {
-            "count": 27,
-            "main_photo_url": "https://i2.photo.2gis.com/main/branch/32/70000001041102937/common",
-            "subtype": "common",
-            "type": "photo_album"
-          },
-          {
-            "count": 3,
-            "main_photo_url": "https://i6.photo.2gis.com/main/geo/32/4504235282745873/view",
-            "subtype": "view",
-            "type": "photo_album"
-          }
+    "meta": {
+        "api_version": "3.0.17025",
+        "code": 200,
+        "issue_date": "20230508"
+    },
+    "result": {
+        "items": [
+            {
+                "address_comment": "цокольный этаж",
+                "address_name": "Тверская улица, 12 ст2",
+                "ads": {
+                    "article": "Для вашего отдыха всё готово: наши двери открыты!<br /><br />Доверяя своё время «Мяте», вы окунётесь в особенную, неповторимую атмосферу нашего пространства.<br /><br />Первое правило для нас — это довольные гости!",
+                    "text": "Атмосфера, уют и комфортный отдых в «Мята Lounge»",
+                    "text_warning": "ООО «МИЛОВИДОВ»."
+                },
+                "external_content": [
+                    {
+                        "count": 27,
+                        "main_photo_url": "https://i2.photo.2gis.com/main/branch/32/70000001041102937/common",
+                        "subtype": "common",
+                        "type": "photo_album"
+                    },
+                    {
+                        "count": 3,
+                        "main_photo_url": "https://i6.photo.2gis.com/main/geo/32/4504235282745873/view",
+                        "subtype": "view",
+                        "type": "photo_album"
+                    }
+                ],
+                "id": "70000001041102937",
+                "name": "Мята Lounge Тверская, центр паровых коктейлей",
+                "point": {
+                    "lat": 55.76381,
+                    "lon": 37.608158
+                },
+                "type": "branch"
+            },
+            {
+                "address_comment": "1 этаж",
+                "address_name": "улица Маросейка, 10/1",
+                "ads": {
+                    "article": "В «Котофейне» вас всегда будет ждать дружный коллектив пушистых обитателей кафе, которые с удовольствием помурчат у вас на коленях.<br /><br />У нас вы найдёте:<br />•&nbsp;более 20 ласковых котиков;<br />•&nbsp;зерновой кофе премиум-класса;<br />•&nbsp;воздушное какао;<br />•&nbsp;китайский листовой чай;<br />•&nbsp;Wi-Fi;<br />•&nbsp;настольные игры на любой вкус;<br />•&nbsp;PS4;<br />•&nbsp;уникальные сувениры;<br />•&nbsp;литературу о котиках;<br />•&nbsp;клубную программу для постоянных гостей;<br />•&nbsp;уютную атмосферу;<br />•&nbsp;дружелюбный персонал и многое другое.<br />",
+                    "link": {
+                        "text": "Что новенького",
+                        "value": "http://link.2gis.com/1.2/7DFD4A87/webapi/20230501/project32/70000001024060881/null/FkBymf7228G2J81301IGG23G2ll8lc49G6G42ABA57270B92ttbc6A477J77G4I1G42693G5yluuuv6B3843102256H2H4J8HHGJH146?https://vk.com/kotofein"
+                    },
+                    "text": "Уютное котокафе в центре Москвы"
+                },
+                "external_content": [
+                    {
+                        "count": 148,
+                        "main_photo_url": "https://i8.photo.2gis.com/main/branch/32/70000001024060881/common",
+                        "subtype": "common",
+                        "type": "photo_album"
+                    },
+                    {
+                        "count": 4,
+                        "main_photo_url": "https://i7.photo.2gis.com/main/geo/32/4504235282741498/view",
+                        "subtype": "view",
+                        "type": "photo_album"
+                    }
+                ],
+                "id": "70000001024060881",
+                "name": "Котофейня, антикафе",
+                "point": {
+                    "lat": 55.757439,
+                    "lon": 37.637199
+                },
+                "type": "branch"
+            },
+            {
+                "address_comment": "1 этаж",
+                "address_name": "Большой Черкасский переулок, 15-17 ст1",
+                "external_content": [
+                    {
+                        "count": 118,
+                        "main_photo_url": "https://i4.photo.2gis.com/main/branch/32/70000001033075254/common",
+                        "subtype": "common",
+                        "type": "photo_album"
+                    },
+                    {
+                        "count": 6,
+                        "main_photo_url": "https://i0.photo.2gis.com/main/geo/32/4504235282813477/view",
+                        "subtype": "view",
+                        "type": "photo_album"
+                    }
+                ],
+                "id": "70000001033075254",
+                "name": "Траппист, бельгийская брассерия",
+                "point": {
+                    "lat": 55.756723,
+                    "lon": 37.626901
+                },
+                "type": "branch"
+            },
+            {
+                "address_comment": "4 этаж",
+                "address_name": "Тверская улица, 12 ст2",
+                "external_content": [
+                    {
+                        "count": 74,
+                        "main_photo_url": "https://i1.photo.2gis.com/main/branch/32/70000001037619774/common",
+                        "subtype": "common",
+                        "type": "photo_album"
+                    },
+                    {
+                        "count": 3,
+                        "main_photo_url": "https://i6.photo.2gis.com/main/geo/32/4504235282745873/view",
+                        "subtype": "view",
+                        "type": "photo_album"
+                    }
+                ],
+                "id": "70000001037619774",
+                "name": "Sol x magneto, авторский бар",
+                "point": {
+                    "lat": 55.763796,
+                    "lon": 37.607243
+                },
+                "type": "branch"
+            },
+            {
+                "address_name": "улица Мясницкая, 13 ст1",
+                "ads": {
+                    "article": "Nebar — одно из самых шумных мест на барной и клубной карте города, потому что это #ТотСамыйNebar, где #МожноВсё.<br /><br />7 дней в неделю в Nebar проходят модные вечеринки, концерты актуальных хип-хоп- и поп-исполнителей, скетчи стендап-комиков и танцы, где каждый может оторваться по полной и даже легко потанцевать на барной стойке.<br /><br />Вечером здесь можно поужинать или легко перекусить сетом (брускетта с фирменным коктейлем), а ночью — насладиться громкой атмосферой американских студенческих вечеринок с присущей им лёгкостью, весельем и куражом.<br /><br />Nebar ― популярное место для дней рождения и весёлых девичников и мальчишников.<br />Для именинников действуют специальные выгодные предложения.<br /><br />7 дней в неделю в «Небаре» #МожноВсё.",
+                    "article_warning": "ООО «Небар Мск1».",
+                    "text": "Твой лучший День Рождения со скидкой 50% только в Небар!",
+                    "warning": "ООО «Небар Мск1»."
+                },
+                "external_content": [
+                    {
+                        "count": 56,
+                        "main_photo_url": "https://i3.photo.2gis.com/main/branch/32/70000001062547789/common",
+                        "subtype": "common",
+                        "type": "photo_album"
+                    },
+                    {
+                        "count": 10,
+                        "main_photo_url": "https://i4.photo.2gis.com/main/geo/32/4504235282811075/view",
+                        "subtype": "view",
+                        "type": "photo_album"
+                    }
+                ],
+                "id": "70000001062547789",
+                "name": "Nebar, клуб",
+                "point": {
+                    "lat": 55.761852,
+                    "lon": 37.633384
+                },
+                "type": "branch"
+            },
+            {
+                "address_comment": "2 этаж",
+                "address_name": "улица Неглинная, 10",
+                "external_content": [
+                    {
+                        "count": 53,
+                        "main_photo_url": "https://i8.photo.2gis.com/main/branch/32/70000001036242671/common",
+                        "subtype": "common",
+                        "type": "photo_album"
+                    },
+                    {
+                        "count": 14,
+                        "main_photo_url": "https://i2.photo.2gis.com/main/geo/32/4504235282761303/view",
+                        "subtype": "view",
+                        "type": "photo_album"
+                    }
+                ],
+                "id": "70000001036242671",
+                "name": "Капо дей Капи, ресторан",
+                "point": {
+                    "lat": 55.762289,
+                    "lon": 37.620368
+                },
+                "type": "branch"
+            },
+            {
+                "address_comment": "цокольный этаж",
+                "address_name": "улица Никольская, 11-13 ст1",
+                "ads": {
+                    "article": "Контактный музей оружия. В нашей экспозиции представлена внушительная коллекция (около 40 образцов) огнестрельного оружия от начала прошлого века по наши дни, а также гранаты, средства индивидуальной защиты и связи. Отличительная особенность нашего музея — контактность. Мы не прячем экспонаты за стеклом, оставляя вам только возможность посмотреть на них, мы даём вам самостоятельно взять их в руки, оценить вес и эргономику оружия, посмотреть, как работают его механизмы, вживую. Кроме этого вы можете научиться разбирать автомат Калашникова — на двух АК-103 можно посоревноваться в скорости и мастерстве с друзьями, а если понадобится помощь — в зале всегда есть инструктор, который будет рад ответить на все вопросы и научить правильному обращению с оружием даже самых юных посетителей. Кстати, о детях — им очень нравится наш лазерный тир, к тому же он совершенно бесплатный для всех посетителей музея.",
+                    "text": "Контактный музей огнестрельного оружия с лазерным тиром"
+                },
+                "external_content": [
+                    {
+                        "count": 43,
+                        "main_photo_url": "https://i8.photo.2gis.com/main/branch/32/70000001052942368/common",
+                        "subtype": "common",
+                        "type": "photo_album"
+                    },
+                    {
+                        "count": 11,
+                        "main_photo_url": "https://i1.photo.2gis.com/main/geo/32/4504235282807743/view",
+                        "subtype": "view",
+                        "type": "photo_album"
+                    }
+                ],
+                "id": "70000001052942368",
+                "name": "Оружейный подвал на Никольской, контактный музей",
+                "point": {
+                    "lat": 55.756898,
+                    "lon": 37.6218
+                },
+                "type": "branch"
+            },
+            {
+                "address_name": "Тверская улица, 9",
+                "ads": {
+                    "article": "Подниму на уши всю Тверскую!<br />Жду тебя. Твоя Ханна.",
+                    "text": "С 22:00 DJ и танцы до утра"
+                },
+                "external_content": [
+                    {
+                        "count": 45,
+                        "main_photo_url": "https://i7.photo.2gis.com/main/branch/32/70000001066753500/common",
+                        "subtype": "common",
+                        "type": "photo_album"
+                    },
+                    {
+                        "count": 18,
+                        "main_photo_url": "https://i9.photo.2gis.com/main/geo/32/4504235282776308/view",
+                        "subtype": "view",
+                        "type": "photo_album"
+                    }
+                ],
+                "id": "70000001066753500",
+                "name": "Нах, бар",
+                "point": {
+                    "lat": 55.759114,
+                    "lon": 37.610906
+                },
+                "type": "branch"
+            },
+            {
+                "address_comment": "цокольный этаж",
+                "address_name": "Архангельский переулок, 7 ст1",
+                "external_content": [
+                    {
+                        "count": 35,
+                        "main_photo_url": "https://i9.photo.2gis.com/main/branch/32/4504128908682856/common",
+                        "subtype": "common",
+                        "type": "photo_album"
+                    },
+                    {
+                        "count": 10,
+                        "main_photo_url": "https://i6.photo.2gis.com/main/geo/32/4504235282979935/view",
+                        "subtype": "view",
+                        "type": "photo_album"
+                    }
+                ],
+                "id": "4504128908682856",
+                "name": "Убежище, антикафе",
+                "point": {
+                    "lat": 55.761141,
+                    "lon": 37.63767
+                },
+                "type": "branch"
+            },
+            {
+                "address_comment": "2 этаж",
+                "address_name": "улица Солянка, 2/6 ст1",
+                "external_content": [
+                    {
+                        "count": 180,
+                        "main_photo_url": "https://i3.photo.2gis.com/main/branch/32/70000001040691356/common",
+                        "subtype": "common",
+                        "type": "photo_album"
+                    },
+                    {
+                        "count": 5,
+                        "main_photo_url": "https://i0.photo.2gis.com/main/geo/32/4504235282739863/view",
+                        "subtype": "view",
+                        "type": "photo_album"
+                    }
+                ],
+                "id": "70000001040691356",
+                "name": "Justa pasta, ресторан итальянской кухни",
+                "point": {
+                    "lat": 55.754006,
+                    "lon": 37.6369
+                },
+                "type": "branch"
+            }
         ],
-        "id": "70000001041102937",
-        "name": "Мята Lounge Тверская, центр паровых коктейлей",
-        "point": {
-          "lat": 55.76381,
-          "lon": 37.608158
-        },
-        "type": "branch"
-      },
-      {
-        "address_comment": "1 этаж",
-        "address_name": "улица Маросейка, 10/1",
-        "ads": {
-          "article": "В «Котофейне» вас всегда будет ждать дружный коллектив пушистых обитателей кафе, которые с удовольствием помурчат у вас на коленях.<br /><br />У нас вы найдёте:<br />•&nbsp;более 20 ласковых котиков;<br />•&nbsp;зерновой кофе премиум-класса;<br />•&nbsp;воздушное какао;<br />•&nbsp;китайский листовой чай;<br />•&nbsp;Wi-Fi;<br />•&nbsp;настольные игры на любой вкус;<br />•&nbsp;PS4;<br />•&nbsp;уникальные сувениры;<br />•&nbsp;литературу о котиках;<br />•&nbsp;клубную программу для постоянных гостей;<br />•&nbsp;уютную атмосферу;<br />•&nbsp;дружелюбный персонал и многое другое.<br />",
-          "link": {
-            "text": "Что новенького",
-            "value": "http://link.2gis.com/1.2/7DFD4A87/webapi/20230501/project32/70000001024060881/null/FkBymf7228G2J81301IGG23G2ll8lc49G6G42ABA57270B92ttbc6A477J77G4I1G42693G5yluuuv6B3843102256H2H4J8HHGJH146?https://vk.com/kotofein"
-          },
-          "text": "Уютное котокафе в центре Москвы"
-        },
-        "external_content": [
-          {
-            "count": 148,
-            "main_photo_url": "https://i8.photo.2gis.com/main/branch/32/70000001024060881/common",
-            "subtype": "common",
-            "type": "photo_album"
-          },
-          {
-            "count": 4,
-            "main_photo_url": "https://i7.photo.2gis.com/main/geo/32/4504235282741498/view",
-            "subtype": "view",
-            "type": "photo_album"
-          }
-        ],
-        "id": "70000001024060881",
-        "name": "Котофейня, антикафе",
-        "point": {
-          "lat": 55.757439,
-          "lon": 37.637199
-        },
-        "type": "branch"
-      },
-      {
-        "address_comment": "1 этаж",
-        "address_name": "Большой Черкасский переулок, 15-17 ст1",
-        "external_content": [
-          {
-            "count": 118,
-            "main_photo_url": "https://i4.photo.2gis.com/main/branch/32/70000001033075254/common",
-            "subtype": "common",
-            "type": "photo_album"
-          },
-          {
-            "count": 6,
-            "main_photo_url": "https://i0.photo.2gis.com/main/geo/32/4504235282813477/view",
-            "subtype": "view",
-            "type": "photo_album"
-          }
-        ],
-        "id": "70000001033075254",
-        "name": "Траппист, бельгийская брассерия",
-        "point": {
-          "lat": 55.756723,
-          "lon": 37.626901
-        },
-        "type": "branch"
-      },
-      {
-        "address_comment": "4 этаж",
-        "address_name": "Тверская улица, 12 ст2",
-        "external_content": [
-          {
-            "count": 74,
-            "main_photo_url": "https://i1.photo.2gis.com/main/branch/32/70000001037619774/common",
-            "subtype": "common",
-            "type": "photo_album"
-          },
-          {
-            "count": 3,
-            "main_photo_url": "https://i6.photo.2gis.com/main/geo/32/4504235282745873/view",
-            "subtype": "view",
-            "type": "photo_album"
-          }
-        ],
-        "id": "70000001037619774",
-        "name": "Sol x magneto, авторский бар",
-        "point": {
-          "lat": 55.763796,
-          "lon": 37.607243
-        },
-        "type": "branch"
-      },
-      {
-        "address_name": "улица Мясницкая, 13 ст1",
-        "ads": {
-          "article": "Nebar — одно из самых шумных мест на барной и клубной карте города, потому что это #ТотСамыйNebar, где #МожноВсё.<br /><br />7 дней в неделю в Nebar проходят модные вечеринки, концерты актуальных хип-хоп- и поп-исполнителей, скетчи стендап-комиков и танцы, где каждый может оторваться по полной и даже легко потанцевать на барной стойке.<br /><br />Вечером здесь можно поужинать или легко перекусить сетом (брускетта с фирменным коктейлем), а ночью — насладиться громкой атмосферой американских студенческих вечеринок с присущей им лёгкостью, весельем и куражом.<br /><br />Nebar ― популярное место для дней рождения и весёлых девичников и мальчишников.<br />Для именинников действуют специальные выгодные предложения.<br /><br />7 дней в неделю в «Небаре» #МожноВсё.",
-          "article_warning": "ООО «Небар Мск1».",
-          "text": "Твой лучший День Рождения со скидкой 50% только в Небар!",
-          "warning": "ООО «Небар Мск1»."
-        },
-        "external_content": [
-          {
-            "count": 56,
-            "main_photo_url": "https://i3.photo.2gis.com/main/branch/32/70000001062547789/common",
-            "subtype": "common",
-            "type": "photo_album"
-          },
-          {
-            "count": 10,
-            "main_photo_url": "https://i4.photo.2gis.com/main/geo/32/4504235282811075/view",
-            "subtype": "view",
-            "type": "photo_album"
-          }
-        ],
-        "id": "70000001062547789",
-        "name": "Nebar, клуб",
-        "point": {
-          "lat": 55.761852,
-          "lon": 37.633384
-        },
-        "type": "branch"
-      },
-      {
-        "address_comment": "2 этаж",
-        "address_name": "улица Неглинная, 10",
-        "external_content": [
-          {
-            "count": 53,
-            "main_photo_url": "https://i8.photo.2gis.com/main/branch/32/70000001036242671/common",
-            "subtype": "common",
-            "type": "photo_album"
-          },
-          {
-            "count": 14,
-            "main_photo_url": "https://i2.photo.2gis.com/main/geo/32/4504235282761303/view",
-            "subtype": "view",
-            "type": "photo_album"
-          }
-        ],
-        "id": "70000001036242671",
-        "name": "Капо дей Капи, ресторан",
-        "point": {
-          "lat": 55.762289,
-          "lon": 37.620368
-        },
-        "type": "branch"
-      },
-      {
-        "address_comment": "цокольный этаж",
-        "address_name": "улица Никольская, 11-13 ст1",
-        "ads": {
-          "article": "Контактный музей оружия. В нашей экспозиции представлена внушительная коллекция (около 40 образцов) огнестрельного оружия от начала прошлого века по наши дни, а также гранаты, средства индивидуальной защиты и связи. Отличительная особенность нашего музея — контактность. Мы не прячем экспонаты за стеклом, оставляя вам только возможность посмотреть на них, мы даём вам самостоятельно взять их в руки, оценить вес и эргономику оружия, посмотреть, как работают его механизмы, вживую. Кроме этого вы можете научиться разбирать автомат Калашникова — на двух АК-103 можно посоревноваться в скорости и мастерстве с друзьями, а если понадобится помощь — в зале всегда есть инструктор, который будет рад ответить на все вопросы и научить правильному обращению с оружием даже самых юных посетителей. Кстати, о детях — им очень нравится наш лазерный тир, к тому же он совершенно бесплатный для всех посетителей музея.",
-          "text": "Контактный музей огнестрельного оружия с лазерным тиром"
-        },
-        "external_content": [
-          {
-            "count": 43,
-            "main_photo_url": "https://i8.photo.2gis.com/main/branch/32/70000001052942368/common",
-            "subtype": "common",
-            "type": "photo_album"
-          },
-          {
-            "count": 11,
-            "main_photo_url": "https://i1.photo.2gis.com/main/geo/32/4504235282807743/view",
-            "subtype": "view",
-            "type": "photo_album"
-          }
-        ],
-        "id": "70000001052942368",
-        "name": "Оружейный подвал на Никольской, контактный музей",
-        "point": {
-          "lat": 55.756898,
-          "lon": 37.6218
-        },
-        "type": "branch"
-      },
-      {
-        "address_name": "Тверская улица, 9",
-        "ads": {
-          "article": "Подниму на уши всю Тверскую!<br />Жду тебя. Твоя Ханна.",
-          "text": "С 22:00 DJ и танцы до утра"
-        },
-        "external_content": [
-          {
-            "count": 45,
-            "main_photo_url": "https://i7.photo.2gis.com/main/branch/32/70000001066753500/common",
-            "subtype": "common",
-            "type": "photo_album"
-          },
-          {
-            "count": 18,
-            "main_photo_url": "https://i9.photo.2gis.com/main/geo/32/4504235282776308/view",
-            "subtype": "view",
-            "type": "photo_album"
-          }
-        ],
-        "id": "70000001066753500",
-        "name": "Нах, бар",
-        "point": {
-          "lat": 55.759114,
-          "lon": 37.610906
-        },
-        "type": "branch"
-      },
-      {
-        "address_comment": "цокольный этаж",
-        "address_name": "Архангельский переулок, 7 ст1",
-        "external_content": [
-          {
-            "count": 35,
-            "main_photo_url": "https://i9.photo.2gis.com/main/branch/32/4504128908682856/common",
-            "subtype": "common",
-            "type": "photo_album"
-          },
-          {
-            "count": 10,
-            "main_photo_url": "https://i6.photo.2gis.com/main/geo/32/4504235282979935/view",
-            "subtype": "view",
-            "type": "photo_album"
-          }
-        ],
-        "id": "4504128908682856",
-        "name": "Убежище, антикафе",
-        "point": {
-          "lat": 55.761141,
-          "lon": 37.63767
-        },
-        "type": "branch"
-      },
-      {
-        "address_comment": "2 этаж",
-        "address_name": "улица Солянка, 2/6 ст1",
-        "external_content": [
-          {
-            "count": 180,
-            "main_photo_url": "https://i3.photo.2gis.com/main/branch/32/70000001040691356/common",
-            "subtype": "common",
-            "type": "photo_album"
-          },
-          {
-            "count": 5,
-            "main_photo_url": "https://i0.photo.2gis.com/main/geo/32/4504235282739863/view",
-            "subtype": "view",
-            "type": "photo_album"
-          }
-        ],
-        "id": "70000001040691356",
-        "name": "Justa pasta, ресторан итальянской кухни",
-        "point": {
-          "lat": 55.754006,
-          "lon": 37.6369
-        },
-        "type": "branch"
-      }
-    ],
-    "total": 488
-  }
+        "total": 488
+    }
 }
