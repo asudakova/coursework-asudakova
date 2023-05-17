@@ -1,6 +1,6 @@
 import { AppDispatch } from '../store';
 import { placesSlice } from './slice';
-import { mockPlaces, mockPlacesNext } from '../../constants/requestMock';
+//import { mockPlaces, mockPlacesNext } from '../../constants/requestMock';
 import axios from 'axios';
 import {
     FetchArgumentsType,
@@ -67,7 +67,7 @@ export const fetchPlaces =
                 //     );
                 // });
 
-                let currentCalls =
+                const currentCalls =
                     Number(localStorage.getItem('apiCallsToPlaces')) + 1;
                 localStorage.setItem(
                     'apiCallsToPlaces',
@@ -187,7 +187,7 @@ export const fetchNextPage =
                 //     );
                 // });
 
-                let currentCalls =
+                const currentCalls =
                     Number(localStorage.getItem('apiCallsToPlaces')) + 1;
                 localStorage.setItem(
                     'apiCallsToPlaces',
