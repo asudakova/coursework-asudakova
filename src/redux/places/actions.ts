@@ -53,11 +53,19 @@ export const fetchPlaces =
         } else {
             try {
                 // mockPlaces().then((data: any) => {
-                // //console.log(createEntityMap(data.result.items), data.result.total)
-                // const {mapPlaces, listIdPlaces, markerPlaces} = createEntityMap(data.result.items);
-                // const total = data.result.total
-                // dispatch(placesSlice.actions.placesFetchingSuccess({ mapPlaces, listIdPlaces, markerPlaces, total }))
-                // })
+                //     //console.log(createEntityMap(data.result.items), data.result.total)
+                //     const { mapPlaces, listIdPlaces, markerPlaces } =
+                //         createEntityMap(data.result.items);
+                //     const total = data.result.total;
+                //     dispatch(
+                //         placesSlice.actions.placesFetchingSuccess({
+                //             mapPlaces,
+                //             listIdPlaces,
+                //             markerPlaces,
+                //             total,
+                //         })
+                //     );
+                // });
 
                 let currentCalls =
                     Number(localStorage.getItem('apiCallsToPlaces')) + 1;
@@ -168,9 +176,16 @@ export const fetchNextPage =
             try {
                 // mockPlacesNext().then((data: any) => {
                 //     //console.log(createEntityMap(data.result.items), data.result.total)
-                //     const { mapPlaces, listIdPlaces, markerPlaces } = createEntityMap(data.result.items);
-                //     dispatch(placesSlice.actions.placesFetchingNextPage({ mapPlaces, listIdPlaces, markerPlaces }))
-                // })
+                //     const { mapPlaces, listIdPlaces, markerPlaces } =
+                //         createEntityMap(data.result.items);
+                //     dispatch(
+                //         placesSlice.actions.placesFetchingNextPage({
+                //             mapPlaces,
+                //             listIdPlaces,
+                //             markerPlaces,
+                //         })
+                //     );
+                // });
 
                 let currentCalls =
                     Number(localStorage.getItem('apiCallsToPlaces')) + 1;

@@ -9,6 +9,8 @@ import { UilHeartAlt } from '@iconscout/react-unicons';
 //@ts-ignore
 import StarRatings from 'react-star-ratings';
 import { getDeclension } from '../../helpers/getDeclension';
+import { useMapglContext } from '../../components/Map/MapglContext';
+import { createMapMarkersArray } from '../../helpers/createMapMarkersArray';
 
 const categories = {
     food: 'Еда',
@@ -18,6 +20,8 @@ const categories = {
 };
 
 const PlacePage: React.FC = () => {
+    const { clusterer } = useMapglContext();
+
     const { placeId } = useParams<{ placeId: string }>();
     const curPlace: CurrentPlaceType = useAppSelector(
         (state) =>
@@ -25,6 +29,10 @@ const PlacePage: React.FC = () => {
                 placeId as keyof typeof state.placesReducer.mapPlaces
             ]
     );
+    if (clusterer !== undefined) {
+        clusterer.load(createMapMarkersArray([curPlace.latLon]));
+    };
+
     const curCategory = useAppSelector((state) => state.placesReducer.category);
 
     const createMarkup = (text: string) => {

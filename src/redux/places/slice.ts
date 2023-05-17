@@ -1,5 +1,5 @@
-import {createSlice, PayloadAction} from '@reduxjs/toolkit';
-import {PlacesStateType, CategoriesType, SortingType} from '../../types'
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { PlacesStateType, CategoriesType, SortingType } from '../../types';
 
 const initialState: PlacesStateType = {
     mapPlaces: {},
@@ -10,8 +10,8 @@ const initialState: PlacesStateType = {
     category: 'food',
     sortBy: 'near',
     isLoading: false,
-    error: ''
-}
+    error: '',
+};
 
 export const placesSlice = createSlice({
     name: 'places',
@@ -20,7 +20,15 @@ export const placesSlice = createSlice({
         placesFetching(state) {
             state.isLoading = true;
         },
-        placesFetchingSuccess(state, action: PayloadAction<{mapPlaces: {}, listIdPlaces: [], markerPlaces: [], total: number}>) {
+        placesFetchingSuccess(
+            state,
+            action: PayloadAction<{
+                mapPlaces: {};
+                listIdPlaces: [];
+                markerPlaces: [[number, number]] | [];
+                total: number;
+            }>
+        ) {
             state.isLoading = false;
             state.error = '';
             state.mapPlaces = action.payload.mapPlaces;
@@ -28,10 +36,26 @@ export const placesSlice = createSlice({
             state.markerPlaces = action.payload.markerPlaces;
             state.totalCount = action.payload.total;
         },
-        placesFetchingNextPage(state, action: PayloadAction<{mapPlaces: {}, listIdPlaces: [], markerPlaces: []}>) {
-            state.mapPlaces = Object.assign(state.mapPlaces, action.payload.mapPlaces);
-            state.listIdPlaces = [...state.listIdPlaces, ...action.payload.listIdPlaces];
-            state.markerPlaces = [...state.markerPlaces, ...action.payload.markerPlaces];
+        placesFetchingNextPage(
+            state,
+            action: PayloadAction<{
+                mapPlaces: {};
+                listIdPlaces: [];
+                markerPlaces: [];
+            }>
+        ) {
+            state.mapPlaces = Object.assign(
+                state.mapPlaces,
+                action.payload.mapPlaces
+            );
+            state.listIdPlaces = [
+                ...state.listIdPlaces,
+                ...action.payload.listIdPlaces,
+            ];
+            state.markerPlaces = [
+                ...state.markerPlaces,
+                ...action.payload.markerPlaces,
+            ];
         },
         placesFetchingError(state, action: PayloadAction<string>) {
             state.isLoading = false;
@@ -45,8 +69,8 @@ export const placesSlice = createSlice({
         },
         placesSetPageNumber(state, action: PayloadAction<number>) {
             state.pageNumber = action.payload;
-        }
-    }
-})
+        },
+    },
+});
 
 export default placesSlice.reducer;

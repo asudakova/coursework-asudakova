@@ -8,8 +8,12 @@ import { setMapBoundaries } from '../../redux/coordinates/actions';
 import { userLocationTag } from '../../img';
 import { createMapMarkersArray } from '../../helpers/createMapMarkersArray';
 import styles from './Map.module.css';
+import { useMapglContext } from './MapglContext';
+import { clustererTag, clustererTagHover } from '../../img';
 
 const Map: React.FC = () => {
+    const { setMapglContext } = useMapglContext();
+
     const dispatch = useAppDispatch();
     const { lngLat } = useAppSelector((state) => state.coordinatesReducer);
     const { userLocation } = useAppSelector(
@@ -40,14 +44,24 @@ const Map: React.FC = () => {
 
             clusterer = new Clusterer(map, {
                 radius: 60,
+                clusterStyle: {
+                    icon: clustererTag,
+                    hoverIcon: clustererTagHover,
+                    labelColor: '#ffffff',
+                    labelFontSize: 18,
+                },
             });
-            clusterer.load(createMapMarkersArray(foundPlaces));
+            clusterer.load(
+                createMapMarkersArray(foundPlaces as [[number, number]])
+            );
 
             map.on('click', (e) => console.log(e));
 
             const { northEast, southWest } = map.getBounds();
             const bounds = [...northEast, ...southWest];
             dispatch(setMapBoundaries(bounds));
+
+            setMapglContext({ clusterer });
         });
 
         // Destroy the map, if Map component is going to be unmounted
@@ -55,8 +69,19 @@ const Map: React.FC = () => {
             map && map.destroy();
             clusterer && clusterer.destroy();
             userLocationMarker && userLocationMarker.destroy();
+            setMapglContext({ clusterer: undefined });
         };
-    }, [lngLat, foundPlaces]);
+    }, [lngLat]);
+
+    const { clusterer } = useMapglContext();
+
+    useEffect(() => {
+        if (clusterer !== undefined) {
+            clusterer.load(
+                createMapMarkersArray(foundPlaces as [[number, number]])
+            );
+        }
+    }, [foundPlaces]);
 
     return (
         <div className={styles.map}>

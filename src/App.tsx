@@ -6,10 +6,10 @@ import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 import './App.module.css';
 import { Route, Routes } from 'react-router-dom';
 import PrivateRoute from './components/PrivateRoute';
-
+import { MapglContextProvider } from '../src/components/Map/MapglContext';
 const App: React.FC = () => {
     return (
-        <>
+        <MapglContextProvider>
             <Routes>
                 <Route path="/signup" element={<SignUpPage />} />
                 <Route path="/" element={<SignInPage />} />
@@ -23,7 +23,7 @@ const App: React.FC = () => {
                 />
                 <Route path="*" element={<NotFoundPage />} />
             </Routes>
-        </>
+        </MapglContextProvider>
     );
 };
 

@@ -1,7 +1,7 @@
 export type PlacesStateType = {
     mapPlaces: {};
     listIdPlaces: [];
-    markerPlaces: [];
+    markerPlaces: [[number, number]] | [];
     totalCount: number;
     pageNumber: number;
     category: 'food' | 'ent' | 'hotels' | 'attr';
@@ -139,7 +139,7 @@ export type FormattedScheduleType = {
 
 export type CurrentPlaceType = {
     id: number | null;
-    latLon: [number, number] | null;
+    latLon: [number, number];
     name: string;
     nameExtension: string | null;
     shortName: string | null;
