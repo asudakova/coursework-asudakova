@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useAppSelector } from '../../redux/typingReduxHooks';
 import styles from './MarkerTip.module.css';
 import { CurrentPlaceType } from '../../types';
@@ -16,14 +16,6 @@ const MarkerTip: React.FC = () => {
         left: `${coordinates[0] + offset}px`,
         display: 'flex',
     };
-
-    // useEffect(() => {
-    //     style = {
-    //         top: `${coordinates[1] + offset}px`,
-    //         left: `${coordinates[0] + offset}px`,
-    //         display: 'flex',
-    //     };
-    // }, coordinates);
 
     return (
         <>
