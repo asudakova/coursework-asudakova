@@ -40,13 +40,11 @@ const Places: React.FC = () => {
         debounce(() => {
             const limit = 10;
             const amountOfPages = Math.ceil(totalCount / limit);
-            console.log(totalCount);
             if (
                 blockRef.current?.scrollHeight !== undefined &&
                 blockRef.current?.clientHeight !== undefined &&
                 blockRef.current?.scrollTop !== undefined
             ) {
-                console.log(amountOfPages, pageNumber);
                 if (
                     blockRef.current?.scrollHeight - (blockRef.current?.clientHeight + blockRef.current?.scrollTop) < 150 &&
                     pageNumber > 0 &&

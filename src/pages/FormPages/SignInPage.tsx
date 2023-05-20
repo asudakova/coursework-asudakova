@@ -1,20 +1,32 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAppDispatch, useAppSelector } from '../../redux/typingReduxHooks';
-import { loginUser } from '../../redux/auth/actions';
+import { loginUser, loginAfterRefresh } from '../../redux/auth/actions';
 import Loader from '../../components/Loader/Loader';
 import styles from './FormPages.module.css';
+import { getAuth, onAuthStateChanged } from 'firebase/auth';
 
 const SignInPage: React.FC = () => {
+    const navigate = useNavigate();
     const dispatch = useAppDispatch();
+
+    const auth = getAuth();
+    onAuthStateChanged(auth, (user) => {
+        if (user) {
+            const userUid = user.uid;
+            const userName = user.displayName;
+            if (userName) {
+                dispatch(loginAfterRefresh(userName, userUid));
+                navigate('/main');
+            }
+        }
+    });
 
     const [email, setEmail] = useState<string>('');
     const [password, setPassword] = useState<string>('');
     const [error, setError] = useState('');
 
     const { loginErrorforUser, userName, isLoginLoading } = useAppSelector((state) => state.authReducer);
-
-    const navigate = useNavigate();
 
     const handleSubmit = (e: React.FormEvent) => {
         setError('');

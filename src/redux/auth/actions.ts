@@ -15,7 +15,10 @@ export const createUser = (email: string, password: string, name: string) => (di
                         updateProfile(auth.currentUser, {
                             displayName: userName,
                         });
-                        dispatch(authSlice.actions.userCtreatingSuccess({userName, userUid}));
+                        dispatch(authSlice.actions.userCtreatingSuccess({ userName, userUid }));
+
+                        const forSave = { userName: userName, userUid: userUid };
+                        localStorage.setItem('savedUser', JSON.stringify(forSave));
                     }
                 }
             })
@@ -46,7 +49,9 @@ export const loginUser = (email: string, password: string) => (dispatch: AppDisp
                 const userName = userCredential.user.displayName;
                 const userUid = userCredential.user.uid;
                 if (userName) {
-                    dispatch(authSlice.actions.userLoggingSuccess({userName, userUid}));
+                    dispatch(authSlice.actions.userLoggingSuccess({ userName, userUid }));
+                    const forSave = { userName: userName, userUid: userUid };
+                    localStorage.setItem('savedUser', JSON.stringify(forSave));
                 }
             })
             .catch((error) => {
@@ -62,6 +67,10 @@ export const loginUser = (email: string, password: string) => (dispatch: AppDisp
             dispatch(authSlice.actions.userLoggingError(e.message));
         }
     }
+};
+
+export const loginAfterRefresh = (userName: string, userUid: string) => (dispatch: AppDispatch) => {
+    dispatch(authSlice.actions.userLoginAfterRefresh({ userName, userUid }));
 };
 
 export const logoutUser = () => (dispatch: AppDispatch) => {

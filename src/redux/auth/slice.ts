@@ -21,7 +21,7 @@ export const authSlice = createSlice({
         userCreating(state) {
             state.isSignupLoading = true;
         },
-        userCtreatingSuccess(state, action: PayloadAction<{userName: string, userUid: string}>) {
+        userCtreatingSuccess(state, action: PayloadAction<{ userName: string; userUid: string }>) {
             state.isSignupLoading = false;
             state.signupError = '';
             state.userName = action.payload.userName;
@@ -38,7 +38,7 @@ export const authSlice = createSlice({
         userLogging(state) {
             state.isLoginLoading = true;
         },
-        userLoggingSuccess(state, action: PayloadAction<{userName: string, userUid: string}>) {
+        userLoggingSuccess(state, action: PayloadAction<{ userName: string; userUid: string }>) {
             state.isLoginLoading = false;
             state.loginError = '';
             state.userName = action.payload.userName;
@@ -51,6 +51,10 @@ export const authSlice = createSlice({
         userLoggingErrorForUser(state, action: PayloadAction<string>) {
             state.isLoginLoading = false;
             state.loginErrorforUser = action.payload;
+        },
+        userLoginAfterRefresh(state, action: PayloadAction<{ userName: string; userUid: string }>) {
+            state.userName = action.payload.userName;
+            state.userUid = action.payload.userUid;
         },
         userLogout(state) {
             state.userName = '';

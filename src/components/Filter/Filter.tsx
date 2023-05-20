@@ -9,11 +9,12 @@ const Filter: React.FC<FilterPropsType> = ({ title, shortCut }) => {
     const dispatch = useAppDispatch();
     const currentSort = useAppSelector((state) => state.placesReducer.sortBy);
 
+    const handleClick = () => {
+        dispatch(setNewSort(shortCut));
+    };
+
     return (
-        <div
-            onClick={() => dispatch(setNewSort(shortCut))}
-            className={cn(styles.filter, currentSort === shortCut ? styles.active : styles.inactive)}
-        >
+        <div onClick={handleClick} className={cn(styles.filter, currentSort === shortCut ? styles.active : styles.inactive)}>
             {title}
         </div>
     );

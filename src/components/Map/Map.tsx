@@ -79,11 +79,7 @@ const Map: React.FC = () => {
             const bounds = [...northEast, ...southWest];
             dispatch(setMapBoundaries(bounds));
 
-            setMapglContext({
-                clusterer,
-                mapglInstance: map,
-                mapgl,
-            });
+            setMapglContext({ clusterer });
         });
 
         // Destroy the map, if Map component is going to be unmounted
@@ -91,11 +87,7 @@ const Map: React.FC = () => {
             map && map.destroy();
             clusterer && clusterer.destroy();
             userLocationMarker && userLocationMarker.destroy();
-            setMapglContext({
-                clusterer: undefined,
-                mapglInstance: undefined,
-                mapgl: undefined,
-            });
+            setMapglContext({ clusterer: undefined });
         };
     }, [lngLat]);
 
