@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import { load } from '@2gis/mapgl';
 import { Clusterer } from '@2gis/mapgl-clusterer';
 import mapgl from '@2gis/mapgl/global';
@@ -14,6 +14,8 @@ import { setMarkerTip, unsetMarkerTip } from '../../redux/marker/actions';
 import { MarkerType } from '../../types';
 import MarkerTip from '../MarkerTip/MarkerTip';
 import { useNavigate } from 'react-router-dom';
+//@ts-ignore
+import debounce from 'lodash.debounce';
 
 const Map: React.FC = () => {
     const navigate = useNavigate();
@@ -24,6 +26,28 @@ const Map: React.FC = () => {
     const { lngLat } = useAppSelector((state) => state.coordinatesReducer);
     const { userLocation } = useAppSelector((state) => state.coordinatesReducer);
     const foundPlaces = useAppSelector((state) => state.placesReducer.markerPlaces);
+
+    const [currentBounds, setCurrentBounds] = useState<number[] | []>([]);
+    const [debouncedBounds, setDebouncedBounds] = useState<number[] | []>([]);
+
+    useEffect(() => {
+        if (currentBounds.length) {
+            debouceMapBounds(currentBounds);
+        }
+    }, [currentBounds]);
+
+    const debouceMapBounds = useCallback(
+        debounce((bounds: number[]) => {
+            setDebouncedBounds(bounds);
+        }, 1000),
+        []
+    );
+
+    useEffect(() => {
+        if (debouncedBounds.length) {
+            dispatch(setMapBoundaries(debouncedBounds));
+        }
+    }, [debouncedBounds]);
 
     useEffect(() => {
         let map: mapgl.Map | undefined = undefined;
@@ -49,7 +73,6 @@ const Map: React.FC = () => {
                 clusterStyle: {
                     icon: clustererTag,
                     size: [30, 30],
-                    //hoverIcon: clustererTagHover,
                     labelColor: '#ffffff',
                     labelFontSize: 18,
                 },
@@ -80,6 +103,13 @@ const Map: React.FC = () => {
             dispatch(setMapBoundaries(bounds));
 
             setMapglContext({ clusterer });
+
+            map.on('idle', () => {
+                if (map !== undefined && map.isIdle()) {
+                    const { northEast, southWest } = map.getBounds();
+                    setCurrentBounds([...northEast, ...southWest]);
+                }
+            });
         });
 
         // Destroy the map, if Map component is going to be unmounted

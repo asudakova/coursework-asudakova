@@ -77,3 +77,10 @@ export const sortQueryParams = {
     abc: 'name',
     new: 'creation_time',
 };
+
+export const categories = {
+    food: 'Еда',
+    ent: 'Развлечения',
+    hotels: 'Отели',
+    attr: 'Достопримечательности',
+};

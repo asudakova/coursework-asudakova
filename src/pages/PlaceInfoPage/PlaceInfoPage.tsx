@@ -1,9 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styles from './PlaceInfoPage.module.css';
 import { useParams } from 'react-router-dom';
 import { useAppSelector } from '../../redux/typingReduxHooks';
 import { CurrentPlaceType, InfoForMarkerType } from '../../types';
-import { Link } from 'react-router-dom';
 //@ts-ignore
 import { UilHeartAlt } from '@iconscout/react-unicons';
 //@ts-ignore
@@ -11,22 +10,20 @@ import StarRatings from 'react-star-ratings';
 import { getDeclension } from '../../helpers/getDeclension';
 import { useMapglContext } from '../../components/Map/MapglContext';
 import { createMapMarkersArray } from '../../helpers/createMapMarkersArray';
-
-const categories = {
-    food: 'Еда',
-    ent: 'Развлечения',
-    hotels: 'Отели',
-    attr: 'Достопримечательности',
-};
+import { categories } from '../../constants';
+import { useNavigate } from 'react-router-dom';
 
 const PlacePage: React.FC = () => {
+    const navigate = useNavigate();
     const { clusterer } = useMapglContext();
-
-    const { placeId } = useParams<{ placeId: string }>();
+    let { placeId } = useParams<{ placeId: string }>();
 
     const curPlace: CurrentPlaceType = useAppSelector(
         (state) => state.placesReducer.mapPlaces[placeId as keyof typeof state.placesReducer.mapPlaces]
     );
+
+
+    const { category, markerPlaces } = useAppSelector((state) => state.placesReducer);
 
     const markerCoords: InfoForMarkerType = {
         lat: curPlace.latLon[1],
@@ -37,18 +34,23 @@ const PlacePage: React.FC = () => {
         clusterer.load(createMapMarkersArray([markerCoords]));
     }
 
-    const curCategory = useAppSelector((state) => state.placesReducer.category);
-
     const createMarkup = (text: string) => {
         return { __html: text };
+    };
+
+    const handleReturnToMainPageClick = () => {
+        if (clusterer !== undefined) {
+            clusterer.load(createMapMarkersArray(markerPlaces));
+        }
+        navigate('/main');
     };
 
     return (
         <div className={styles.wrapper}>
             <div className={styles.navigation}>
-                <Link to="/main" className={styles.link}>
-                    {categories[curCategory]}
-                </Link>
+                <div onClick={handleReturnToMainPageClick} className={styles.link}>
+                    {categories[category]}
+                </div>
                 <span className={styles.linkName}>{curPlace.shortName ? curPlace.shortName : curPlace.name}</span>
             </div>
             {curPlace.photo && (

@@ -15,7 +15,7 @@ const Places: React.FC = () => {
     const dispatch = useAppDispatch();
     const { north, east, south, west } = useAppSelector((state) => state.coordinatesReducer.boundaries);
     const { isLoading, category, sortBy, pageNumber, totalCount } = useAppSelector((state) => state.placesReducer);
-    
+
     const topRef = useRef<HTMLDivElement>(null);
     const blockRef = useRef<HTMLDivElement>(null);
 
@@ -79,7 +79,7 @@ const Places: React.FC = () => {
             blockRef.current?.removeEventListener('scroll', handleInfiniteScroll);
         };
     }, [handleInfiniteScroll]);
-    
+
     const handleScroll = () => {
         if (blockRef.current?.scrollTop !== undefined) {
             if (!showButton && blockRef.current.scrollTop > displayAfter) {
@@ -89,7 +89,7 @@ const Places: React.FC = () => {
                 setShowButton(false);
             }
         }
-    }
+    };
 
     useEffect(() => {
         blockRef.current?.addEventListener('scroll', handleScroll);
