@@ -3,6 +3,7 @@ import { AuthStateType } from '../../types';
 
 const initialState: AuthStateType = {
     userName: '',
+    userUid: '',
 
     isSignupLoading: false,
     signupError: '',
@@ -20,10 +21,11 @@ export const authSlice = createSlice({
         userCreating(state) {
             state.isSignupLoading = true;
         },
-        userCtreatingSuccess(state, action: PayloadAction<string>) {
+        userCtreatingSuccess(state, action: PayloadAction<{userName: string, userUid: string}>) {
             state.isSignupLoading = false;
             state.signupError = '';
-            state.userName = action.payload;
+            state.userName = action.payload.userName;
+            state.userUid = action.payload.userUid;
         },
         userCreatingError(state, action: PayloadAction<string>) {
             state.isSignupLoading = false;
@@ -36,10 +38,11 @@ export const authSlice = createSlice({
         userLogging(state) {
             state.isLoginLoading = true;
         },
-        userLoggingSuccess(state, action: PayloadAction<string>) {
+        userLoggingSuccess(state, action: PayloadAction<{userName: string, userUid: string}>) {
             state.isLoginLoading = false;
             state.loginError = '';
-            state.userName = action.payload;
+            state.userName = action.payload.userName;
+            state.userUid = action.payload.userUid;
         },
         userLoggingError(state, action: PayloadAction<string>) {
             state.isLoginLoading = false;
@@ -51,6 +54,7 @@ export const authSlice = createSlice({
         },
         userLogout(state) {
             state.userName = '';
+            state.userUid = '';
             state.loginErrorforUser = '';
             state.signupErrorforUser = '';
         },

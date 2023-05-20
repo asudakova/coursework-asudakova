@@ -5,14 +5,14 @@
     width: 100%;
     height: 100%;
     border-radius: 25px;
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 0px 4px 10px 1px #1f123544;
-    transition: all .1s ease-in-out;
+    transition: all 0.1s ease-in-out;
 }
 .placeCard:hover {
     box-shadow: 0px 4px 10px 5px #1f123553;
 }
-.fav, 
+.fav,
 .noFav {
     position: absolute;
     top: 20px;
@@ -22,19 +22,19 @@
     padding: 8px;
     border-radius: 20px;
     cursor: pointer;
-    transition: all .1s ease-in-out;
+    transition: all 0.1s ease-in-out;
 }
-.fav:hover, 
+.fav:hover,
 .noFav:hover {
     padding: 6px;
 }
 .fav {
-    color: #FFFFFF;
-    background-color: #867AC5;
+    color: #ffffff;
+    background-color: #867ac5;
 }
 .noFav {
-    color: #86838C;
-    background-color: #FFFFFF;
+    color: #86838c;
+    background-color: #ffffff;
 }
 .pic,
 .noPic {
@@ -47,7 +47,7 @@
     object-fit: cover;
 }
 .noPic {
-    background-color: rgba(134, 131, 140, 0.4);;
+    background-color: rgba(134, 131, 140, 0.4);
 }
 .placeInfo {
     padding: 0 10px;
@@ -63,20 +63,20 @@
     font-weight: 300;
     font-size: 15px;
     line-height: 18px;
-    color: #1F1235;
+    color: #1f1235;
     margin-left: 5px;
 }
 .name {
     font-weight: 400;
     font-size: 24px;
     line-height: 28px;
-    color: #1F1235;
+    color: #1f1235;
     margin-bottom: 5px;
 }
 .address {
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
-    color: #1F1235;
+    color: #1f1235;
     margin-bottom: 5px;
 }

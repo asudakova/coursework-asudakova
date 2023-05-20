@@ -4,7 +4,7 @@ import { useAppSelector, useAppDispatch } from '../../redux/typingReduxHooks';
 import { useNavigate } from 'react-router-dom';
 import { logoutUser } from '../../redux/auth/actions';
 //@ts-ignore
-import { UilMoon, UilHeartAlt, UilUserCircle } from '@iconscout/react-unicons';
+import { UilHeartAlt, UilUserCircle } from '@iconscout/react-unicons';
 //@ts-ignore
 import { UilSignOutAlt } from '@iconscout/react-unicons';
 import { logo } from '../../img';
@@ -35,18 +35,12 @@ const Header: React.FC = () => {
                 </a>
                 <Input />
                 <div className={styles.accountBtns}>
-                    <UilMoon className={styles.darkThemeBtn} />
                     <UilHeartAlt className={styles.favBtn} />
                     <div className={styles.profile}>
                         <UilUserCircle className={styles.profileBtn} />
                         <div className={styles.userInfo}>
-                            <div className={styles.userName}>
-                                {userName || ''}
-                            </div>
-                            <UilSignOutAlt
-                                onClick={handleLogout}
-                                className={styles.logountBtn}
-                            />
+                            <div className={styles.userName}>{userName || ''}</div>
+                            <UilSignOutAlt onClick={handleLogout} className={styles.logountBtn} />
                         </div>
                     </div>
                 </div>

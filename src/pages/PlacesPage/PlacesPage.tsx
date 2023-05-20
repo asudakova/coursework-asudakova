@@ -1,29 +1,21 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState, useRef, useCallback } from 'react';
 import { useAppSelector, useAppDispatch } from '../../redux/typingReduxHooks';
 import Category from '../../components/Category/Category';
 import Loader from '../../components/Loader/Loader';
 import FoundPlaces from '../../components/FoundPlaces/FoundPlaces';
-import {
-    fetchNextPage,
-    fetchPlaces,
-    setNewPageNumber,
-} from '../../redux/places/actions';
+import { fetchNextPage, fetchPlaces, setNewPageNumber } from '../../redux/places/actions';
 import { typesOfPlaces } from '../../constants';
 //@ts-ignore
 import { UilArrowUp } from '@iconscout/react-unicons';
+//@ts-ignore
+import debounce from 'lodash.debounce';
 import styles from './PlacesPage.module.css';
 
 const Places: React.FC = () => {
     const dispatch = useAppDispatch();
-    const { north, east, south, west } = useAppSelector(
-        (state) => state.coordinatesReducer.boundaries
-    );
-    const { isLoading, category, sortBy, pageNumber, totalCount } =
-        useAppSelector((state) => state.placesReducer);
-
-    const limit = 10;
-    const amountOfPages = Math.ceil(totalCount / limit);
-
+    const { north, east, south, west } = useAppSelector((state) => state.coordinatesReducer.boundaries);
+    const { isLoading, category, sortBy, pageNumber, totalCount } = useAppSelector((state) => state.placesReducer);
+    
     const topRef = useRef<HTMLDivElement>(null);
     const blockRef = useRef<HTMLDivElement>(null);
 
@@ -35,26 +27,7 @@ const Places: React.FC = () => {
         dispatch(fetchPlaces({ north, east, south, west, category, sortBy }));
     }, [north, east, south, west, category, sortBy]);
 
-    useEffect(() => {
-        if (pageNumber > 1 && amountOfPages >= pageNumber) {
-            dispatch(
-                fetchNextPage({
-                    north,
-                    east,
-                    south,
-                    west,
-                    category,
-                    sortBy,
-                    pageNumber,
-                })
-            );
-        }
-    }, [pageNumber]);
-
-    const scrollFunc = (
-        target: React.RefObject<HTMLDivElement>,
-        block: React.RefObject<HTMLDivElement>
-    ) => {
+    const scrollFunc = (target: React.RefObject<HTMLDivElement>, block: React.RefObject<HTMLDivElement>) => {
         if (target.current?.offsetTop !== undefined) {
             block.current?.scrollTo({
                 top: target.current?.offsetTop - 50,
@@ -63,20 +36,54 @@ const Places: React.FC = () => {
         }
     };
 
-    const handleScroll = () => {
-        if (
-            blockRef.current?.scrollHeight !== undefined &&
-            blockRef.current?.clientHeight !== undefined &&
-            blockRef.current?.scrollTop !== undefined
-        ) {
+    const handleInfiniteScroll = useCallback(
+        debounce(() => {
+            const limit = 10;
+            const amountOfPages = Math.ceil(totalCount / limit);
+            console.log(totalCount);
             if (
-                blockRef.current?.scrollHeight -
-                    (blockRef.current?.clientHeight +
-                        blockRef.current?.scrollTop) <
-                150
+                blockRef.current?.scrollHeight !== undefined &&
+                blockRef.current?.clientHeight !== undefined &&
+                blockRef.current?.scrollTop !== undefined
             ) {
-                dispatch(setNewPageNumber(pageNumber + 1));
+                console.log(amountOfPages, pageNumber);
+                if (
+                    blockRef.current?.scrollHeight - (blockRef.current?.clientHeight + blockRef.current?.scrollTop) < 150 &&
+                    pageNumber > 0 &&
+                    amountOfPages > pageNumber
+                ) {
+                    dispatch(
+                        fetchNextPage({
+                            north,
+                            east,
+                            south,
+                            west,
+                            category,
+                            sortBy,
+                            pageNumber: pageNumber + 1,
+                        })
+                    );
+                }
+                if (!showButton && blockRef.current.scrollTop > displayAfter) {
+                    setShowButton(true);
+                }
+                if (!showButton && blockRef.current.scrollTop <= displayAfter) {
+                    setShowButton(false);
+                }
             }
+        }, 250),
+        [pageNumber, showButton, totalCount]
+    );
+
+    useEffect(() => {
+        blockRef.current?.addEventListener('scroll', handleInfiniteScroll);
+        return () => {
+            blockRef.current?.removeEventListener('scroll', handleInfiniteScroll);
+        };
+    }, [handleInfiniteScroll]);
+    
+    const handleScroll = () => {
+        if (blockRef.current?.scrollTop !== undefined) {
             if (!showButton && blockRef.current.scrollTop > displayAfter) {
                 setShowButton(true);
             }
@@ -84,7 +91,7 @@ const Places: React.FC = () => {
                 setShowButton(false);
             }
         }
-    };
+    }
 
     useEffect(() => {
         blockRef.current?.addEventListener('scroll', handleScroll);
@@ -101,12 +108,7 @@ const Places: React.FC = () => {
                 ))}
             </div>
             {isLoading ? <Loader /> : <FoundPlaces />}
-            {showButton && (
-                <UilArrowUp
-                    onClick={() => scrollFunc(topRef, blockRef)}
-                    className={styles.arrowUp}
-                />
-            )}
+            {showButton && <UilArrowUp onClick={() => scrollFunc(topRef, blockRef)} className={styles.arrowUp} />}
         </div>
     );
 };

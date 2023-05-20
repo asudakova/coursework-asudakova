@@ -22,18 +22,12 @@ export const coordinatesSlice = createSlice({
         coordinatesFetching(state) {
             state.isLoading = true;
         },
-        coordinatesFetchingFromSearchSuccess(
-            state,
-            action: PayloadAction<number[]>
-        ) {
+        coordinatesFetchingFromSearchSuccess(state, action: PayloadAction<number[]>) {
             state.isLoading = false;
             state.error = '';
             state.lngLat = action.payload;
         },
-        coordinatesFetchingFromLocationSuccess(
-            state,
-            action: PayloadAction<number[]>
-        ) {
+        coordinatesFetchingFromLocationSuccess(state, action: PayloadAction<number[]>) {
             state.isLoading = false;
             state.error = '';
             state.lngLat = action.payload;

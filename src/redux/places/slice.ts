@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { PlacesStateType, CategoriesType, SortingType } from '../../types';
+import { PlacesStateType, InfoForMarkerType, CategoriesType, SortingType } from '../../types';
 
 const initialState: PlacesStateType = {
     mapPlaces: {},
@@ -25,7 +25,7 @@ export const placesSlice = createSlice({
             action: PayloadAction<{
                 mapPlaces: {};
                 listIdPlaces: [];
-                markerPlaces: [[number, number]] | [];
+                markerPlaces: InfoForMarkerType[] | [];
                 total: number;
             }>
         ) {
@@ -44,18 +44,9 @@ export const placesSlice = createSlice({
                 markerPlaces: [];
             }>
         ) {
-            state.mapPlaces = Object.assign(
-                state.mapPlaces,
-                action.payload.mapPlaces
-            );
-            state.listIdPlaces = [
-                ...state.listIdPlaces,
-                ...action.payload.listIdPlaces,
-            ];
-            state.markerPlaces = [
-                ...state.markerPlaces,
-                ...action.payload.markerPlaces,
-            ];
+            state.mapPlaces = Object.assign(state.mapPlaces, action.payload.mapPlaces);
+            state.listIdPlaces = [...state.listIdPlaces, ...action.payload.listIdPlaces];
+            state.markerPlaces = [...state.markerPlaces, ...action.payload.markerPlaces];
         },
         placesFetchingError(state, action: PayloadAction<string>) {
             state.isLoading = false;

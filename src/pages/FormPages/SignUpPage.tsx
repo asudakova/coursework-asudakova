@@ -14,9 +14,7 @@ const SignUpPage: React.FC = () => {
     const [confirmPassword, setConfirmPassword] = useState<string>('');
     const [error, setError] = useState('');
 
-    const { signupErrorforUser, userName, isSignupLoading } = useAppSelector(
-        (state) => state.authReducer
-    );
+    const { signupErrorforUser, userName, isSignupLoading } = useAppSelector((state) => state.authReducer);
 
     const navigate = useNavigate();
 
@@ -82,9 +80,7 @@ const SignUpPage: React.FC = () => {
                             type="password"
                             placeholder="Повторите пароль"
                         />
-                        {error !== '' && (
-                            <div className={styles.error}>{error}</div>
-                        )}
+                        {error !== '' && <div className={styles.error}>{error}</div>}
                         <button type="submit" className={styles.btn}>
                             Зарегистрироваться
                         </button>

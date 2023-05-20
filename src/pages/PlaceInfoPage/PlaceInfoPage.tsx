@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './PlaceInfoPage.module.css';
 import { useParams } from 'react-router-dom';
 import { useAppSelector } from '../../redux/typingReduxHooks';
-import { CurrentPlaceType } from '../../types';
+import { CurrentPlaceType, InfoForMarkerType } from '../../types';
 import { Link } from 'react-router-dom';
 //@ts-ignore
 import { UilHeartAlt } from '@iconscout/react-unicons';
@@ -23,15 +23,19 @@ const PlacePage: React.FC = () => {
     const { clusterer } = useMapglContext();
 
     const { placeId } = useParams<{ placeId: string }>();
+
     const curPlace: CurrentPlaceType = useAppSelector(
-        (state) =>
-            state.placesReducer.mapPlaces[
-                placeId as keyof typeof state.placesReducer.mapPlaces
-            ]
+        (state) => state.placesReducer.mapPlaces[placeId as keyof typeof state.placesReducer.mapPlaces]
     );
-    if (clusterer !== undefined) {
-        clusterer.load(createMapMarkersArray([curPlace.latLon]));
+
+    const markerCoords: InfoForMarkerType = {
+        lat: curPlace.latLon[1],
+        lon: curPlace.latLon[0],
     };
+
+    if (clusterer !== undefined) {
+        clusterer.load(createMapMarkersArray([markerCoords]));
+    }
 
     const curCategory = useAppSelector((state) => state.placesReducer.category);
 
@@ -42,20 +46,16 @@ const PlacePage: React.FC = () => {
     return (
         <div className={styles.wrapper}>
             <div className={styles.navigation}>
-                <Link to="/" className={styles.link}>
+                <Link to="/main" className={styles.link}>
                     {categories[curCategory]}
                 </Link>
-                <span className={styles.linkName}>
-                    {curPlace.shortName ? curPlace.shortName : curPlace.name}
-                </span>
+                <span className={styles.linkName}>{curPlace.shortName ? curPlace.shortName : curPlace.name}</span>
             </div>
-            <div className={styles.photos}>
-                <img
-                    src={curPlace.photo[0]}
-                    alt="Place photo"
-                    className={styles.photo}
-                />
-            </div>
+            {curPlace.photo && (
+                <div className={styles.photos}>
+                    <img src={curPlace.photo} alt="Place photo" className={styles.photo} />
+                </div>
+            )}
             <div className={styles.info}>
                 <div className={styles.titleWrapper}>
                     {curPlace.nameExtension && curPlace.shortName ? (
@@ -80,36 +80,23 @@ const PlacePage: React.FC = () => {
                             starSpacing="1px"
                         />
                         <span className={styles.review}>
-                            ({curPlace.reviewsAmount}{' '}
-                            {
-                                ['отзыв', 'отзыва', 'отзывов'][
-                                    getDeclension(curPlace.reviewsAmount)
-                                ]
-                            }
-                            )
+                            ({curPlace.reviewsAmount} {['отзыв', 'отзыва', 'отзывов'][getDeclension(curPlace.reviewsAmount)]})
                         </span>
                     </div>
                 )}
             </div>
             <div className={styles.address}>{curPlace.address}</div>
             {curPlace.description && (
-                <div
-                    className={styles.description}
-                    dangerouslySetInnerHTML={createMarkup(curPlace.description)}
-                ></div>
+                <div className={styles.description} dangerouslySetInnerHTML={createMarkup(curPlace.description)}></div>
             )}
             <div className={styles.schedule}>
                 <h2 className={styles.scheduleTitle}>Время работы</h2>
                 {Object.keys(curPlace.workingHours).map((day, index) => {
-                    const curDayHours =
-                        curPlace.workingHours[
-                            day as keyof typeof curPlace.workingHours
-                        ];
+                    const curDayHours = curPlace.workingHours[day as keyof typeof curPlace.workingHours];
                     return (
                         <div key={index} className={styles.scheduleLine}>
                             <span className={styles.day}>{day}</span>
-                            {curDayHours[0] === '' ? '' : curDayHours[0]}-
-                            {curDayHours[1] === '' ? '' : curDayHours[1]}
+                            {curDayHours[0] === '' ? '' : curDayHours[0]}-{curDayHours[1] === '' ? '' : curDayHours[1]}
                         </div>
                     );
                 })}

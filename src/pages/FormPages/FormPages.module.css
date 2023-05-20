@@ -8,11 +8,7 @@
     align-items: center;
     background: rgb(31, 18, 53);
     background: rgb(31, 18, 53);
-    background: linear-gradient(
-        129deg,
-        rgba(31, 18, 53, 0.8) 0%,
-        rgba(88, 67, 190, 1) 100%
-    );
+    background: linear-gradient(129deg, rgba(31, 18, 53, 0.8) 0%, rgba(88, 67, 190, 1) 100%);
 }
 .title {
     font: 600 36px/43px 'Rubik', sans-serif;

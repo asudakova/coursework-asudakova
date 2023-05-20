@@ -1,5 +1,4 @@
 import { formatWorkingHours } from './formatWorkingHours';
-import { formatPicsUrls } from './formatPicsUrls';
 
 export const createEntityMap = (entities: any) => {
     return entities.reduce(
@@ -18,9 +17,13 @@ export const createEntityMap = (entities: any) => {
                 reviewsAmount: entity.reviews?.general_review_count || null,
                 workingHours: formatWorkingHours(entity.schedule),
                 description: entity.ads?.article || null,
-                photo: formatPicsUrls(entity.external_content),
+                photo: entity.external_content[0]?.main_photo_url || null,
             };
-            result.markerPlaces.push([entity.point?.lon, entity.point?.lat]);
+            result.markerPlaces.push({
+                id: entity.id,
+                lon: entity.point?.lon,
+                lat: entity.point?.lat,
+            });
             result.listIdPlaces.push(entity.id);
             return result;
         },

@@ -4,10 +4,7 @@ import debounce from 'lodash.debounce';
 //@ts-ignore
 import { UilSearch, UilMapMarker, UilTimes } from '@iconscout/react-unicons';
 import { useAppDispatch } from '../../redux/typingReduxHooks';
-import {
-    fetchCoordinates,
-    getUserLocation,
-} from '../../redux/coordinates/actions';
+import { fetchCoordinates, getUserLocation } from '../../redux/coordinates/actions';
 import styles from './Input.module.css';
 
 const Input: React.FC = () => {
@@ -58,15 +55,9 @@ const Input: React.FC = () => {
                     className={styles.input}
                     placeholder="Введите город..."
                 />
-                <UilTimes
-                    onClick={handleClearClick}
-                    className={styles.clearBtn}
-                />
+                <UilTimes onClick={handleClearClick} className={styles.clearBtn} />
             </div>
-            <UilMapMarker
-                onClick={handleLocationClick}
-                className={styles.locationBtn}
-            />
+            <UilMapMarker onClick={handleLocationClick} className={styles.locationBtn} />
         </div>
     );
 };

@@ -1,7 +1,7 @@
 export type PlacesStateType = {
     mapPlaces: {};
     listIdPlaces: [];
-    markerPlaces: [[number, number]] | [];
+    markerPlaces: InfoForMarkerType[] | [];
     totalCount: number;
     pageNumber: number;
     category: 'food' | 'ent' | 'hotels' | 'attr';
@@ -23,6 +23,12 @@ export type CoordinatesStateType = {
     error: string;
 };
 
+export type MarkerTipStateType = {
+    isHover: boolean;
+    id: string;
+    coordinates: number[];
+};
+
 export type OptionsType = {
     params: {
         q: string;
@@ -40,6 +46,7 @@ export type OptionsType = {
 
 export type AuthStateType = {
     userName: string;
+    userUid: string;
 
     isSignupLoading: boolean;
     signupError: string;
@@ -148,7 +155,7 @@ export type CurrentPlaceType = {
     reviewsAmount: number | null;
     workingHours: FormattedScheduleType;
     description: string | null;
-    photo: string[];
+    photo: string;
 };
 
 export type FormattedPlacesInfoType = {
@@ -156,9 +163,18 @@ export type FormattedPlacesInfoType = {
     places: CurrentPlaceType[];
 };
 
+export type InfoForMarkerType = {
+    id?: string;
+    lon: number;
+    lat: number;
+};
+
 export type MarkerType = {
-    coordinates: number[];
+    coordinates: [number, number];
+    userData?: string;
+    size?: [number, number];
     icon?: string;
+    hoverIcon?: string;
 };
 
 export type CategoryPropsType = {
@@ -178,7 +194,7 @@ export type PlaceCardPropsType = {
     address: string;
     rating: number | null;
     reviewsAmount: number | null;
-    photo: string[];
+    photo: string;
 };
 
 export type FetchArgumentsType = {

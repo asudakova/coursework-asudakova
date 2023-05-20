@@ -12,9 +12,7 @@ const SignInPage: React.FC = () => {
     const [password, setPassword] = useState<string>('');
     const [error, setError] = useState('');
 
-    const { loginErrorforUser, userName, isLoginLoading } = useAppSelector(
-        (state) => state.authReducer
-    );
+    const { loginErrorforUser, userName, isLoginLoading } = useAppSelector((state) => state.authReducer);
 
     const navigate = useNavigate();
 
@@ -60,9 +58,7 @@ const SignInPage: React.FC = () => {
                             type="password"
                             placeholder="Пароль"
                         />
-                        {error !== '' && (
-                            <div className={styles.error}>{error}</div>
-                        )}
+                        {error !== '' && <div className={styles.error}>{error}</div>}
                         <button type="submit" className={styles.btn}>
                             Войти
                         </button>

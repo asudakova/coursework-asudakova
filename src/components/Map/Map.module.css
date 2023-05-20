@@ -2,6 +2,8 @@
     height: calc(100vh - 80px);
     width: 100%;
     background-color: rgba(134, 131, 140, 0.4);
+    position: relative;
+    overflow: hidden;
 }
 .mapWrapper {
     height: 100%;
