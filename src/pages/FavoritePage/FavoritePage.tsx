@@ -20,6 +20,9 @@ const FavoritePage: React.FC = () => {
     const { isLoading, favPlaces, favId } = useAppSelector((state) => state.favoriteReducer);
 
     useEffect(() => {
+        if (clusterer !== undefined) {
+            clusterer.load(createFavMarkers(favId, favPlaces));
+        }
         dispatch(getUserFavPlaces(userUid));
     }, []);
 
@@ -31,10 +34,6 @@ const FavoritePage: React.FC = () => {
         }
         navigate('/main');
     };
-
-    if (clusterer !== undefined) {
-        clusterer.load(createFavMarkers(favId, favPlaces));
-    }
 
     return (
         <div className={styles.wrapper}>

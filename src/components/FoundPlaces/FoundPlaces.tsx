@@ -34,7 +34,7 @@ const FoundPlaces: React.FC = () => {
                             listIdPlaces.map((placeId) => {
                                 const curPlace: CurrentPlaceType = mapPlaces[placeId];
                                 return (
-                                    <Link key={placeId} to={`place/${curPlace.id}`} state={'main'}>
+                                    <Link key={placeId} to={`place/${curPlace.id}`}>
                                         <PlaceCard
                                             rating={curPlace.rating}
                                             reviewsAmount={curPlace.reviewsAmount}

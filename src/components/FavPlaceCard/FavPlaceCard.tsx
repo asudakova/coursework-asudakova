@@ -27,7 +27,7 @@ const FavPlaceCard: React.FC<PlaceCardPropsType> = ({ rating, reviewsAmount, nam
                 <div className={styles.noPic}></div>
             )}
             <div className={styles.placeInfo}>
-                <Link to={`/main/place/${id}`} state={'fav'}>
+                <Link to={`/main/favorite/place/${id}`} state={'fav'}>
                     <h2 className={styles.name}>{name}</h2>
                 </Link>
                 {rating && reviewsAmount && (

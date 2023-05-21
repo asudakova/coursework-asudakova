@@ -10,6 +10,22 @@ export type PlacesStateType = {
     error: string;
 };
 
+export type PlaceExtraInfoPropsType = {
+    handleReturnClick: () => void;
+    handleFavClick: () => void;
+    isFav: boolean,
+    category?: 'food' | 'ent' | 'hotels' | 'attr';
+    name: string;
+    shortName: string | null;
+    nameExtension: string | null;
+    description: string | null;
+    photo: string;
+    rating: number | null;
+    reviewsAmount: number | null;
+    address: string;
+    workingHours: FormattedScheduleType
+};
+
 export type FavoriteStateType = {
     favId: string[] | [];
     favPlaces: {};

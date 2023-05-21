@@ -102,7 +102,7 @@ const Map: React.FC = () => {
             const bounds = [...northEast, ...southWest];
             dispatch(setMapBoundaries(bounds));
 
-            setMapglContext({ clusterer });
+            setMapglContext({ clusterer, mapglInstance: map, mapgl });
 
             map.on('idle', () => {
                 if (map !== undefined && map.isIdle()) {
@@ -117,7 +117,7 @@ const Map: React.FC = () => {
             map && map.destroy();
             clusterer && clusterer.destroy();
             userLocationMarker && userLocationMarker.destroy();
-            setMapglContext({ clusterer: undefined });
+            setMapglContext({ clusterer: undefined, mapglInstance: undefined, mapgl: undefined });
         };
     }, [lngLat]);
 

@@ -8,20 +8,24 @@ import { useNavigate } from 'react-router-dom';
 import { addFavPlace, removeFavPlace } from '../../redux/favorite/actions';
 import PlaceExtraInfo from '../../components/PlaceExtraInfo/PlaceExtraInfo';
 
-const PlacePage: React.FC = () => {
+const FavPlaceInfoPage: React.FC = () => {
     const navigate = useNavigate();
-    const { clusterer } = useMapglContext();
+    const { mapglInstance, clusterer } = useMapglContext();
     let { placeId } = useParams<{ placeId: string }>();
 
     const { mapPlaces } = useAppSelector((state) => state.placesReducer);
-    
-    const curPlace: CurrentPlaceType = useAppSelector(
-        (state) => state.placesReducer.mapPlaces[placeId as keyof typeof state.placesReducer.mapPlaces]
-    );
 
-    const favId = useAppSelector((state) => state.favoriteReducer.favId);
+    const { favId, favPlaces } = useAppSelector((state) => state.favoriteReducer);
     const setFavId = new Set(favId);
+
+    const curPlace: CurrentPlaceType = favPlaces[placeId as keyof typeof favPlaces];
+
+    if (mapglInstance) {
+        mapglInstance.setCenter(curPlace?.latLon);
+    }
+
     const [isFav, setIsFav] = useState(false);
+
     const { userUid } = useAppSelector((state) => state.authReducer);
 
     useEffect(() => {
@@ -45,8 +49,6 @@ const PlacePage: React.FC = () => {
         }
     };
 
-    const { category, markerPlaces } = useAppSelector((state) => state.placesReducer);
-
     const markerCoords: InfoForMarkerType = {
         lat: curPlace?.latLon[1],
         lon: curPlace?.latLon[0],
@@ -56,19 +58,15 @@ const PlacePage: React.FC = () => {
         clusterer.load(createMapMarkersArray([markerCoords]));
     }
 
-    const handleReturnToMainPageClick = () => {
-        if (clusterer !== undefined) {
-            clusterer.load(createMapMarkersArray(markerPlaces));
-        }
-        navigate('/main');
+    const handleReturnToFavPageClick = () => {
+        navigate('/main/favorite');
     };
 
     return (
-        <PlaceExtraInfo 
-            handleReturnClick={handleReturnToMainPageClick}
+        <PlaceExtraInfo
+            handleReturnClick={handleReturnToFavPageClick}
             handleFavClick={handleFavClick}
             isFav={isFav}
-            category={category}
             name={curPlace.name}
             shortName={curPlace.shortName}
             nameExtension={curPlace.nameExtension}
@@ -82,4 +80,4 @@ const PlacePage: React.FC = () => {
     );
 };
 
-export default PlacePage;
+export default FavPlaceInfoPage;
