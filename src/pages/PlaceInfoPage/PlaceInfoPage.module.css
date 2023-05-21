@@ -24,11 +24,13 @@
 }
 .photos {
     height: 300px;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
 }
 .photo {
     height: 100%;
-    width: auto;
+    width: 50%;
+    border-radius: 25px;
+    object-fit: cover;
 }
 .info {
     display: flex;
@@ -56,8 +58,7 @@
     cursor: pointer;
     transition: all 0.1s ease-in-out;
 }
-.fav:hover,
-.noFav:hover {
+.fav:hover {
     padding: 6px;
 }
 .fav {
@@ -65,8 +66,13 @@
     background-color: #867ac5;
 }
 .noFav {
+    padding: 5.5px;
     color: #86838c;
     background-color: #ffffff;
+    border: solid 2.5px #86838c;
+}
+.noFav:hover {
+    padding: 3.5px;
 }
 .rating {
     display: flex;

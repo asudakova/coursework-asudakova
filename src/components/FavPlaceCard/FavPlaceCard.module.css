@@ -1,0 +1,71 @@
+.placeCard {
+    padding-top: 25px;
+    font-family: 'Rubik', sans-serif;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-bottom: 25px;
+    border-bottom: solid 1px #5843be;
+    transition: all 0.3s ease-in-out;
+}
+.pic,
+.noPic {
+    width: 250px;
+    height: 150px;
+    border-radius: 25px;
+    margin-right: 40px;
+}
+.pic {
+    object-fit: cover;
+}
+.noPic {
+    background-color: rgba(134, 131, 140, 0.4);
+}
+.placeInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: auto;
+}
+.rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.review {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    color: #1f1235;
+    margin-left: 5px;
+}
+.name {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #1f1235;
+    margin-bottom: 15px;
+    transition: color 0.1s ease-in-out;
+}
+.name:hover {
+    color: #867ac5;
+}
+.address {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #1f1235;
+}
+.delete {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: color 0.1s ease-in-out;
+    color: #867ac5;
+    z-index: 50;
+}
+.delete:hover {
+    color: #1f1235;
+}

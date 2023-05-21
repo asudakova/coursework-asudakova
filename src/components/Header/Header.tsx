@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Input from '../Input/Input';
 import { useAppSelector, useAppDispatch } from '../../redux/typingReduxHooks';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { logoutUser } from '../../redux/auth/actions';
 //@ts-ignore
 import { UilHeartAlt, UilUserCircle } from '@iconscout/react-unicons';
@@ -35,7 +35,9 @@ const Header: React.FC = () => {
                 </a>
                 <Input />
                 <div className={styles.accountBtns}>
-                    <UilHeartAlt className={styles.favBtn} />
+                    <Link to="/main/favorite">
+                        <UilHeartAlt className={styles.favBtn} />
+                    </Link>
                     <div className={styles.profile}>
                         <UilUserCircle className={styles.profileBtn} />
                         <div className={styles.userInfo}>

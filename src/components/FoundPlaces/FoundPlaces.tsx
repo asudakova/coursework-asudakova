@@ -12,6 +12,9 @@ const FoundPlaces: React.FC = () => {
     const { mapPlaces, listIdPlaces } = useAppSelector((state) => state.placesReducer);
     const { totalCount } = useAppSelector((state) => state.placesReducer);
 
+    const favId = useAppSelector((state) => state.favoriteReducer.favId);
+    const setFavId = new Set(favId);
+
     return (
         <div>
             {totalCount === 0 ? (
@@ -31,13 +34,15 @@ const FoundPlaces: React.FC = () => {
                             listIdPlaces.map((placeId) => {
                                 const curPlace: CurrentPlaceType = mapPlaces[placeId];
                                 return (
-                                    <Link key={placeId} to={`place/${curPlace.id}`}>
+                                    <Link key={placeId} to={`place/${curPlace.id}`} state={'main'}>
                                         <PlaceCard
                                             rating={curPlace.rating}
                                             reviewsAmount={curPlace.reviewsAmount}
                                             name={curPlace.name}
                                             address={curPlace.address}
                                             photo={curPlace.photo}
+                                            id={placeId}
+                                            isFavId={setFavId.has(curPlace.id) ? true : false}
                                         />
                                     </Link>
                                 );

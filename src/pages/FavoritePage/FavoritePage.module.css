@@ -1,0 +1,25 @@
+.wrapper {
+    font: 400 16px/19px 'Rubik', sans-serif;
+    color: #1f1235;
+    height: calc(100vh - 80px);
+    overflow-y: scroll;
+    padding-right: 20px;
+}
+.navigation {
+    margin-top: 50px;
+    margin-bottom: 35px;
+    font: 400 20px/24px 'Rubik', sans-serif;
+    color: #5843be;
+    cursor: pointer;
+}
+.title {
+    font: 600 32px/38px 'Rubik', sans-serif;
+    color: #1f1235;
+    margin-bottom: 45px;
+}
+.favList {
+    margin-bottom: 60px;
+}
+.notFound {
+    font: 300 24px/28px 'Rubik', sans-serif;
+}

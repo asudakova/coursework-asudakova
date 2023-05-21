@@ -3,7 +3,6 @@ import SignUpPage from './pages/FormPages/SignUpPage';
 import SignInPage from './pages/FormPages/SignInPage';
 import MainPage from './pages/MainPage/MainPage';
 import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
-import './App.module.css';
 import { Route, Routes } from 'react-router-dom';
 import PrivateRoute from './components/PrivateRoute';
 import { MapglContextProvider } from '../src/components/Map/MapglContext';

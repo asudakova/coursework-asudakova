@@ -10,6 +10,13 @@ export type PlacesStateType = {
     error: string;
 };
 
+export type FavoriteStateType = {
+    favId: string[] | [];
+    favPlaces: {};
+    isLoading: boolean;
+    error: string;
+};
+
 export type CoordinatesStateType = {
     lngLat: number[];
     userLocation: number[];
@@ -145,7 +152,7 @@ export type FormattedScheduleType = {
 };
 
 export type CurrentPlaceType = {
-    id: number | null;
+    id: string;
     latLon: [number, number];
     name: string;
     nameExtension: string | null;
@@ -195,6 +202,8 @@ export type PlaceCardPropsType = {
     rating: number | null;
     reviewsAmount: number | null;
     photo: string;
+    id: string;
+    isFavId?: boolean
 };
 
 export type FetchArgumentsType = {

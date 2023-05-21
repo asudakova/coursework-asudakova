@@ -2,7 +2,13 @@ import { AppDispatch } from '../store';
 import { placesSlice } from './slice';
 //import { mockPlaces, mockPlacesNext } from '../../constants/requestMock';
 import axios from 'axios';
-import { FetchArgumentsType, CategoriesType, SortingType, FetchNextPageArgumentsType, OptionsType } from '../../types';
+import {
+    FetchArgumentsType,
+    CategoriesType,
+    SortingType,
+    FetchNextPageArgumentsType,
+    OptionsType,
+} from '../../types';
 import { createEntityMap } from '../../helpers/createEntityMap';
 import { categoryQueryParams, sortQueryParams } from '../../constants';
 
@@ -47,8 +53,7 @@ export const fetchPlaces =
             try {
                 // mockPlaces().then((data: any) => {
                 //     //console.log(createEntityMap(data.result.items), data.result.total)
-                //     const { mapPlaces, listIdPlaces, markerPlaces } =
-                //         createEntityMap(data.result.items);
+                //     const { mapPlaces, listIdPlaces, markerPlaces } = createEntityMap(data.result.items);
                 //     const total = data.result.total;
                 //     dispatch(
                 //         placesSlice.actions.placesFetchingSuccess({
@@ -60,12 +65,12 @@ export const fetchPlaces =
                 //     );
                 // });
 
-                const currentCalls = Number(localStorage.getItem('apiCallsToPlaces')) + 1;
-                localStorage.setItem('apiCallsToPlaces', currentCalls.toString());
-
                 const response = await axios.get(URL, options);
 
-                if (response.data.meta.code == 404 && response.data.meta.error?.message == 'Results not found') {
+                if (
+                    response.data.meta.code == 404 &&
+                    response.data.meta.error?.message == 'Results not found'
+                ) {
                     const mapPlaces = {};
                     const listIdPlaces: [] = [];
                     const markerPlaces: [] = [];
@@ -80,7 +85,9 @@ export const fetchPlaces =
                         })
                     );
                 } else if (response.data.meta.code == 200) {
-                    const { mapPlaces, listIdPlaces, markerPlaces } = createEntityMap(response.data.result.items);
+                    const { mapPlaces, listIdPlaces, markerPlaces } = createEntityMap(
+                        response.data.result.items
+                    );
                     const total = response.data.result.total;
 
                     cache.set(fetchString, {
@@ -145,8 +152,7 @@ export const fetchNextPage =
             try {
                 // mockPlacesNext().then((data: any) => {
                 //     //console.log(createEntityMap(data.result.items), data.result.total)
-                //     const { mapPlaces, listIdPlaces, markerPlaces } =
-                //         createEntityMap(data.result.items);
+                //     const { mapPlaces, listIdPlaces, markerPlaces } = createEntityMap(data.result.items);
                 //     dispatch(
                 //         placesSlice.actions.placesFetchingNextPage({
                 //             mapPlaces,
@@ -156,12 +162,12 @@ export const fetchNextPage =
                 //     );
                 // });
 
-                const currentCalls = Number(localStorage.getItem('apiCallsToPlaces')) + 1;
-                localStorage.setItem('apiCallsToPlaces', currentCalls.toString());
-
                 const response = await axios.get(URL, options);
 
-                if (response.data.meta.code == 404 && response.data.meta.error?.message == 'Results not found') {
+                if (
+                    response.data.meta.code == 404 &&
+                    response.data.meta.error?.message == 'Results not found'
+                ) {
                     const mapPlaces = {};
                     const listIdPlaces: [] = [];
                     const markerPlaces: [] = [];
@@ -174,7 +180,9 @@ export const fetchNextPage =
                         })
                     );
                 } else if (response.data.meta.code == 200) {
-                    const { mapPlaces, listIdPlaces, markerPlaces } = createEntityMap(response.data.result.items);
+                    const { mapPlaces, listIdPlaces, markerPlaces } = createEntityMap(
+                        response.data.result.items
+                    );
 
                     cache.set(fetchString, {
                         mapPlaces,

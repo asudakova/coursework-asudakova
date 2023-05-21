@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './PlaceInfoPage.module.css';
 import { useParams } from 'react-router-dom';
-import { useAppSelector } from '../../redux/typingReduxHooks';
+import { useAppSelector, useAppDispatch } from '../../redux/typingReduxHooks';
 import { CurrentPlaceType, InfoForMarkerType } from '../../types';
 //@ts-ignore
 import { UilHeartAlt } from '@iconscout/react-unicons';
@@ -11,7 +11,8 @@ import { getDeclension } from '../../helpers/getDeclension';
 import { useMapglContext } from '../../components/Map/MapglContext';
 import { createMapMarkersArray } from '../../helpers/createMapMarkersArray';
 import { categories } from '../../constants';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
+import { addFavPlace, removeFavPlace } from '../../redux/favorite/actions';
 
 const PlacePage: React.FC = () => {
     const navigate = useNavigate();
@@ -22,6 +23,37 @@ const PlacePage: React.FC = () => {
         (state) => state.placesReducer.mapPlaces[placeId as keyof typeof state.placesReducer.mapPlaces]
     );
 
+    const { state } = useLocation();
+
+    const favId = useAppSelector((state) => state.favoriteReducer.favId);
+    const setFavId = new Set(favId);
+
+    const [isFav, setIsFav] = useState(false);
+
+    const { userUid } = useAppSelector((state) => state.authReducer);
+
+    const { mapPlaces } = useAppSelector((state) => state.placesReducer);
+
+    useEffect(() => {
+        if (placeId) {
+            setIsFav(setFavId.has(placeId));
+        }
+    }, []);
+
+    const dispatch = useAppDispatch();
+
+    const handleFavClick = () => {
+        if (placeId) {
+            if (isFav) {
+                setIsFav(!isFav);
+                dispatch(removeFavPlace(placeId, userUid));
+            } else {
+                setIsFav(isFav);
+                const newPlace = mapPlaces[placeId as keyof typeof mapPlaces];
+                dispatch(addFavPlace(placeId, userUid, newPlace));
+            }
+        }
+    };
 
     const { category, markerPlaces } = useAppSelector((state) => state.placesReducer);
 
@@ -45,13 +77,22 @@ const PlacePage: React.FC = () => {
         navigate('/main');
     };
 
+    const handleReturnToFavPageClick = () => {
+        navigate('/main/favorite');
+    };
+
     return (
         <div className={styles.wrapper}>
             <div className={styles.navigation}>
-                <div onClick={handleReturnToMainPageClick} className={styles.link}>
-                    {categories[category]}
+                <div
+                    onClick={state == 'fav' ? handleReturnToFavPageClick : handleReturnToMainPageClick}
+                    className={styles.link}
+                >
+                    {state == 'fav' ? 'Избранное' : categories[category]}
                 </div>
-                <span className={styles.linkName}>{curPlace.shortName ? curPlace.shortName : curPlace.name}</span>
+                <span className={styles.linkName}>
+                    {curPlace.shortName ? curPlace.shortName : curPlace.name}
+                </span>
             </div>
             {curPlace.photo && (
                 <div className={styles.photos}>
@@ -68,7 +109,7 @@ const PlacePage: React.FC = () => {
                     ) : (
                         <h1 className={styles.title}>{curPlace.name}</h1>
                     )}
-                    <UilHeartAlt className={styles.fav} />
+                    <UilHeartAlt onClick={handleFavClick} className={isFav ? styles.fav : styles.noFav} />
                 </div>
                 {curPlace.rating && curPlace.reviewsAmount && (
                     <div className={styles.rating}>
@@ -82,14 +123,18 @@ const PlacePage: React.FC = () => {
                             starSpacing="1px"
                         />
                         <span className={styles.review}>
-                            ({curPlace.reviewsAmount} {['отзыв', 'отзыва', 'отзывов'][getDeclension(curPlace.reviewsAmount)]})
+                            ({curPlace.reviewsAmount}{' '}
+                            {['отзыв', 'отзыва', 'отзывов'][getDeclension(curPlace.reviewsAmount)]})
                         </span>
                     </div>
                 )}
             </div>
             <div className={styles.address}>{curPlace.address}</div>
             {curPlace.description && (
-                <div className={styles.description} dangerouslySetInnerHTML={createMarkup(curPlace.description)}></div>
+                <div
+                    className={styles.description}
+                    dangerouslySetInnerHTML={createMarkup(curPlace.description)}
+                ></div>
             )}
             <div className={styles.schedule}>
                 <h2 className={styles.scheduleTitle}>Время работы</h2>
@@ -98,7 +143,8 @@ const PlacePage: React.FC = () => {
                     return (
                         <div key={index} className={styles.scheduleLine}>
                             <span className={styles.day}>{day}</span>
-                            {curDayHours[0] === '' ? '' : curDayHours[0]}-{curDayHours[1] === '' ? '' : curDayHours[1]}
+                            {curDayHours[0] === '' ? '' : curDayHours[0]}-
+                            {curDayHours[1] === '' ? '' : curDayHours[1]}
                         </div>
                     );
                 })}

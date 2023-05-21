@@ -6,7 +6,7 @@ import { CurrentPlaceType } from '../../types';
 import StarRatings from 'react-star-ratings';
 
 const MarkerTip: React.FC = () => {
-    const { isHover, id, coordinates } = useAppSelector((state) => state.markerReucer);
+    const { isHover, id, coordinates } = useAppSelector((state) => state.markerReducer);
     const placeInfo: CurrentPlaceType = useAppSelector(
         (state) => state.placesReducer.mapPlaces[id as keyof typeof state.placesReducer.mapPlaces]
     );

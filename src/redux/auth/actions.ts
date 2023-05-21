@@ -1,7 +1,14 @@
 import { AppDispatch } from '../store';
 import { authSlice } from './slice';
 import { auth } from '../../firebase';
-import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, updateProfile } from 'firebase/auth';
+import {
+    createUserWithEmailAndPassword,
+    signInWithEmailAndPassword,
+    signOut,
+    updateProfile,
+} from 'firebase/auth';
+import { doc, setDoc } from 'firebase/firestore';
+import { db } from '../../firebase';
 
 export const createUser = (email: string, password: string, name: string) => (dispatch: AppDispatch) => {
     dispatch(authSlice.actions.userCreating());
@@ -20,6 +27,11 @@ export const createUser = (email: string, password: string, name: string) => (di
                         const forSave = { userName: userName, userUid: userUid };
                         localStorage.setItem('savedUser', JSON.stringify(forSave));
                     }
+
+                    setDoc(doc(db, 'usersFavs', userUid), {
+                        places: {},
+                        placesId: [],
+                    });
                 }
             })
             .catch((error) => {
@@ -27,10 +39,18 @@ export const createUser = (email: string, password: string, name: string) => (di
                     dispatch(authSlice.actions.userCreatingErrorForUser('Неверная почта'));
                 }
                 if (error.code == 'auth/weak-password') {
-                    dispatch(authSlice.actions.userCreatingErrorForUser('Пароль должен содержать не менее 6 символов'));
+                    dispatch(
+                        authSlice.actions.userCreatingErrorForUser(
+                            'Пароль должен содержать не менее 6 символов'
+                        )
+                    );
                 }
                 if (error.code == 'auth/email-already-in-use') {
-                    dispatch(authSlice.actions.userCreatingErrorForUser('Пользователь с такой почтой уже существует'));
+                    dispatch(
+                        authSlice.actions.userCreatingErrorForUser(
+                            'Пользователь с такой почтой уже существует'
+                        )
+                    );
                 }
             });
     } catch (e) {

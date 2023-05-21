@@ -6,6 +6,7 @@ import PlaceInfoPage from '../PlaceInfoPage/PlaceInfoPage';
 import NotFoundPage from '../NotFoundPage/NotFoundPage';
 import Header from '../../components/Header/Header';
 import Map from '../../components/Map/Map';
+import FavoritePage from '../FavoritePage/FavoritePage';
 
 const MainPage: React.FC = () => {
     return (
@@ -15,6 +16,7 @@ const MainPage: React.FC = () => {
                 <Routes>
                     <Route path="" element={<PlacesPage />} />
                     <Route path="place/:placeId" element={<PlaceInfoPage />} />
+                    <Route path="favorite" element={<FavoritePage />} />
                     <Route path="/*" element={<NotFoundPage />} />
                 </Routes>
 

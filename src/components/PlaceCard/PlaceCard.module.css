@@ -23,6 +23,7 @@
     border-radius: 20px;
     cursor: pointer;
     transition: all 0.1s ease-in-out;
+    z-index: 50;
 }
 .fav:hover,
 .noFav:hover {

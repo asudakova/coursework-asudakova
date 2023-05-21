@@ -14,7 +14,10 @@ const Filter: React.FC<FilterPropsType> = ({ title, shortCut }) => {
     };
 
     return (
-        <div onClick={handleClick} className={cn(styles.filter, currentSort === shortCut ? styles.active : styles.inactive)}>
+        <div
+            onClick={handleClick}
+            className={cn(styles.filter, currentSort === shortCut ? styles.active : styles.inactive)}
+        >
             {title}
         </div>
     );

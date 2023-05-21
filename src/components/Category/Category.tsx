@@ -10,8 +10,8 @@ const Category: React.FC<CategoryPropsType> = ({ active, inactive, title, shortC
     const currentCategory = useAppSelector((state) => state.placesReducer.category);
 
     const handleClick = () => {
-        dispatch(setNewCategory(shortCut))
-    }
+        dispatch(setNewCategory(shortCut));
+    };
 
     return (
         <div

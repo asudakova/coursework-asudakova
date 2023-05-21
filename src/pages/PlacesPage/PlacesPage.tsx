@@ -10,11 +10,20 @@ import { UilArrowUp } from '@iconscout/react-unicons';
 //@ts-ignore
 import debounce from 'lodash.debounce';
 import styles from './PlacesPage.module.css';
+import { getUserFavPlaces } from '../../redux/favorite/actions';
 
 const Places: React.FC = () => {
+    const { userUid } = useAppSelector((state) => state.authReducer);
+
+    useEffect(() => {
+        dispatch(getUserFavPlaces(userUid));
+    }, []);
+
     const dispatch = useAppDispatch();
     const { north, east, south, west } = useAppSelector((state) => state.coordinatesReducer.boundaries);
-    const { isLoading, category, sortBy, pageNumber, totalCount } = useAppSelector((state) => state.placesReducer);
+    const { isLoading, category, sortBy, pageNumber, totalCount } = useAppSelector(
+        (state) => state.placesReducer
+    );
 
     const topRef = useRef<HTMLDivElement>(null);
     const blockRef = useRef<HTMLDivElement>(null);
@@ -27,15 +36,6 @@ const Places: React.FC = () => {
         dispatch(fetchPlaces({ north, east, south, west, category, sortBy }));
     }, [north, east, south, west, category, sortBy]);
 
-    const scrollFunc = (target: React.RefObject<HTMLDivElement>, block: React.RefObject<HTMLDivElement>) => {
-        if (target.current?.offsetTop !== undefined) {
-            block.current?.scrollTo({
-                top: target.current?.offsetTop - 50,
-                behavior: 'smooth',
-            });
-        }
-    };
-
     const handleInfiniteScroll = useCallback(
         debounce(() => {
             const limit = 10;
@@ -46,7 +46,9 @@ const Places: React.FC = () => {
                 blockRef.current?.scrollTop !== undefined
             ) {
                 if (
-                    blockRef.current?.scrollHeight - (blockRef.current?.clientHeight + blockRef.current?.scrollTop) < 150 &&
+                    blockRef.current?.scrollHeight -
+                        (blockRef.current?.clientHeight + blockRef.current?.scrollTop) <
+                        150 &&
                     pageNumber > 0 &&
                     amountOfPages > pageNumber
                 ) {
@@ -80,6 +82,15 @@ const Places: React.FC = () => {
         };
     }, [handleInfiniteScroll]);
 
+    const scrollFunc = (target: React.RefObject<HTMLDivElement>, block: React.RefObject<HTMLDivElement>) => {
+        if (target.current?.offsetTop !== undefined) {
+            block.current?.scrollTo({
+                top: target.current?.offsetTop - 50,
+                behavior: 'smooth',
+            });
+        }
+    };
+
     const handleScroll = () => {
         if (blockRef.current?.scrollTop !== undefined) {
             if (!showButton && blockRef.current.scrollTop > displayAfter) {
@@ -106,7 +117,9 @@ const Places: React.FC = () => {
                 ))}
             </div>
             {isLoading ? <Loader /> : <FoundPlaces />}
-            {showButton && <UilArrowUp onClick={() => scrollFunc(topRef, blockRef)} className={styles.arrowUp} />}
+            {showButton && (
+                <UilArrowUp onClick={() => scrollFunc(topRef, blockRef)} className={styles.arrowUp} />
+            )}
         </div>
     );
 };
