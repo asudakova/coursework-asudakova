@@ -1,7 +1,7 @@
 # Where to go
 
 ## Курсовой проект для Tinkoff Fintech School, Frontend, весна 2023
-Выполнила Судакова Александра Валерьевна  
+Выполнила: Судакова Александра Валерьевна  
 [Ссылка на проект](https://coursework-asudakova.vercel.app/)
 
 ## Описание проекта
