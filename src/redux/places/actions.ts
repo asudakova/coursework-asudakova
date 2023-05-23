@@ -1,6 +1,5 @@
 import { AppDispatch } from '../store';
 import { placesSlice } from './slice';
-//import { mockPlaces, mockPlacesNext } from '../../constants/requestMock';
 import axios from 'axios';
 import {
     FetchArgumentsType,
@@ -51,20 +50,6 @@ export const fetchPlaces =
             );
         } else {
             try {
-                // mockPlaces().then((data: any) => {
-                //     //console.log(createEntityMap(data.result.items), data.result.total)
-                //     const { mapPlaces, listIdPlaces, markerPlaces } = createEntityMap(data.result.items);
-                //     const total = data.result.total;
-                //     dispatch(
-                //         placesSlice.actions.placesFetchingSuccess({
-                //             mapPlaces,
-                //             listIdPlaces,
-                //             markerPlaces,
-                //             total,
-                //         })
-                //     );
-                // });
-
                 const response = await axios.get(URL, options);
 
                 if (
@@ -150,18 +135,6 @@ export const fetchNextPage =
             dispatch(placesSlice.actions.placesSetPageNumber(pageNumber));
         } else {
             try {
-                // mockPlacesNext().then((data: any) => {
-                //     //console.log(createEntityMap(data.result.items), data.result.total)
-                //     const { mapPlaces, listIdPlaces, markerPlaces } = createEntityMap(data.result.items);
-                //     dispatch(
-                //         placesSlice.actions.placesFetchingNextPage({
-                //             mapPlaces,
-                //             listIdPlaces,
-                //             markerPlaces,
-                //         })
-                //     );
-                // });
-
                 const response = await axios.get(URL, options);
 
                 if (

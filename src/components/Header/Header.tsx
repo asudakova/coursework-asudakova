@@ -16,6 +16,10 @@ const Header: React.FC = () => {
 
     const { userName } = useAppSelector((state) => state.authReducer);
 
+    const handleLogoClick = () => {
+        navigate('/main');
+    }
+
     const handleLogout = () => {
         dispatch(logoutUser());
     };
@@ -29,7 +33,7 @@ const Header: React.FC = () => {
     return (
         <div className={styles.header}>
             <div className={styles.wrapper}>
-                <a href="#!" className={styles.logo}>
+                <a onClick={handleLogoClick} href="#!" className={styles.logo}>
                     <img src={logo} className={styles.logoImg} alt="Logo pic" />
                     <span className={styles.logoText}>Where to go</span>
                 </a>

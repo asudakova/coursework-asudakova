@@ -13,7 +13,7 @@ export type PlacesStateType = {
 export type PlaceExtraInfoPropsType = {
     handleReturnClick: () => void;
     handleFavClick: () => void;
-    isFav: boolean,
+    isFav: boolean;
     category?: 'food' | 'ent' | 'hotels' | 'attr';
     name: string;
     shortName: string | null;
@@ -23,7 +23,7 @@ export type PlaceExtraInfoPropsType = {
     rating: number | null;
     reviewsAmount: number | null;
     address: string;
-    workingHours: FormattedScheduleType
+    workingHours: FormattedScheduleType;
 };
 
 export type FavoriteStateType = {
@@ -50,6 +50,7 @@ export type MarkerTipStateType = {
     isHover: boolean;
     id: string;
     coordinates: number[];
+    meta: string;
 };
 
 export type OptionsType = {
@@ -219,7 +220,7 @@ export type PlaceCardPropsType = {
     reviewsAmount: number | null;
     photo: string;
     id: string;
-    isFavId?: boolean
+    isFavId?: boolean;
 };
 
 export type FetchArgumentsType = {

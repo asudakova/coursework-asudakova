@@ -6,12 +6,19 @@ import { CurrentPlaceType } from '../../types';
 import StarRatings from 'react-star-ratings';
 
 const MarkerTip: React.FC = () => {
-    const { isHover, id, coordinates } = useAppSelector((state) => state.markerReducer);
-    const placeInfo: CurrentPlaceType = useAppSelector(
-        (state) => state.placesReducer.mapPlaces[id as keyof typeof state.placesReducer.mapPlaces]
-    );
+    const { isHover, id, coordinates, meta } = useAppSelector((state) => state.markerReducer);
+    const placeInfo: CurrentPlaceType =
+        meta === 'main'
+            ? useAppSelector(
+                  (state) => state.placesReducer.mapPlaces[id as keyof typeof state.placesReducer.mapPlaces]
+              )
+            : useAppSelector(
+                  (state) =>
+                      state.favoriteReducer.favPlaces[id as keyof typeof state.favoriteReducer.favPlaces]
+              );
+
     const offset = 5;
-    let style = {
+    const style = {
         top: `${coordinates[1] + offset}px`,
         left: `${coordinates[0] + offset}px`,
         display: 'flex',

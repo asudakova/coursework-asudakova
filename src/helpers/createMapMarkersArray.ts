@@ -1,7 +1,7 @@
 import { MarkerType, InfoForMarkerType } from '../types';
 import { mapMarkerTag, mapMarkerTagHover } from '../img';
 
-export const createMapMarkersArray = (arr: InfoForMarkerType[]) => {
+export const createMapMarkersArray = (arr: InfoForMarkerType[], type: string) => {
     if (!arr.length) {
         return [];
     }
@@ -10,7 +10,7 @@ export const createMapMarkersArray = (arr: InfoForMarkerType[]) => {
         const curMarker: MarkerType = {
             coordinates: [place.lon, place.lat],
             size: [28, 28],
-            userData: place.id,
+            userData: `${type},${place.id}`,
             icon: mapMarkerTag,
             hoverIcon: mapMarkerTagHover,
         };

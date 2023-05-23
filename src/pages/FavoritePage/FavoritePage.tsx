@@ -20,17 +20,21 @@ const FavoritePage: React.FC = () => {
     const { isLoading, favPlaces, favId } = useAppSelector((state) => state.favoriteReducer);
 
     useEffect(() => {
-        if (clusterer !== undefined) {
-            clusterer.load(createFavMarkers(favId, favPlaces));
-        }
         dispatch(getUserFavPlaces(userUid));
     }, []);
 
+    useEffect(() => {
+        if (clusterer !== undefined) {
+            clusterer.load(createFavMarkers(favId, favPlaces, 'fav'));
+        }
+    }, [favPlaces]);
+
     const { clusterer } = useMapglContext();
     const { markerPlaces } = useAppSelector((state) => state.placesReducer);
+    
     const handleReturnToMainPageClick = () => {
         if (clusterer !== undefined) {
-            clusterer.load(createMapMarkersArray(markerPlaces));
+            clusterer.load(createMapMarkersArray(markerPlaces, 'main'));
         }
         navigate('/main');
     };

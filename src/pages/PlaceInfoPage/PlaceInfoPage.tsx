@@ -53,12 +53,12 @@ const PlacePage: React.FC = () => {
     };
 
     if (clusterer !== undefined) {
-        clusterer.load(createMapMarkersArray([markerCoords]));
+        clusterer.load(createMapMarkersArray([markerCoords], 'one'));
     }
 
     const handleReturnToMainPageClick = () => {
         if (clusterer !== undefined) {
-            clusterer.load(createMapMarkersArray(markerPlaces));
+            clusterer.load(createMapMarkersArray(markerPlaces, 'main'));
         }
         navigate('/main');
     };

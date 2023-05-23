@@ -1,7 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { CoordinatesStateType } from '../../types';
 
-//по дефолту центр москвы
 const initialState: CoordinatesStateType = {
     lngLat: [37.6174943, 55.7504461],
     userLocation: [],

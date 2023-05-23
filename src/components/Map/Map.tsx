@@ -77,20 +77,35 @@ const Map: React.FC = () => {
                     labelFontSize: 18,
                 },
             });
-            clusterer.load(createMapMarkersArray(foundPlaces));
+            clusterer.load(createMapMarkersArray(foundPlaces, 'main'));
 
             clusterer.on('click', (event) => {
-                if (event.target.type === 'marker') {
-                    dispatch(unsetMarkerTip());
-                    navigate(`/main/place/${event.target.data.userData}`);
+                const { userData } = event.target.data as MarkerType;
+                const arrUserData = userData?.split(',');
+                if (arrUserData) {
+                    const meta = arrUserData[0];
+                    const id = arrUserData[1];
+                    if (event.target.type === 'marker' && meta === 'main') {
+                        dispatch(unsetMarkerTip());
+                        navigate(`/main/place/${id}`);
+                    }
+                    if (event.target.type === 'marker' && meta === 'fav') {
+                        dispatch(unsetMarkerTip());
+                        navigate(`/main/favorite/place/${id}`);
+                    }
                 }
             });
 
-            clusterer.on('mouseover', (e) => {
-                const { userData } = e.target.data as MarkerType;
-                const { point } = e;
-                if (userData) {
-                    dispatch(setMarkerTip(userData, point));
+            clusterer.on('mouseover', (event) => {
+                const { userData } = event.target.data as MarkerType;
+                const arrUserData = userData?.split(',');
+                if (arrUserData) {
+                    const meta = arrUserData[0];
+                    const id = arrUserData[1];
+                    const { point } = event;
+                    if (userData && meta !== 'one') {
+                        dispatch(setMarkerTip(meta, id, point));
+                    }
                 }
             });
 
@@ -112,7 +127,6 @@ const Map: React.FC = () => {
             });
         });
 
-        // Destroy the map, if Map component is going to be unmounted
         return () => {
             map && map.destroy();
             clusterer && clusterer.destroy();
@@ -125,7 +139,7 @@ const Map: React.FC = () => {
 
     useEffect(() => {
         if (clusterer !== undefined) {
-            clusterer.load(createMapMarkersArray(foundPlaces));
+            clusterer.load(createMapMarkersArray(foundPlaces, 'main'));
         }
     }, [foundPlaces]);
 

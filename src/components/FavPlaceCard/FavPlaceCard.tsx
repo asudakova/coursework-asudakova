@@ -15,40 +15,45 @@ const FavPlaceCard: React.FC<PlaceCardPropsType> = ({ rating, reviewsAmount, nam
 
     const { userUid } = useAppSelector((state) => state.authReducer);
 
-    const handleDeleteClick = () => {
+    const handleDeleteClick = (e: React.MouseEvent<HTMLInputElement>) => {
+        e.preventDefault()
         dispatch(removeFavPlace(id, userUid));
     };
 
     return (
-        <div className={styles.placeCard}>
-            {photo ? (
-                <img src={photo} alt={name} className={styles.pic} />
-            ) : (
-                <div className={styles.noPic}></div>
-            )}
-            <div className={styles.placeInfo}>
-                <Link to={`/main/favorite/place/${id}`} state={'fav'}>
-                    <h2 className={styles.name}>{name}</h2>
-                </Link>
-                {rating && reviewsAmount && (
-                    <div className={styles.rating}>
-                        <StarRatings
-                            rating={rating}
-                            starRatedColor="#5843BE"
-                            starEmptyColor="#86838C"
-                            numberOfStars={5}
-                            starDimension="18px"
-                            starSpacing="1px"
-                        />
-                        <span className={styles.review}>
-                            ({reviewsAmount} {['отзыв', 'отзыва', 'отзывов'][getDeclension(reviewsAmount)]})
-                        </span>
-                    </div>
+        <Link to={`/main/favorite/place/${id}`}>
+            <div className={styles.placeCard}>
+                {photo ? (
+                    <img src={photo} alt={name} className={styles.pic} />
+                ) : (
+                    <div className={styles.noPic}></div>
                 )}
-                <span className={styles.address}>{address}</span>
+                <div className={styles.placeInfo}>
+                    {/* <Link to={`/main/favorite/place/${id}`} state={'fav'}>
+                    <h2 className={styles.name}>{name}</h2>
+                </Link> */}
+                    <h2 className={styles.name}>{name}</h2>
+                    {rating && reviewsAmount && (
+                        <div className={styles.rating}>
+                            <StarRatings
+                                rating={rating}
+                                starRatedColor="#5843BE"
+                                starEmptyColor="#86838C"
+                                numberOfStars={5}
+                                starDimension="18px"
+                                starSpacing="1px"
+                            />
+                            <span className={styles.review}>
+                                ({reviewsAmount}{' '}
+                                {['отзыв', 'отзыва', 'отзывов'][getDeclension(reviewsAmount)]})
+                            </span>
+                        </div>
+                    )}
+                    <span className={styles.address}>{address}</span>
+                </div>
+                <UilTimes onClick={handleDeleteClick} className={styles.delete} />
             </div>
-            <UilTimes onClick={handleDeleteClick} className={styles.delete} />
-        </div>
+        </Link>
     );
 };
 

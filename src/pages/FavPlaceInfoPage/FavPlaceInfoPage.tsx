@@ -41,6 +41,7 @@ const FavPlaceInfoPage: React.FC = () => {
             if (isFav) {
                 setIsFav(!isFav);
                 dispatch(removeFavPlace(placeId, userUid));
+                navigate('/main/favorite');
             } else {
                 setIsFav(isFav);
                 const newPlace = mapPlaces[placeId as keyof typeof mapPlaces];
@@ -55,7 +56,7 @@ const FavPlaceInfoPage: React.FC = () => {
     };
 
     if (clusterer !== undefined) {
-        clusterer.load(createMapMarkersArray([markerCoords]));
+        clusterer.load(createMapMarkersArray([markerCoords], 'one'));
     }
 
     const handleReturnToFavPageClick = () => {

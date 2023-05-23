@@ -9,7 +9,6 @@ import attr_active from './attractions-active.png';
 import mapMarkerTag from './map-marker.svg';
 import mapMarkerTagHover from './map-marker-hover.svg';
 import clustererTag from './clusterertag.svg';
-import clustererTagHover from './clusterertag-hover.svg';
 import userLocationTag from './user-location-tag.svg';
 import logo from './logo.png';
 
@@ -26,6 +25,5 @@ export {
     mapMarkerTag,
     mapMarkerTagHover,
     userLocationTag,
-    clustererTag,
-    clustererTagHover
+    clustererTag
 };

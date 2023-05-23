@@ -23,7 +23,6 @@ const SignUpPage: React.FC = () => {
         if (password !== confirmPassword) {
             setError('Пароли не совпадают');
         } else {
-            setError('');
             dispatch(createUser(email, password, name));
         }
     };
@@ -31,6 +30,8 @@ const SignUpPage: React.FC = () => {
     useEffect(() => {
         if (signupErrorforUser !== '') {
             setError(signupErrorforUser);
+        } else {
+            setError('');
         }
     }, [signupErrorforUser]);
 

@@ -1,7 +1,11 @@
 import { CurrentPlaceType, MarkerType } from '../types';
 import { mapMarkerTag, mapMarkerTagHover } from '../img';
 
-export const createFavMarkers = (arrId: string[], placesInfo: { [name: string]: CurrentPlaceType }) => {
+export const createFavMarkers = (
+    arrId: string[],
+    placesInfo: { [name: string]: CurrentPlaceType },
+    type: string
+) => {
     if (!arrId.length) {
         return [];
     }
@@ -10,7 +14,7 @@ export const createFavMarkers = (arrId: string[], placesInfo: { [name: string]: 
         markers.push({
             coordinates: placesInfo[id].latLon,
             size: [28, 28],
-            userData: id,
+            userData: `${type},${id}`,
             icon: mapMarkerTag,
             hoverIcon: mapMarkerTagHover,
         });
