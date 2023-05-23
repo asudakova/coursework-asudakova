@@ -16,7 +16,7 @@ const FavPlaceCard: React.FC<PlaceCardPropsType> = ({ rating, reviewsAmount, nam
     const { userUid } = useAppSelector((state) => state.authReducer);
 
     const handleDeleteClick = (e: React.MouseEvent<HTMLInputElement>) => {
-        e.preventDefault()
+        e.preventDefault();
         dispatch(removeFavPlace(id, userUid));
     };
 
@@ -24,14 +24,13 @@ const FavPlaceCard: React.FC<PlaceCardPropsType> = ({ rating, reviewsAmount, nam
         <Link to={`/main/favorite/place/${id}`}>
             <div className={styles.placeCard}>
                 {photo ? (
-                    <img src={photo} alt={name} className={styles.pic} />
+                    <div className={styles.picWrapper}>
+                        <img src={photo} alt={name} className={styles.pic} />
+                    </div>
                 ) : (
                     <div className={styles.noPic}></div>
                 )}
                 <div className={styles.placeInfo}>
-                    {/* <Link to={`/main/favorite/place/${id}`} state={'fav'}>
-                    <h2 className={styles.name}>{name}</h2>
-                </Link> */}
                     <h2 className={styles.name}>{name}</h2>
                     {rating && reviewsAmount && (
                         <div className={styles.rating}>
