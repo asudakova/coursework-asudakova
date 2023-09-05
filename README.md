@@ -3,6 +3,19 @@
 ## Курсовой проект для Tinkoff Fintech School, Frontend, весна 2023
 Выполнила: Судакова Александра Валерьевна  
 [Ссылка на проект](https://coursework-asudakova.vercel.app/)
+![image](https://github.com/asudakova/coursework-asudakova/assets/102738427/f5abbdfc-d6c6-4ecb-8ab4-a719b434a9a5)
+
+---
+### Использованные технологии
+
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+![Axios](https://img.shields.io/badge/Axios-5A29E4?logo=axios&logoColor=fff&style=for-the-badge)
+![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
 ## Описание проекта
 ### *Какую задачу решает приложение*  
